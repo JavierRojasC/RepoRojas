@@ -325,7 +325,7 @@ Si se tienen K tablas, con la misma estructura de la tabla \ref{tab:inicial}, co
 
 
 ```{r diagram, echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='40%', fig.width=16, fig.height=9}
-knitr::include_graphics("/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables.png")
+knitr::include_graphics("ktables.png")
 ```
 
 \caption{K tablas con el formato inicial.}
@@ -339,7 +339,7 @@ La generalización a K tablas del procedimiento del MCA, se presenta en la Figur
 \begin{figure}[!h]
 
 ```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="h", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
-knitr::include_graphics("/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA.png")
+knitr::include_graphics("ktablesMCA.png")
 ```
 
 \caption{Procedimiento del MCA para K tablas}
@@ -425,7 +425,7 @@ devtools::install_github("JavierRojasC/T2Qv")
 
 
 ```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
-knitr::include_graphics("/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack.png")
+knitr::include_graphics("DescrPack.png")
 ```
 
 \caption{Documentación del paquete T2Qv}
@@ -475,7 +475,7 @@ Por consiguiente, la pregunta que surge es hasta cuántas dimensiones se puede d
 
 
 ```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='80%', fig.width=18, fig.height=12}
-knitr::include_graphics("/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ArticleHotellingACM/conjuntosensibilidad.png")
+knitr::include_graphics("conjuntosensibilidad.png")
 ```
 
 \caption{Curvas de nivel y superficie de respuesta obtenidas con el gráfico T2 Hotelling para variables cualitativas.}

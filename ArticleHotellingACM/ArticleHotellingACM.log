@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  12 NOV 2021 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  12 NOV 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,31 +1314,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 567--569
  []
 
 [5]
-</Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables.png, id=243, 41
-9.5675pt x 289.08pt>
-File: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables.png Graphi
-c file (type png)
-<use /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables.png>
-Package pdftex.def Info: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM
-/ktables.png  used on input line 626.
+<ktables.png, id=243, 419.5675pt x 289.08pt>
+File: ktables.png Graphic file (type png)
+<use ktables.png>
+Package pdftex.def Info: ktables.png  used on input line 626.
 (pdftex.def)             Requested size: 177.54256pt x 122.32584pt.
-</Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA.png, id=246,
- 1184.425pt x 499.8675pt>
-File: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA.png Gra
-phic file (type png)
-<use /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA.png>
-Package pdftex.def Info: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM
-/ktablesMCA.png  used on input line 639.
+<ktablesMCA.png, id=246, 1184.425pt x 499.8675pt>
+File: ktablesMCA.png Graphic file (type png)
+<use ktablesMCA.png>
+Package pdftex.def Info: ktablesMCA.png  used on input line 639.
 (pdftex.def)             Requested size: 399.47415pt x 168.5874pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 </Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables.png>]
+[6 <./ktables.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 691--695
 
  []
 
-[7 </Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA.png>]
+[7 <./ktablesMCA.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 60.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1348,23 +1342,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-</Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack.png, id=275, 
-642.4pt x 520.94624pt>
-File: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack.png Grap
-hic file (type png)
-<use /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack.png>
-Package pdftex.def Info: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM
-/DescrPack.png  used on input line 772.
+<DescrPack.png, id=275, 642.4pt x 520.94624pt>
+File: DescrPack.png Graphic file (type png)
+<use DescrPack.png>
+Package pdftex.def Info: DescrPack.png  used on input line 772.
 (pdftex.def)             Requested size: 266.32062pt x 215.97404pt.
-[8 </Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack.png>]
-</Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ArticleHotellingACM/con
-juntosensibilidad.png, id=290, 782.925pt x 319.1925pt>
-File: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ArticleHotellingAC
-M/conjuntosensibilidad.png Graphic file (type png)
-<use /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ArticleHotellingACM
-/conjuntosensibilidad.png>
-Package pdftex.def Info: /Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM
-/ArticleHotellingACM/conjuntosensibilidad.png  used on input line 846.
+[8 <./DescrPack.png>]
+<conjuntosensibilidad.png, id=290, 782.925pt x 319.1925pt>
+File: conjuntosensibilidad.png Graphic file (type png)
+<use conjuntosensibilidad.png>
+Package pdftex.def Info: conjuntosensibilidad.png  used on input line 846.
 (pdftex.def)             Requested size: 355.0919pt x 144.77011pt.
 
 Underfull \hbox (badness 1048) in paragraph at lines 853--869
@@ -1372,8 +1359,7 @@ Underfull \hbox (badness 1048) in paragraph at lines 853--869
 -siderando el por-centaje de vari-ables
  []
 
-(./appendix.tex [9 </Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/Arti
-cleHotellingACM/conjuntosensibilidad.png>]) (./ArticleHotellingACM.bbl
+(./appendix.tex [9 <./conjuntosensibilidad.png>]) (./ArticleHotellingACM.bbl
 Underfull \hbox (badness 6078) in paragraph at lines 37--45
 []\T1/ppl/m/n/9 (+20) APARISI, F.  Hotelling's T2 con-trol chart with adap-tive
  sam-ple sizes.  \T1/ppl/m/it/9 (+20) In-ter-na-tional
@@ -1416,8 +1402,8 @@ Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
 (rerunfilecheck)             Checksum: 14D8C4F7162C21A320C057CC60CF059A;2854.
  ) 
 Here is how much of TeX's memory you used:
- 26313 strings out of 480990
- 469627 string characters out of 5907211
+ 26307 strings out of 480990
+ 467767 string characters out of 5907211
  840720 words of memory out of 5000000
  42534 multiletter control sequences out of 15000+600000
  466275 words of font info for 337 fonts, out of 8000000 for 9000
