@@ -1,0 +1,929 @@
+%  LaTeX support: latex@mdpi.com
+%  In case you need support, please attach all files that are necessary for compiling as well as the log file, and specify the details of your LaTeX setup (which operating system and LaTeX version / tools you are using).
+
+%=================================================================
+\documentclass[water,article,submit,moreauthors,pdftex]{mdpi}
+
+% If you would like to post an early version of this manuscript as a preprint, you may use preprint as the journal and change 'submit' to 'accept'. The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
+
+%% Some pieces required from the pandoc template
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{4pt}}
+\setlist[itemize]{leftmargin=*,labelsep=5.8mm}
+\setlist[enumerate]{leftmargin=*,labelsep=4.9mm}
+
+\usepackage{longtable}
+
+% see https://stackoverflow.com/a/47122900
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% acoustics, actuators, addictions, admsci, aerospace, agriculture, agriengineering, agronomy, algorithms, animals, antibiotics, antibodies, antioxidants, applsci, arts, asc, asi, atmosphere, atoms, axioms, batteries, bdcc, behavsci , beverages, bioengineering, biology, biomedicines, biomimetics, biomolecules, biosensors, brainsci , buildings, cancers, carbon , catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, children, cleantechnol, climate, clockssleep, cmd, coatings, colloids, computation, computers, condensedmatter, cosmetics, cryptography, crystals, dairy, data, dentistry, designs , diagnostics, diseases, diversity, drones, econometrics, economies, education, electrochem, electronics, energies, entropy, environments, epigenomes, est, fermentation, fibers, fire, fishes, fluids, foods, forecasting, forests, fractalfract, futureinternet, futurephys, galaxies, games, gastrointestdisord, gels, genealogy, genes, geohazards, geosciences, geriatrics, hazardousmatters, healthcare, heritage, highthroughput, horticulturae, humanities, hydrology, ijerph, ijfs, ijgi, ijms, ijns, ijtpp, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jcdd, jcm, jcp, jcs, jdb, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmse, jnt, jof, joitmc, jpm, jrfm, jsan, land, languages, laws, life, literature, logistics, lubricants, machines, magnetochemistry, make, marinedrugs, materials, mathematics, mca, medicina, medicines, medsci, membranes, metabolites, metals, microarrays, micromachines, microorganisms, minerals, modelling, molbank, molecules, mps, mti, nanomaterials, ncrna, neuroglia, nitrogen, notspecified, nutrients, ohbm, particles, pathogens, pharmaceuticals, pharmaceutics, pharmacy, philosophies, photonics, physics, plants, plasma, polymers, polysaccharides, preprints , proceedings, processes, proteomes, psych, publications, quantumrep, quaternary, qubs, reactions, recycling, religions, remotesensing, reports, resources, risks, robotics, safety, sci, scipharm, sensors, separations, sexes, signals, sinusitis, smartcities, sna, societies, socsci, soilsystems, sports, standards, stats, surfaces, surgeries, sustainability, symmetry, systems, technologies, test, toxics, toxins, tropicalmed, universe, urbansci, vaccines, vehicles, vetsci, vibration, viruses, vision, water, wem, wevj
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by:
+% abstract, addendum, article, benchmark, book, bookreview, briefreport, casereport, changes, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, expressionofconcern, extendedabstract, meetingreport, creative, datadescriptor, discussion, editorial, essay, erratum, hypothesis, interestingimages, letter, meetingreport, newbookreceived, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, supfile, technicalnote, viewpoint
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+\firstpage{1}
+\makeatletter
+\setcounter{page}{\@firstpage}
+\makeatother
+\pubvolume{xx}
+\issuenum{1}
+\articlenumber{5}
+\pubyear{2019}
+\copyrightyear{2019}
+%\externaleditor{Academic Editor: name}
+\history{Received: date; Accepted: date; Published: date}
+\updates{yes} % If there is an update available, un-comment this line
+
+%% MDPI internal command: uncomment if new journal that already uses continuous page numbers
+%\continuouspages{yes}
+
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+%\pdfoutput=1
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, calc, indentfirst, fancyhdr, graphicx, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, amsthm, hyphenat, natbib, hyperref, footmisc, geometry, caption, url, mdframed, tabto, soul, multirow, microtype, tikz
+
+%=================================================================
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Gráfico de control T2 Hotelling para variables cualitativas}
+
+% Authors, for the paper (add full first names)
+\Author{Wilson
+Rojas-Preciado$^{1,2}$\href{https://orcid.org/0000-0003-1614-698X}{\orcidicon}, Mauricio
+Rojas-Campuzano$^{3}$\href{https://orcid.org/0000-0001-8000-9432}{\orcidicon}, Purificación
+Galindo-Villardón$^{2}$\href{https://orcid.org/0000-0001-6977-7545}{\orcidicon}, Omar
+Ruiz-Barzola$^{3}$\href{https://orcid.org/0000-0001-8206-1744}{\orcidicon}, $^{}$, $^{}$, $^{}$}
+
+% Authors, for metadata in PDF
+\AuthorNames{Wilson Rojas-Preciado, Mauricio
+Rojas-Campuzano, Purificación Galindo-Villardón, Omar
+Ruiz-Barzola, , , }
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+}
+% Contact information of the corresponding author
+\corres{Correspondence: \href{mailto:wrojas@utmachala.edu.ec}{\nolinkurl{wrojas@utmachala.edu.ec}};
+Tel.: +593-992-83-3719}
+
+% Current address and/or shared authorship
+\firstnote{Current address: Updated affiliation}
+\secondnote{These authors contributed equally to this work.}
+
+
+
+
+
+
+% The commands \thirdnote{} till \eighthnote{} are available for further notes
+
+% Simple summary
+\simplesumm{A Simple summary goes here.}
+
+% Abstract (Do not insert blank lines, i.e. \\)
+\abstract{Abstract}
+
+% Keywords
+\keyword{keyword 1; keyword 2; keyword 3 (list three to ten pertinent
+keywords specific to the article, yet reasonably common within the
+subject discipline.).}
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences:
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data:
+%\dataset{DOI number or link to the deposited data set in cases where the data set is published or set to be published separately. If the data set is submitted and will be published as a supplement to this paper in the journal Data, this field will be filled by the editors of the journal. In this case, please make sure to submit the data set as a supplement when entering your manuscript into our manuscript editorial system.}
+
+%\datasetlicense{license under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%\setcounter{secnumdepth}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Pandoc citation processing
+
+\usepackage{subfig}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Los gráficos de control constituyen una de las herramientas más
+importantes para definir límites y parámetros óptimos de los procesos,
+así como para controlar la calidad de los productos mediante la
+reducción de la variabilidad. El uso de gráficos de control facilita la
+evaluación del comportamiento de las variables del proceso y contribuye
+al logro de los objetivos planificados.
+
+La variación de los procesos se entiende como la diversidad de
+resultados que genera un grupo de variables de un proceso, su monitoreo
+es un objetivo clave del control estadístico, por lo tanto, es necesario
+entender los tipos y motivos de la variabilidad. Para ello es preciso
+registrar de manera sistemática y adecuada diferentes variables del
+proceso que se desea controlar, como las propiedades de los insumos, las
+condiciones de operación de los equipos, las competencias del personal
+que maneja los procesos, además de las características de los productos,
+la satisfacción de los usuarios, el cumplimiento de requisitos, entre
+otras.
+
+El pionero del control estadístico de procesos fue Walter Shewhart.
+Estableció las diferencias entre la variabilidad natural o común,
+presente en todos los procesos, y la provocada por causas asignables o
+especiales, que pueden llevarlos a un estado de fuera de control. Señaló
+que un proceso está en control estadístico cuando trabaja sólo con
+causas comunes de variación. Propuso los primeros gráficos de control
+para variables de tipo continuo y para variables de atributos
+\citep{Gutierrez2013}.
+
+El control estadístico de procesos mediante gráficos de control permitió
+a las organizaciones monitorear el comportamiento de una variable a la
+vez, no obstante, las organizaciones requirieron, con el pasar del
+tiempo, el análisis de varias características de calidad de forma
+simultánea, abriendo la puerta al control estadístico de procesos desde
+una perspectiva multivariante \citep{ramos2017}. Para facilitar el
+control de calidad de procesos es común el uso de gráficas de control
+que recolectan abundante información en diversas variables de forma
+simultánea, su análisis permite caracterizar los diferentes tipos de
+variables que afectan la calidad y explican su comportamiento a lo largo
+del tiempo \citep{li2012}.
+
+Hay una variedad de gráficos de control de procesos desde la perspectiva
+multivariante, entre los clásicos están el Gráfico \(T^2\) de Hotelling
+\citep{hotelling1947}, el Multivariate Exponentially Weighted Moving --
+MEWMA \citep{lowry1992}, el Multivariate Cumulative Sum Control Chart --
+MCUSUM \citep{Crosier1988}. Con el transcurso del tiempo se hicieron
+diversos aportes para mejorar el rendimiento de estos gráficos, entre
+los más destacados están Gráfico de control \(T^2\) con tamaños de
+muestra adaptables \citep{Aparisi1996}, Gráfico de control \(T^2\) con
+intervalos de muestreo variables \citep{Aparisi2001}, Gráfico de control
+\(T^2\) con líneas de advertencia dobles \citep{Faraz2006}, Gráfico de
+control robusto \citep{shabbak2012}, Gráficos de control basados en
+modelos de minería de datos para procesos multivariantes y
+autocorrelacionados \citep{kim2012}, Gráficos de control de calidad
+multivariantes con dimensión variable \citep{ruiz2013}, Gráfico de
+control para el coeficiente de variación multivariante
+\citep{yeong2016}.
+
+Además de estos gráficos de control para entornos paramétricos, se
+desarrollaron otros para datos numéricos y cualitativos en entornos
+multivariantes no paramétricos, entre ellos el Gráfico de control
+multivariante basado en la distancia de Gower para una combinación de
+variables continuas y cualitativas \citep{Tuerhong2014}, Gráfico de
+control multivariante basado en la combinación de PCA para
+características de calidad de atributos y variables
+\citep{Muhammad2018}, Gráfico de control multivariante no paramétrico
+basado en la ponderación de novedad sensible a la densidad para procesos
+no normales \citep{liu2020}, Gráfico de control de deméritos con
+clustering difuso de c-medias \citep{yilmaz2020}, Gráfico de control
+basado en ACP que utiliza máquinas de vectores de soporte para
+distribuciones no normales multivariadas \citep{Farokhnia}, Gráfico
+CUSUM no paramétrico para monitorear procesos multivariados
+correlacionados en serie \citep{xue2020}, Gráfico de control
+multivariante basado en Kernel PCA para monitorear características de
+calidad de atributos y variables mixtas \citep{Ahsan2020}, Gráfico
+\(T^2\) basado en la combinación de PCA para datos continuos y
+cualitativos con detección de datos atípicos \citep{Ahsan2021}.
+
+Como se puede observar, la literatura científica es abundante en lo
+referente a gráficos de control en entornos multivariantes paramétricos
+y no paramétricos para datos numéricos y, en los últimos años, para
+datos mixtos (numéricos y cualitativos), sin embargo, no se puede decir
+lo mismo de las publicaciones sobre gráficos de control multivariantes
+para datos cualitativos.
+
+En el estudio de los procesos que se desarrollan en el entorno
+social-educativo y que explican el comportamiento de variables como el
+rendimiento académico, tasas de graduación o deserción, producción
+científica, porcentajes de matrícula de nuevo ingreso, entre otros, se
+maneja con mucha frecuencia variables cualitativas. No es que estén
+ausentes los datos cuantitativos, sino que, en las bases de datos que se
+utilizan para estos análisis, abundan las variables cualitativas
+nominales y ordinales sobre las de tipo numérico, algunos ejemplos de
+datos de los estudiantes son: sexo, lugar de procedencia,
+autodenominación étnica, grado académico de los padres, tipo de
+institución educativa de procedencia (fiscal, particular, municipal);
+ejemplos de datos de las instituciones son: tipo de sostenimiento
+económico, jornada, modalidad, campo de estudio, niveles (tecnológico,
+grado y postgrado), tipo de infraestructura; ejemplos asociados a datos
+de los profesores son: titularidad, dedicación, grado académico, grado
+en el escalafón, discapacidad, entre otros.
+
+\citet{perez2004} señala que al observar muchas variables sobre una
+muestra es presumible que una parte de la información recogida pueda ser
+redundante o que sea excesiva, en cuyo caso los métodos multivariantes
+de reducción de la dimensión tratan de eliminarla combinando muchas
+variables observadas para quedarse con pocas variables ficticias que,
+aunque no observadas, sean combinación de las reales y sinteticen la
+mayor parte de la información contenida en sus datos. En este caso se
+deberá tener en cuenta el tipo de variables que maneja. Si son variables
+cuantitativas las técnicas que le permiten este tratamiento pueden ser
+el Análisis de componentes principales
+\citep{Person1901, Hotelling1933}, el Análisis factorial
+\citep{ch1904, thurstone1947, kaiser1958}, mientras que, si se trata de
+variables cualitativas, es recomendable la aplicación de un Análisis de
+correspondencias múltiple, Análisis de homogeneidad o un Análisis de
+Escalamiento multidimensional.
+
+\hypertarget{anuxe1lisis-de-correspondencias}{%
+\subsection{Análisis de
+Correspondencias}\label{anuxe1lisis-de-correspondencias}}
+
+El tratamiento multivariante de variables cualitativas requiere un
+proceso metodológico distinto, uno de los más representativos es el
+Análisis de Correspondencias \citep{Benzecri}. Según \citep{perez2004},
+este análisis implica estudios de similaridad o disimilaridad entre
+categorías, se debe cuantificar la diferencia o distancia entre ellas
+sumando las diferencias cuadráticas relativas entre las frecuencias de
+las distribuciones de las variables analizadas, lo que conduce al
+concepto de la \(\chi^2\). Así, el análisis de correspondencias puede
+considerase como un análisis de componentes principales aplicado a
+variables cualitativas que, al no poder utilizar correlaciones, se basa
+en la distancia no euclídea de la\(\chi^2\). En el enfoque francés del
+Análisis de Correspondencias, que se caracteriza por el énfasis en la
+geometría, el análisis de una tabla cruzada se llama análisis de
+correspondencia (AC) y el análisis de una colección de matrices
+indicadoras, se denomina análisis de correspondencia múltiple (ACM)
+\citep{michailidis1998}. En contextos anglosajones, el ACM es conocido
+como Análisis de Homogeneidad o Escalamiento Dual, especialmente en
+psicometría.
+
+\hypertarget{anuxe1lisis-de-homogeneidad}{%
+\subsection{Análisis de
+Homogeneidad}\label{anuxe1lisis-de-homogeneidad}}
+
+El Análisis de Homogeneidad, Homogeneous Alternating Least Squares
+(HOMALS), es un modelo de la familia de modelos matemáticos del
+Escalamiento óptimo del sistema Gifi \citep{Gifi1990}, el cual comprende
+una serie de técnicas exploratorias de análisis multivariado no lineal.
+Igual que el ACM, HOMALS se considera una forma de Análisis de
+Componentes Principales para datos cualitativos. El Análisis de
+Homogeneidad representa los objetos analizados mediante puntos en el
+modelo espacial, sus características más relevantes se presentan en las
+relaciones geométricas entre los puntos, para ello, es necesario la
+cuantificación de datos cualitativos \citep{Lopez2014}. El uso de
+variables cualitativas no es particularmente restrictivo, ya que una
+variable numérica continua se puede considerar como una variable
+cualitativa con un gran número de categorías. HOMALS se diferencia del
+el ACM en que éste utiliza la función de Descomposición de valores
+propios mientras que el Análisis de Homogeneidad utiliza Mínimos
+Cuadrados Alternos, lo que se conoce en la literatura como la Solución
+de Homals \citep{michailidis1998}.
+
+\hypertarget{escalamiento-multidimensional}{%
+\subsection{Escalamiento
+multidimensional}\label{escalamiento-multidimensional}}
+
+Otra de las técnicas multivariantes para el tratamiento de variables
+cualitativas es el escalamiento multidimensional (EMD)
+\citep{torgerson1952, shepard1962}. Se define como una técnica que
+elabora una representación gráfica que permite conocer la imagen que los
+individuos se crean de un conjunto de objetos por posicionamiento de
+cada uno en relación con los demás, (mapa perceptual). El EMD trata de
+encontrar la estructura de un conjunto de medidas de distancia entre
+objetos o casos. Esto se logra asignando las observaciones a posiciones
+específicas en un espacio conceptual, normalmente de dos o tres
+dimensiones, de modo que las distancias entre los puntos en el espacio
+concuerden al máximo con las disimilaridades dadas. Las dimensiones de
+este espacio conceptual se pueden interpretar para favorecer la
+comprensión de los datos, inclusive si son valoraciones subjetivas de
+disimilaridad entre objetos o conceptos. Dado que el EMD permite
+calcular las distancias a partir de los datos multivariados, si las
+variables se han medido objetivamente, se lo puede utilizar como técnica
+de reducción de datos \citep{perez2004}.
+
+Las variables que utiliza esta técnica pueden ser métricas o no
+métricas. El escalamiento multidimensional las transforma en distancias
+entre los objetos en un espacio de dimensiones múltiples, de modo que
+objetos que aparecen situados más próximos entre sí son percibidos como
+más similares por los sujetos.
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and Methods}\label{materials-and-methods}}
+
+\hypertarget{notaciuxf3n}{%
+\subsection{Notación}\label{notaciuxf3n}}
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||c ||c |c ||} 
+ \hline
+ Caracteres & Tipo & Ejemplo \\
+ \hline\hline
+ Escalares & Letras en minúscula. & $v,\lambda$\\
+\hline
+Vectores & Letras en minúscula y en negrita. & $\mathbf{v},\mathbf{u}$\\
+\hline
+Matrices & Letras en mayúscula y en negrita. & $\mathbf{V},\mathbf{X}$\\
+\hline
+Matrices de tres vías (Cubos de datos) & Letras con doble trazo en mayúscula. & $\mathbb{C},\mathbb{X}$\\
+\hline
+\end{tabular}\caption{Notación}
+\label{tab:notacion}
+\end{center}
+\end{table}
+
+A lo largo del artículo se utilizarán letras para hacer referencia a
+parámetros necesarios, se los enuncia a continuación:
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||c ||c | c ||} 
+ \hline
+ Letra &  Significado & Especificación\\
+ \hline\hline
+ p & Número de dimensiones &\\
+\hline
+ K & Número total de tablas (Especifica la profundidad del cubo de datos) & \\
+ \hline
+ $k$ & Índice de tabla &  k=1,2,...,K\\
+  \hline
+ $T$ & Índice de matriz transpuesta &  $\mathbf{X^{T}}$\\
+\hline
+ n & Tamaño muestral de las K tablas &\\
+\hline
+\end{tabular}\caption{Notación}
+\label{tab:notacion}
+\end{center}
+\end{table}
+
+\hypertarget{anuxe1lisis-de-correspondencia-muxfaltiple-mca}{%
+\subsection{Análisis de Correspondencia Múltiple
+(MCA)}\label{anuxe1lisis-de-correspondencia-muxfaltiple-mca}}
+
+El análisis de correspondencias múltiples (MCA) es una generalización
+del análisis de correspondencias simple o binario, donde se incluyen más
+variables cualitativas Se obtiene al realizar el análisis de
+correspondencias simple a una tabla disyuntiva completa, conocida como
+la tabla de Burt.
+
+Se tiene una matriz de datos con \(p\) variables cualitativas, cada una
+con h categorías (h \textgreater1). En el ejemplo que se desarrolla para
+esta investigación, se dispone de una base de datos (nombre de la base
+de datos) constituida por 10 tablas, cada una tiene 10 variables y cada
+variable, 3 categorías (Alto, Medio y Bajo).
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ $V_{1}$ & $V_{2}$ & $\cdots$ & $V_{p}$ \\ [0.5ex] 
+ \hline\hline
+ Alto & Medio & $\cdots$ & Medio\\
+ \hline
+Medio & Bajo & $\cdots$ & Alto\\
+\hline
+\vdots & $\vdots$ & $\vdots$ & $\vdots$\\
+\hline
+Bajo & Alto & $\cdots$ & Bajo \\ [1ex] 
+ \hline
+\end{tabular}\caption{Matriz inicial}
+\label{tab:inicial}
+\end{center}
+\end{table}
+
+Esta matriz es equivalente a la matriz disyuntiva \(Z\), que desglosa
+las variables en cada una de sus modalidades y se registra la ocurrencia
+de eventos de forma binaria.
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
+ \hline
+ $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ \hline\hline
+ 1 & 0 & 0 & 1 & 0 & 0 & $\cdots$ & 0 & 1 & 0 \\ [0.2ex] 
+ \hline
+ 0 & 1 & 0 & 0 & 1 & 0 & $\cdots$ & 1 & 0 & 0 \\ 
+\hline
+ 0 & 0 & 1 & 0 & 0 &  1 & $\cdots$ & 0 & 0 & 1 \\ 
+\hline
+ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ &  $\vdots$ & $\ddots$ & $\vdots$ & $\vdots$ & $\vdots$ \\ 
+\hline
+ 1 & 0 & 0 & 1 & 0 & 0 & $\cdots$ &1 & 0 & 0 \\  
+ \hline
+\end{tabular}
+\caption{Matriz disyuntiva Z}
+\label{tab:z}
+\end{center}
+\end{table}
+
+La tabla de Burt viene dada por:
+
+\begin{equation}
+\mathbf{B}=\mathbf{Z'}\mathbf{Z}
+\label{eq:Burt}
+\end{equation}
+
+\emph{La matriz de Burt se construye por superposición de cajas. En los
+bloques diagonales aparecen matrices diagonales conteniendo las
+frecuencias marginales de cada una de las variables analizadas. Fuera de
+la diagonal aparecen las tablas de frecuencia cruzadas correspondientes
+a todas las combinaciones 2 a 2 de las variables analizadas}\\
+Para realizar el análisis de correspondencias múltiples se parte de la
+matriz de Burt, obtenida con la ecuación \ref{eq:Burt}. Esta matriz está
+formada por las frecuencias absolutas, éstas se transforman en
+frecuencias relativas, dividiendo los valores de la matriz por la
+frecuencia total, dando lugar a una nueva matriz que se denominará
+\textbf{P}.
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{| p{1.7cm} ||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1.3cm} p{1cm} p{1cm} ||} 
+ \hline
+  & $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ \hline\hline
+ $V_{1}:Alto$ & $b_{1,1}$ & 0 & 0  & $b_{1,4}$ & $b_{1,5}$ & $b_{1,6}$ & $\cdots$ & $b_{1,3p-2}$ & $b_{1,3p-1}$ & $b_{1,3p}$ \\
+ $V_{1}:Medio$ & 0 & $b_{2,2}$ & 0 & $b_{2,4}$ & $b_{2,5}$ & $b_{2,6}$ & $\cdots$ & $b_{2,3p-2}$ & $b_{2,3p-1}$ & $b_{2,3p}$ \\ 
+ $V_{1}:Bajo$ & 0 & 0 & $b_{3,3}$  & $b_{3,4}$ & $b_{3,5}$ & $b_{3,6}$ & $\cdots$ & $b_{3,3p-2}$ & $b_{3,3p-1}$ & $b_{3,3p}$ \\ 
+\hline\hline
+  $V_{2}:Alto$ & $b_{4,1}$ & $b_{4,2}$ & $b_{4,3}$ & $b_{4,4}$ & 0 & 0 & $\cdots$ & $b_{4,3p-2}$ & $b_{4,3p-1}$ & $b_{4,3p}$ \\
+ $V_{2}:Medio$ & $b_{5,1}$ & $b_{5,2}$ & $b_{5,3}$ & 0 & $b_{5,5}$ & 0 & $\cdots$ & $b_{5,3p-2}$ & $b_{5,3p-1}$ & $b_{5,3p}$ \\ 
+ $V_{2}:Bajo$ &  $b_{6,1}$ & $b_{6,2}$ & $b_{6,3}$ & 0 & 0 &  $b_{6,6}$ & $\cdots$& $b_{6,3p-2}$ & $b_{6,3p-1}$ & $b_{6,3p}$ \\ 
+\hline\hline
+ 
+ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$ & $\vdots$ & $\vdots$ \\ 
+ 
+\hline\hline
+ $V_{p}:Alto$  & $b_{3p-2,1}$   & $b_{3p-2,2}$   & $b_{3p-2,3}$   & $b_{3p-2,4}$   & $b_{3p-2,5}$   & $b_{3p-2,6}$    & $\cdots$ & $b_{3p-2,3p-2}$ & 0 & 0 \\
+ $V_{p}:Medio$ & $b_{3p-1,1}$ & $b_{3p-1,2}$ & $b_{3p-1,3}$ & $b_{3p-1,4}$ & $b_{3p-1,5}$ & $b_{3p-1,6}$  & $\cdots$ & 0 & $b_{3p-1,3p-1}$ & 0 \\ 
+ $V_{p}:Bajo$  & $b_{3p,1}$ & $b_{3p,2}$ & $b_{3p,3}$ & $b_{3p,4}$ & $b_{3p,5}$ & $b_{3p,6}$  & $\cdots$ & 0 & 0 & $b_{3p,3p}$ \\ 
+\hline
+\end{tabular}
+\caption{P: Tabla de contingencia de Burt en frecuencias relativas}
+\label{tab:p}
+\end{center}
+\end{table}
+
+Se obtienen las marginales de las filas \emph{(mf)} y de las columnas
+\emph{(mc)} de la matriz \textbf{P} (Tabla \ref{tab:p}). A estos
+vectores se los conoce también como \emph{Masas de fila y columna},
+respectivamente.
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
+ \hline
+ $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ \hline
+    $b_{\bullet,1}$ & $b_{\bullet,2}$ & $b_{\bullet,3}$ & $b_{\bullet,4}$ & $b_{\bullet,5}$ & $b_{\bullet,6}$ & $\cdots$ & $b_{\bullet,3p-2}$ & $b_{\bullet,3p-1}$ & $b_{\bullet,3p}$ \\ [0.5ex] 
+ \hline
+\end{tabular}
+\caption{Frecuencias marginales de las filas. (mf)}
+\label{tab:margfilas}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+ \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
+ \hline
+ $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ \hline
+    $b_{\bullet,1}$ & $b_{\bullet,2}$ & $b_{\bullet,3}$ & $b_{\bullet,4}$ & $b_{\bullet,5}$ & $b_{\bullet,6}$ & $\cdots$ & $b_{\bullet,3p-2}$ & $b_{\bullet,3p-1}$ & $b_{\bullet,3p}$ \\ [0.5ex] 
+ \hline
+\end{tabular}
+\caption{Frecuencias marginales de las columnas. (mc)}
+\label{tab:margcolumnas}
+\end{center}
+\end{table}
+
+Se obtiene la matriz de residuos estandarizados \textbf{S}.
+
+\begin{equation}
+\mathbf{S}=\mathbf{D_{fila}}^{-\frac{1}{2}}(\mathbf{P}-\mathbf{mf} \hspace{0.2cm} \mathbf{mc'})\mathbf{D_{columna}}^{-\frac{1}{2}}
+\label{eq:s}
+\end{equation} donde:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathbf{D_{fila}}\) es una matriz diagonal que contiene las masas de
+  las filas.\\
+\item
+  \(\mathbf{D_{columna}}\) es una matriz diagonal que contiene las masas
+  de las columnas
+\end{itemize}
+
+Se aplica descomposición singular (SVD) a la matriz \textbf{S} (Ecuación
+\ref{eq:s}):
+
+\begin{equation}
+\mathbf{S}=\mathbf{U}\mathbf{D}\mathbf{V'}
+\label{eq:svd}
+\end{equation} donde:
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathbf{U}\) y \(\mathbf{V}\) son matrices ortogonales.\\
+\item
+  \(\mathbf{D}\) es una matriz diagonal que contiene los valores
+  singulares.
+\end{itemize}
+
+Para encontrar las coordenadas estandarizadas se aplica lo siguiente:
+
+\begin{equation}
+\mathbf{X}=\mathbf{D_{fila}}^{-\frac{1}{2}} \mathbf{U}
+\label{eq:xcoor}
+\end{equation}
+
+\begin{equation}
+\mathbf{Y}=\mathbf{D_{columna}}^{-\frac{1}{2}} \mathbf{V}
+\label{eq:ycoor}
+\end{equation}
+
+Para los fines necesarios, utilizaremos las coordenadas de las columnas
+(Tabla \ref{tab:colcoor}).
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{|| c ||c c c c||} 
+ \hline
+ & $Dim_{1}$      & $Dim_{2}$ & $\cdots$ & $Dim_{3p}$ \\ [0.5ex] 
+ \hline\hline
+  $V_{1}:Alto$    & ${v_{1}d_{1}}_{alto}$& ${v_{1}d_{1}}_{alto}$  & $\cdots$ & ${v_{1}d_{p}}_{alto}$\\
+ \hline
+ $V_{1}:Medio$    &${v_{1}d_{1}}_{medio}$ & ${v_{1}d_{1}}_{medio}$ & $\cdots$ & ${v_{1}d_{p}}_{medio}$\\
+\hline
+ $V_{1}:Bajo$     &${v_{1}d_{1}}_{bajo}$ & ${v_{1}d_{1}}_{bajo}$  &$\cdots$ & ${v_{1}d_{p}}_{bajo}$\\
+\hline
+\vdots & $\vdots$ & $\vdots$  &$\ddots$& $\vdots$\\
+\hline
+ $V_{p}:Bajo$     &${v_{p}d_{1}}_{bajo}$ & ${v_{p}d_{1}}_{bajo}$ & $\cdots$ & ${v_{p} d_{p}} _{bajo}$ \\ [1ex] 
+ \hline
+\end{tabular}\caption{Coordenadas estandarizadas de las columnas.}
+\label{tab:colcoor}
+\end{center}
+\end{table}
+
+\hypertarget{generalizaciuxf3n-a-k-tablas}{%
+\subsection{Generalización a K
+tablas}\label{generalizaciuxf3n-a-k-tablas}}
+
+Si se tienen K tablas, con la misma estructura de la tabla
+\ref{tab:inicial}, como se visualiza en la figura \ref{fig:ktables},
+abordamos el enfoque del análisis factorial múltiple (MFA). \citet{AFM}
+indica que el MFA utiliza análisis de correspondencia múltiple cuando se
+trata de variables cualitativas. El procedimiento implica la realización
+de un MCA por cada tabla y dividirlo por su primer valor propio con la
+finalidad de obtener K grupos normalizados. Posteriormente se consideran
+todas las tablas y se realiza un MCA global.
+
+\begin{figure}[!ht]
+
+
+
+\begin{center}\includegraphics[width=0.4\linewidth,]{/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktables} \end{center}
+
+\caption{K tablas con el formato inicial.}
+
+\label{fig:ktables}
+\end{figure}
+
+La generalización a K tablas del procedimiento del MCA, se presenta en
+la Figura \ref{fig:MCAk}
+
+\begin{figure}[!h]
+
+
+\begin{center}\includegraphics[width=0.9\linewidth,]{/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ktablesMCA} \end{center}
+
+\caption{Procedimiento del MCA para K tablas}
+
+\label{fig:MCAk}
+\end{figure}
+
+Llamaremos \(C\) a cada tabla de coordenadas. Con la finalidad de
+detectar la magnitud de las variables latentes, su aporte neto a las
+variables, se trata la matriz \(C\) con valor absoluto.
+
+\hypertarget{aporte-del-anuxe1lisis-factorial-muxfaltiple-mfa}{%
+\subsection{Aporte del Análisis Factorial Múltiple
+(MFA)}\label{aporte-del-anuxe1lisis-factorial-muxfaltiple-mfa}}
+
+Una vez que se tienen las coordenadas de las columnas, se procede a
+realizar la normalización, característica del procedimiento MFA.
+
+Sea \(\lambda_{1}^{k}\) el primer valor propio obtenido de la
+descomposición singular de la k-ésima tabla C. Normalizaremos la tabla
+multiplicándola por \(1/\lambda_{1}^{k}\). Con esto se obtiene la tabla
+\(C^{'}\), que corresponde a la tabla de coordenadas normalizadas.\\
+Individualmente, para el caso de la matriz k, se tendría la siguiente
+expresión.
+
+\begin{equation}
+\mathbf{C'_k}=\frac{1}{\lambda_{k}^1} \mathbf{C_k}
+\label{eq:Cprimak}
+\end{equation}
+
+Aglomerando las matrices normalizadas \(C^{'}\) en una sola, se tiene la
+matriz \(\mathbb{C}^{'}\). Esta contiene todos los elementos de las k
+tablas.
+
+\begin{equation}
+\mathbf{\mathbb{C^{'}}}=[\mathbf{C_1^{'}}|\mathbf{C_2^{'}}|,...,|\mathbf{C'_{K}}]^{T}
+\label{eq:Cprima}
+\end{equation}
+
+La normalización que realiza el MFA se encarga de ponderar las k tablas,
+con el objetivo de evitar alguna descompensación al momento de realizar
+el análisis conjunto de las tablas.
+
+\hypertarget{gruxe1fico-de-control}{%
+\subsection{Gráfico de control}\label{gruxe1fico-de-control}}
+
+Para definir el gráfico de control \(T^2\) Hotelling se deben tomar las
+siguientes consideraciones:
+
+\begin{itemize}
+\tightlist
+\item
+  La tabla \(\mathbb{C}^{'}\) (Ecuación \ref{eq:Cprima}) se denomina
+  Consenso, sirve como referente para el escenario \emph{bajo control},
+  y de la cual se obtiene \(\mu_{0}\) y \(\mathbf{S_0}\).\\
+\item
+  Cada matriz \(\mathbf{C'_k}\) tiene el mismo número de filas (n) y
+  columnas (p) (individuos y variables).
+\item
+  El vector de medias \(\mathbf{\mu_k}\) está atado a la tabla
+  \(\mathbf{C'_k}\), es decir, el gráfico de control estará en función
+  de las diferencias entre las matrices \(\mathbf{C'_k}\) y la matriz
+  consenso \(\mathbf{\mathbb{C^{'}}}\).
+\item
+  Las matrices \(\mathbf{C'_k}\) siguen una distribución normal
+  multivariante con vector de medias \(\mu_{k}\) y matriz de covarianzas
+  \(\mathbf{S_k}\).
+\end{itemize}
+
+Con esto, se obtiene el estadístico \(T^2\):
+
+\begin{equation}
+T^2=n (\mu_{k}-\mu_{0})'\mathbf{\Sigma_{0}^{-1}}(\mu_{k}-\mu_{0})
+\label{eq:T2}
+\end{equation}
+
+Se sabe que, bajo control, el \(T^2\) se distribuye como una
+Chi-cuadrado con p grados de libertad \(\chi^2_p\). En este caso se
+puede aplicar este principio, ya que utilizamos la matriz consenso
+(\(\mathbb{C}^{'}\)), que representa al escenario bajo control.
+
+Dado que este gráfico de control está basado en distancias de
+Mahalanobis ponderadas, sólo tiene límite de control superior. Este
+viene dado por la ecuación \ref{eq:UCL}
+
+\begin{equation}
+UCL=\chi^2_{\alpha,p}
+\label{eq:UCL}
+\end{equation}
+
+donde, \(\alpha\) es la significancia predeterminada considerando el
+número de variables \(p\).\\
+\(p\) es el número de dimensiones.
+
+\hypertarget{tabla-posterior}{%
+\subsection{Tabla posterior}\label{tabla-posterior}}
+
+Con la finalidad de detectar las potenciales categorías responsables de
+que un punto en el gráfico \(T^2\) de Hotelling para variables
+cualitativas se encuentre fuera de control, se propone una tabla que
+presenta las anomalías de cada categoría en cada variable, comparando
+las masas de columna de la tabla \(k\) y las masas de columna de la
+tabla consenso por medio de distancias \(\chi^2\) que proporcionan un
+valor p, aportando a la interpretación.
+
+\hypertarget{complemento-computacional}{%
+\section{Complemento computacional}\label{complemento-computacional}}
+
+Para facilitar la distribución y aplicación del método propuesto, se ha
+desarrollado un paquete reproducible en R. El paquete \textbf{T2Qv}
+utiliza la metodología expuesta en este artículo y la lleva a un entorno
+práctico, permite visualizar los resultados de forma plana o
+interactiva, además, presenta un panel Shiny que contiene todas las
+funciones individuales en un mismo espacio.
+
+\hypertarget{disponibilidad}{%
+\subsection{Disponibilidad}\label{disponibilidad}}
+
+El paquete está disponible en GitHub, la descarga se la puede realizar
+de la siguiente forma:
+
+\begin{verbatim}
+install.packages("devtools")
+devtools::install_github("JavierRojasC/T2Qv")
+\end{verbatim}
+
+\hypertarget{el-paquete-t2qv}{%
+\subsection{El paquete: T2Qv}\label{el-paquete-t2qv}}
+
+\begin{figure}[!ht]
+
+
+
+\begin{center}\includegraphics[width=0.6\linewidth,]{/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/DescrPack} \end{center}
+
+\caption{Documentación del paquete T2Qv}
+
+\label{fig:documentation}
+\end{figure}
+
+Las funciones que contiene el paquete y su descripción se enuncian en la
+tabla \ref{tab:functions}.
+
+\begin{table}[!ht]
+\begin{center}
+ \begin{tabular}{||c  m{35em}||} 
+ \hline
+  Función & Descripción \\ [0.5ex] 
+ \hline\hline
+ T2 qualitative & Multivariate control chart T2 Hotelling applicable for qualitative variables.\\
+ \hline
+  ACMconsensus & Multiple correspondence analysis applied to a consensus table.\\
+\hline
+  ACMpoint & Multiple correspondence analysis applied to a specific table.\\
+\hline
+  ChiSq variable & Contains Chi square distance between the column masses of the table specified in PointTable and the consensus table. It allows to identify which mode is responsible for the anomaly in the table in which it is located. \\ [1ex] 
+  \hline
+  Full Panel & A shiny panel complete with the 
+  multivariate control chart for 
+  qualitative variables, the two ACM 
+  charts and the modality distance table. 
+  Within the dashboard, arguments such as 
+  type I error and dimensionality can be 
+  modified. \\ [1ex] 
+ \hline
+\end{tabular}\caption{Funciones del paquete T2Qv}
+\label{tab:functions}
+\end{center}
+\end{table}
+
+\hypertarget{anuxe1lisis-de-sensibilidad}{%
+\section{Análisis de sensibilidad}\label{anuxe1lisis-de-sensibilidad}}
+
+Como se ha mencionado anteriormente, en el gráfico T2Qv, un punto fuera
+de control se interpreta como una tabla (\(k_i\)) que incluye una
+cantidad o una proporción de variables contaminadas, de tal manera que
+la diferencia de los valores de masas de columna, entre de la matriz
+\(k_i\) y la matriz consenso, sean significativos según el valor p
+obtenido de la distribución \(\chi^2\). En estos casos, se espera que
+los puntos en el gráfico T2Qv generalicen el comportamiento de estas
+diferencias y superen el límite de control superior (UCL). La ubicación
+de este límite de control varía en función del número de dimensiones que
+se representen, así, cuando es alto se logra un desempeño óptimo,
+mientras que, se introduce inestabilidad y se pierde confiabilidad en
+los resultados al disminuir el número de dimensiones de entre las que se
+puede representar.
+
+El gráfico de control propuesto es capaz de detectar un punto fuera de
+control, aún con un bajo número de variables contaminadas, cuando se
+trabaja con un alto número de dimensiones. Se recomienda p - 1, tal que
+p es el número total de dimensiones de la matriz inicial (Tabla
+\ref{tab:inicial}). Cuando se disminuye el número de dimensiones también
+disminuye la altura del límite de control superior (UCL), en
+consecuencia, se incrementa el número de puntos fuera de control, aunque
+no necesariamente las variables expresen diferencias significativas en
+su valores, crece la probabilidad de falsos positivos. Por consiguiente,
+la pregunta que surge es hasta cuántas dimensiones se puede disminuir en
+el análisis sin perder confiabilidad en el resultado. La importancia de
+esta pregunta radica en la necesidad de disponer un gráfico confiable,
+que identifique puntos fuera de control aún si se ha aplicado a los
+datos una técnica de una reducción de dimensiones, sin caer en casos de
+falso positivo.
+
+\begin{figure}[!ht]
+
+
+
+\begin{center}\includegraphics[width=0.8\linewidth,]{/Users/javierrojas/Documents/ESTAD EXTRAS/HotellingACM/ArticleHotellingACM/conjuntosensibilidad} \end{center}
+
+\caption{Curvas de nivel y superficie de respuesta obtenidas con el gráfico T2 Hotelling para variables cualitativas.}
+
+\label{fig:sensibilidad}
+\end{figure}
+
+El análisis de sensibilidad utiliza curvas de nivel y superficies de
+respuesta (figura \ref{fig:sensibilidad}) para representar el número de
+puntos fuera de control, considerando el porcentaje de variables
+contaminadas de la \(k_i\) tabla y el número de dimensiones
+representadas. Los datos de prueba utilizados en el modelo se registran
+en 10 tablas, cada una de ellas incluye 10 variables y cada variable
+tiene tres categorías: alto, medio y bajo. La tabla 10 tiene una
+distribución diferente de las demás, esta es la tabla contaminada. Se
+observa que el modelo es capaz de identificar un punto fuera de control
+trabajando con 9 dimensiones (d-1), aún con un porcentaje bajo de
+variables contaminadas. Cuando el número de dimensiones disminuye a 8 y
+el porcentaje de variables contaminadas es cercano a 100\%, detecta
+correctamente 1 punto fuera de control. Se observa además que cuando el
+número de dimensiones es menor se pierde estabilidad. En consecuencia,
+el análisis de sensibilidad ratifica que el gráfico de control T2Qv
+tiene un buen rendimiento cuando trabaja con altas dimensiones.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% optional
+% \supplementary{The following are available online at www.mdpi.com/link, Figure S1: title, Table S1: title, Video S1: title.}
+%
+% % Only for the journal Methods and Protocols:
+% % If you wish to submit a video article, please do so with any other supplementary material.
+% % \supplementary{The following are available at www.mdpi.com/link: Figure S1: title, Table S1: title, Video S1: title. A supporting video article is available at doi: link.}
+
+\vspace{6pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+
+\input{"appendix.tex"}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here.
+
+%=====================================
+% References, variant A: internal bibliography
+%=====================================
+%\reftitle{References}
+%\begin{thebibliography}{999}
+% Reference 1
+%\bibitem[Author1(year)]{ref-journal}
+%Author1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
+% Reference 2
+%\bibitem[Author2(year)]{ref-book}
+%Author2, L. The title of the cited contribution. In {\em The Book Title}; Editor1, F., Editor2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
+%\end{thebibliography}
+
+% The following MDPI journals use author-date citation: Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, JRFM, Laws, Religions, Risks, Social Sciences. For those journals, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%=====================================
+% References, variant B: external bibliography
+%=====================================
+\reftitle{References}
+\externalbibliography{yes}
+\bibliography{mybibfile.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
