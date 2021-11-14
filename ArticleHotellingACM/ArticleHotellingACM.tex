@@ -287,14 +287,14 @@ las distribuciones de las variables analizadas, lo que conduce al
 concepto de la \(\chi^2\). Así, el análisis de correspondencias puede
 considerase como un análisis de componentes principales aplicado a
 variables cualitativas que, al no poder utilizar correlaciones, se basa
-en la distancia no euclídea de la\(\chi^2\). En el enfoque francés del
-Análisis de Correspondencias, que se caracteriza por el énfasis en la
-geometría, el análisis de una tabla cruzada se llama análisis de
-correspondencia (CA) y el análisis de una colección de matrices
-indicadoras, se denomina análisis de correspondencia múltiple (MCA)
-\citep{michailidis1998}. En contextos anglosajones, el MCA es conocido
-como Análisis de Homogeneidad o Escalamiento Dual, especialmente en
-psicometría.
+en la distancia no e\emph{UCL}ídea de la\(\chi^2\). En el enfoque
+francés del Análisis de Correspondencias, que se caracteriza por el
+énfasis en la geometría, el análisis de una tabla cruzada se llama
+análisis de correspondencia (CA) y el análisis de una colección de
+matrices indicadoras, se denomina análisis de correspondencia múltiple
+(MCA) \citep{michailidis1998}. En contextos anglosajones, el MCA es
+conocido como Análisis de Homogeneidad o Escalamiento Dual,
+especialmente en psicometría.
 
 \hypertarget{anuxe1lisis-de-homogeneidad}{%
 \subsection{Análisis de
@@ -370,7 +370,7 @@ Matrices & Letras en mayúscula y en negrita. & $\mathbf{V},\mathbf{X}$\\
 \hline
 Matrices de tres vías (Cubos de datos) & Letras con doble trazo en mayúscula. & $\mathbb{C},\mathbb{X}$\\
 \hline
-\end{tabular}\caption{Notación}
+\end{tabular}\caption{Elementos algebraicos}
 \label{tab:notacion}
 \end{center}
 \end{table}
@@ -385,7 +385,7 @@ parámetros necesarios, se los enuncia a continuación en la tabla
  \hline
  Letra &  Significado & Especificación\\
  \hline\hline
- p & Número de dimensiones &\\
+ $p$ & Número de dimensiones &\\
 \hline
  K & Número total de tablas (Especifica la profundidad del cubo de datos) & \\
  \hline
@@ -406,15 +406,15 @@ parámetros necesarios, se los enuncia a continuación en la tabla
 
 El análisis de correspondencias múltiples (MCA) es una generalización
 del análisis de correspondencias simple o binario, donde se incluyen más
-variables cualitativas Se obtiene al realizar el análisis de
+variables cualitativas. Se obtiene al realizar el análisis de
 correspondencias simple a una tabla disyuntiva completa, conocida como
 la tabla de Burt.
 
 Se tiene una matriz de datos con \(p\) variables cualitativas, cada una
-con h categorías (h \textgreater1). En el ejemplo que se desarrolla para
-esta investigación, se dispone de una base de datos (nombre de la base
-de datos) constituida por 10 tablas, cada una tiene 10 variables y cada
-variable, 3 categorías (Alto, Medio y Bajo).
+con \(h\) categorías (\(h\) \textgreater1). En el ejemplo que se
+desarrolla para esta investigación, se dispone de una base de datos
+(\emph{Datak10Contaminated}) constituida por 10 tablas, cada una tiene
+10 variables y cada variable, 3 categorías (Alto, Medio y Bajo).
 
 \begin{table}[!ht]
 \begin{center}
@@ -468,11 +468,11 @@ La tabla de Burt viene dada por:
 \label{eq:Burt}
 \end{equation}
 
-\emph{La matriz de Burt se construye por superposición de cajas. En los
-bloques diagonales aparecen matrices diagonales conteniendo las
-frecuencias marginales de cada una de las variables analizadas. Fuera de
-la diagonal aparecen las tablas de frecuencia cruzadas correspondientes
-a todas las combinaciones 2 a 2 de las variables analizadas}\\
+La construcción de la matriz de Burt se da por la superposición de
+tablas. En las tablas ubicadas en la diagonal se encuentran matrices
+diagonales que contienen las frecuencias marginales de cada una de las
+variables. Fuera de la diagonal de la matriz de Burt se encuentran las
+tablas cruzadas por pares de variables.\\
 Para realizar el análisis de correspondencias múltiples se parte de la
 matriz de Burt, obtenida con la ecuación \ref{eq:Burt}. Esta matriz está
 formada por las frecuencias absolutas, éstas se transforman en
@@ -587,7 +587,7 @@ Para encontrar las coordenadas estandarizadas se aplica lo siguiente:
 \label{eq:ycoor}
 \end{equation}
 
-Para los fines necesarios, utilizaremos las coordenadas de las columnas
+Para los fines necesarios, se utilizará las coordenadas de las columnas
 (Tabla \ref{tab:colcoor}).
 
 \begin{table}[!ht]
@@ -616,8 +616,8 @@ Para los fines necesarios, utilizaremos las coordenadas de las columnas
 tablas}\label{generalizaciuxf3n-a-k-tablas}}
 
 Si se tienen K tablas, con la misma estructura de la tabla
-\ref{tab:inicial}, como se visualiza en la figura \ref{fig:ktables},
-abordamos el enfoque del análisis factorial múltiple (MFA). \citet{AFM}
+\ref{tab:inicial}, como se visualiza en la figura \ref{fig:ktables}, se
+aborda el enfoque del análisis factorial múltiple (MFA). \citet{AFM}
 indica que el MFA utiliza análisis de correspondencia múltiple cuando se
 trata de variables cualitativas. El procedimiento implica la realización
 de un MCA por cada tabla y dividirlo por su primer valor propio con la
@@ -648,9 +648,9 @@ la Figura \ref{fig:MCAk}
 \label{fig:MCAk}
 \end{figure}
 
-Llamaremos \(C\) a cada tabla de coordenadas. Con la finalidad de
-detectar la magnitud de las variables latentes, su aporte neto a las
-variables, se trata la matriz \(C\) con valor absoluto.
+Se llama \(C\) a cada tabla de coordenadas. Con la finalidad de detectar
+la magnitud de las variables latentes, su aporte neto a las variables,
+se trata la matriz \(C\) con valor absoluto.
 
 \hypertarget{aporte-del-anuxe1lisis-factorial-muxfaltiple-mfa}{%
 \subsection{Aporte del Análisis Factorial Múltiple
@@ -660,7 +660,7 @@ Una vez que se tienen las coordenadas de las columnas, se procede a
 realizar la normalización, característica del procedimiento MFA.
 
 Sea \(\lambda_{1}^{k}\) el primer valor propio obtenido de la
-descomposición singular de la k-ésima tabla C. Normalizaremos la tabla
+descomposición singular de la k-ésima tabla C. Se normaliza la tabla
 multiplicándola por \(1/\lambda_{1}^{k}\). Con esto se obtiene la tabla
 \(C^{'}\), que corresponde a la tabla de coordenadas normalizadas.\\
 Individualmente, para el caso de la matriz k, se tendría la siguiente
@@ -710,7 +710,7 @@ siguientes consideraciones:
   \(\mathbf{S_k}\).
 \end{itemize}
 
-Con esto, se obtiene el estadístico \(T^2\):
+Con esto se obtiene el estadístico \(T^2\):
 
 \begin{equation}
 T^2=n (\mu_{k}-\mu_{0})'\mathbf{\Sigma_{0}^{-1}}(\mu_{k}-\mu_{0})
@@ -718,22 +718,21 @@ T^2=n (\mu_{k}-\mu_{0})'\mathbf{\Sigma_{0}^{-1}}(\mu_{k}-\mu_{0})
 \end{equation}
 
 Se sabe que, bajo control, el \(T^2\) se distribuye como una
-Chi-cuadrado con p grados de libertad \(\chi^2_p\). En este caso se
-puede aplicar este principio, ya que utilizamos la matriz consenso
+Chi-cuadrado con \(p\) grados de libertad \(\chi^2_p\). En este caso se
+puede aplicar este principio, ya que se utiliza la matriz consenso
 (\(\mathbb{C}^{'}\)), que representa al escenario bajo control.
 
 Dado que este gráfico de control está basado en distancias de
 Mahalanobis ponderadas, sólo tiene límite de control superior. Este
-viene dado por la ecuación \ref{eq:UCL}
+viene dado por la ecuación \ref{eq:*UCL*}
 
 \begin{equation}
-UCL=\chi^2_{\alpha,p}
-\label{eq:UCL}
+*UCL*=\chi^2_{\alpha,p}
+\label{eq:*UCL*}
 \end{equation}
 
-donde, \(\alpha\) es la significancia predeterminada considerando el
-número de variables \(p\).\\
-\(p\) es el número de dimensiones.
+donde \(p\) es el número de dimensiones y \(\alpha\) es la significancia
+predeterminada considerando \(p\).
 
 \hypertarget{tabla-posterior}{%
 \subsection{Tabla posterior}\label{tabla-posterior}}
@@ -749,7 +748,7 @@ valor p, aportando a la interpretación.
 \hypertarget{complemento-computacional}{%
 \section{Complemento computacional}\label{complemento-computacional}}
 
-Para facilitar la distribución y aplicación del método propuesto, se ha
+Para facilitar la difusión y aplicación del método propuesto, se ha
 desarrollado un paquete reproducible en R. El paquete \textbf{T2Qv}
 utiliza la metodología expuesta en este artículo y la lleva a un entorno
 práctico, permite visualizar los resultados de forma plana o
@@ -814,26 +813,26 @@ tabla \ref{tab:functions}.
 \hypertarget{anuxe1lisis-de-sensibilidad}{%
 \section{Análisis de sensibilidad}\label{anuxe1lisis-de-sensibilidad}}
 
-Como se ha mencionado anteriormente, en el gráfico T2Qv, un punto fuera
-de control se interpreta como una tabla (\(k_i\)) que incluye una
-cantidad o una proporción de variables contaminadas, de tal manera que
-la diferencia de los valores de masas de columna, entre de la matriz
-\(k_i\) y la matriz consenso, sean significativos según el valor p
-obtenido de la distribución \(\chi^2\). En estos casos, se espera que
-los puntos en el gráfico T2Qv generalicen el comportamiento de estas
-diferencias y superen el límite de control superior (UCL). La ubicación
-de este límite de control varía en función del número de dimensiones que
-se representen, así, cuando es alto se logra un desempeño óptimo,
-mientras que, se introduce inestabilidad y se pierde confiabilidad en
-los resultados al disminuir el número de dimensiones de entre las que se
+Como se ha mencionado, en el gráfico T2Qv un punto fuera de control se
+interpreta como una tabla (\(k_i\)) que incluye una cantidad o una
+proporción de variables contaminadas, de tal manera que la diferencia de
+los valores de masas de columna, entre de la matriz \(k_i\) y la matriz
+consenso, sean significativos según el valor \(p\) obtenido de la
+distribución \(\chi^2\). En estos casos, se espera que los puntos en el
+gráfico T2Qv generalicen el comportamiento de estas diferencias y
+superen el límite de control superior (\emph{UCL}). La ubicación de este
+límite de control varía en función del número de dimensiones que se
+representen, así, cuando es alto se logra un desempeño óptimo, mientras
+que, se introduce inestabilidad y se pierde confiabilidad en los
+resultados al disminuir el número de dimensiones de entre las que se
 puede representar.
 
 El gráfico de control propuesto es capaz de detectar un punto fuera de
 control, aún con un bajo número de variables contaminadas, cuando se
-trabaja con un alto número de dimensiones. Se recomienda p - 1, tal que
-p es el número total de dimensiones de la matriz inicial (Tabla
+trabaja con un alto número de dimensiones. Se recomienda \(p\) - 1, tal
+que \(p\) es el número total de dimensiones de la matriz inicial (Tabla
 \ref{tab:inicial}). Cuando se disminuye el número de dimensiones también
-disminuye la altura del límite de control superior (UCL), en
+disminuye la altura del límite de control superior (\emph{UCL}), en
 consecuencia, se incrementa el número de puntos fuera de control, aunque
 no necesariamente las variables expresen diferencias significativas en
 su valores, crece la probabilidad de falsos positivos. Por consiguiente,
@@ -864,7 +863,7 @@ en 10 tablas, cada una de ellas incluye 10 variables y cada variable
 tiene tres categorías: alto, medio y bajo. La tabla 10 tiene una
 distribución diferente de las demás, esta es la tabla contaminada. Se
 observa que el modelo es capaz de identificar un punto fuera de control
-trabajando con 9 dimensiones (d-1), aún con un porcentaje bajo de
+trabajando con 9 dimensiones (\(p\)-1), aún con un porcentaje bajo de
 variables contaminadas. Cuando el número de dimensiones disminuye a 8 y
 el porcentaje de variables contaminadas es cercano a 100\%, detecta
 correctamente 1 punto fuera de control. Se observa además que cuando el
