@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  14 NOV 2021 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  14 NOV 2021 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,7 +1396,7 @@ Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  26306 strings out of 480990
- 467763 string characters out of 5907211
+ 467761 string characters out of 5907211
  840732 words of memory out of 5000000
  42535 multiletter control sequences out of 15000+600000
  466208 words of font info for 336 fonts, out of 8000000 for 9000
@@ -1415,7 +1415,7 @@ errojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></Us
 ers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 >
-Output written on ArticleHotellingACM.pdf (11 pages, 1200815 bytes).
+Output written on ArticleHotellingACM.pdf (11 pages, 1200547 bytes).
 PDF statistics:
  427 PDF objects out of 1000 (max. 8388607)
  342 compressed objects within 4 object streams
