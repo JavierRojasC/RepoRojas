@@ -81,16 +81,16 @@ En el estudio de los procesos que se desarrollan en el entorno social-educativo 
 ## Análisis de Correspondencias
 
 El tratamiento multivariante de variables cualitativas requiere un proceso metodológico distinto, uno de los más representativos es el Análisis de Correspondencias [@Benzecri]. Según [@perez2004], este análisis implica estudios de similaridad o disimilaridad entre categorías, se debe cuantificar la diferencia o distancia entre ellas sumando las diferencias cuadráticas relativas entre las frecuencias de las distribuciones de las variables analizadas, lo que conduce al concepto de la $\chi^2$.  Así, el análisis de correspondencias puede considerase como un análisis de componentes principales aplicado a variables cualitativas que, al no poder utilizar correlaciones, se basa en la distancia no euclídea de la$\chi^2$.
-En el enfoque francés del Análisis de Correspondencias, que se caracteriza por el énfasis en la geometría, el análisis de una tabla cruzada se llama análisis de correspondencia (AC) y el análisis de una colección de matrices indicadoras, se denomina análisis de correspondencia múltiple (ACM) [@michailidis1998]. En contextos anglosajones, el ACM es conocido como Análisis de Homogeneidad o Escalamiento Dual, especialmente en psicometría.
+En el enfoque francés del Análisis de Correspondencias, que se caracteriza por el énfasis en la geometría, el análisis de una tabla cruzada se llama análisis de correspondencia (CA) y el análisis de una colección de matrices indicadoras, se denomina análisis de correspondencia múltiple (MCA) [@michailidis1998]. En contextos anglosajones, el MCA es conocido como Análisis de Homogeneidad o Escalamiento Dual, especialmente en psicometría.
 
 ## Análisis de Homogeneidad
 
-El Análisis de Homogeneidad, Homogeneous Alternating Least Squares (HOMALS), es un modelo de la familia de modelos matemáticos del Escalamiento óptimo del sistema Gifi [@Gifi1990], el cual comprende una serie de técnicas exploratorias de análisis multivariado no lineal. Igual que el ACM, HOMALS se considera una forma de Análisis de Componentes Principales para datos cualitativos. El Análisis de Homogeneidad representa los objetos analizados mediante puntos en el modelo espacial, sus características más relevantes se presentan en las relaciones geométricas entre los puntos, para ello, es necesario la cuantificación de datos cualitativos [@Lopez2014]. El uso de variables cualitativas no es particularmente restrictivo, ya que una variable numérica continua se puede considerar como una variable cualitativa con un gran número de categorías. HOMALS se diferencia del el ACM en que éste utiliza la función de Descomposición de valores propios mientras que el Análisis de Homogeneidad utiliza Mínimos Cuadrados Alternos, lo que se conoce en la literatura como la Solución de Homals [@michailidis1998]. 
+El Análisis de Homogeneidad, Homogeneous Alternating Least Squares (HOMALS), es un modelo de la familia de modelos matemáticos del Escalamiento óptimo del sistema Gifi [@Gifi1990], el cual comprende una serie de técnicas exploratorias de análisis multivariado no lineal. Igual que el MCA, HOMALS se considera una forma de Análisis de Componentes Principales para datos cualitativos. El Análisis de Homogeneidad representa los objetos analizados mediante puntos en el modelo espacial, sus características más relevantes se presentan en las relaciones geométricas entre los puntos, para ello, es necesario la cuantificación de datos cualitativos [@Lopez2014]. El uso de variables cualitativas no es particularmente restrictivo, ya que una variable numérica continua se puede considerar como una variable cualitativa con un gran número de categorías. HOMALS se diferencia del el MCA en que éste utiliza la función de Descomposición de valores propios mientras que el Análisis de Homogeneidad utiliza Mínimos Cuadrados Alternos, lo que se conoce en la literatura como la Solución de Homals [@michailidis1998]. 
 
 
 ## Escalamiento multidimensional 
 
-Otra de las técnicas multivariantes para el tratamiento de variables cualitativas es el escalamiento multidimensional (EMD) [@torgerson1952; @shepard1962]. Se define como una técnica que elabora una representación gráfica que permite conocer la imagen que los individuos se crean de un conjunto de objetos por posicionamiento de cada uno en relación con los demás, (mapa perceptual). El EMD trata de encontrar la estructura de un conjunto de medidas de distancia entre objetos o casos. Esto se logra asignando las observaciones a posiciones específicas en un espacio conceptual, normalmente de dos o tres dimensiones, de modo que las distancias entre los puntos en el espacio concuerden al máximo con las disimilaridades dadas. Las dimensiones de este espacio conceptual se pueden interpretar para favorecer la comprensión de los datos, inclusive si son valoraciones subjetivas de disimilaridad entre objetos o conceptos.  Dado que el EMD permite calcular las distancias a partir de los datos multivariados, si las variables se han medido objetivamente, se lo puede utilizar como técnica de reducción de datos [@perez2004]. 
+Otra de las técnicas multivariantes para el tratamiento de variables cualitativas es el escalamiento multidimensional (EMD) [@torgerson1952; @shepard1962]. Se define como una técnica que elabora una representación gráfica que permite conocer la imagen que los individuos crean de un conjunto de objetos por posicionamiento de cada uno en relación con los demás, (mapa perceptual). El EMD trata de encontrar la estructura de un conjunto de medidas de distancia entre objetos o casos. Esto se logra asignando las observaciones a posiciones específicas en un espacio conceptual, normalmente de dos o tres dimensiones, de modo que las distancias entre los puntos en el espacio concuerden al máximo con las disimilaridades dadas. Las dimensiones de este espacio conceptual se pueden interpretar para favorecer la comprensión de los datos, inclusive si son valoraciones subjetivas de disimilaridad entre objetos o conceptos.  Dado que el EMD permite calcular las distancias a partir de los datos multivariados, si las variables se han medido objetivamente, se lo puede utilizar como técnica de reducción de datos [@perez2004]. 
 
 Las variables que utiliza esta técnica pueden ser métricas o no métricas. El escalamiento multidimensional las transforma en distancias entre los objetos en un espacio de dimensiones múltiples, de modo que objetos que aparecen situados más próximos entre sí son percibidos como más similares por los sujetos.
 
@@ -99,11 +99,13 @@ Las variables que utiliza esta técnica pueden ser métricas o no métricas. El 
 
 ## Notación
 
+La tabla \ref{tab:notacion} contiene elementos, representación y ejemplos de la manera como se presentan los elementos algebraicos abordados en la metodología.
+
 \begin{table}[!ht]
 \begin{center}
  \begin{tabular}{||c ||c |c ||} 
  \hline
- Caracteres & Tipo & Ejemplo \\
+ Elementos & Representación & Ejemplo \\
  \hline\hline
  Escalares & Letras en minúscula. & $v,\lambda$\\
 \hline
@@ -118,7 +120,7 @@ Matrices de tres vías (Cubos de datos) & Letras con doble trazo en mayúscula. 
 \end{center}
 \end{table}
 
-A lo largo del artículo se utilizarán letras para hacer referencia a parámetros necesarios, se los enuncia a continuación:
+A lo largo del artículo se utilizarán letras para hacer referencia a parámetros necesarios, se los enuncia a continuación en la tabla \ref{tab:notacion2}:
 
 \begin{table}[!ht]
 \begin{center}
@@ -137,7 +139,7 @@ A lo largo del artículo se utilizarán letras para hacer referencia a parámetr
  n & Tamaño muestral de las K tablas &\\
 \hline
 \end{tabular}\caption{Notación}
-\label{tab:notacion}
+\label{tab:notacion2}
 \end{center}
 \end{table}
 
@@ -443,15 +445,15 @@ Las funciones que contiene el paquete y su descripción se enuncian en la tabla 
  \hline\hline
  T2 qualitative & Multivariate control chart T2 Hotelling applicable for qualitative variables.\\
  \hline
-  ACMconsensus & Multiple correspondence analysis applied to a consensus table.\\
+  MCAconsensus & Multiple correspondence analysis applied to a consensus table.\\
 \hline
-  ACMpoint & Multiple correspondence analysis applied to a specific table.\\
+  MCApoint & Multiple correspondence analysis applied to a specific table.\\
 \hline
   ChiSq variable & Contains Chi square distance between the column masses of the table specified in PointTable and the consensus table. It allows to identify which mode is responsible for the anomaly in the table in which it is located. \\ [1ex] 
   \hline
   Full Panel & A shiny panel complete with the 
   multivariate control chart for 
-  qualitative variables, the two ACM 
+  qualitative variables, the two MCA 
   charts and the modality distance table. 
   Within the dashboard, arguments such as 
   type I error and dimensionality can be 

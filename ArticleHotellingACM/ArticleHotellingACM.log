@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  12 NOV 2021 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.10.28)  14 NOV 2021 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,11 +917,7 @@ ftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count354
 \l__pdf_internal_box=\box72
-) (./ArticleHotellingACM.aux
-
-LaTeX Warning: Label `tab:notacion' multiply defined.
-
-)
+) (./ArticleHotellingACM.aux)
 \openout1 = `ArticleHotellingACM.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
@@ -1104,237 +1100,237 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {/Users/javierrojas/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
 p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>] [2]
-Underfull \hbox (badness 1122) in paragraph at lines 402--407
+Underfull \hbox (badness 1122) in paragraph at lines 407--412
 []\T1/ppl/m/n/10 (+20) El análi-sis de cor-re-spon-den-cias múlti-ples (MCA) es
  una gen-er-al-ización del análi-sis de
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Overfull \hbox (3.32793pt too wide) in paragraph at lines 496--496
+Overfull \hbox (3.32793pt too wide) in paragraph at lines 501--501
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (11.86385pt too wide) in paragraph at lines 497--497
+Overfull \hbox (11.86385pt too wide) in paragraph at lines 502--502
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (43.96968pt too wide) in paragraph at lines 480--501
+Overfull \hbox (43.96968pt too wide) in paragraph at lines 485--506
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--515
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
-47.
+52.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 549--552
+Underfull \hbox (badness 10000) in paragraph at lines 554--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--569
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
  []
 
 [5]
-<ktables.png, id=243, 419.5675pt x 289.08pt>
+<ktables.png, id=245, 419.5675pt x 289.08pt>
 File: ktables.png Graphic file (type png)
 <use ktables.png>
-Package pdftex.def Info: ktables.png  used on input line 626.
+Package pdftex.def Info: ktables.png  used on input line 631.
 (pdftex.def)             Requested size: 177.54256pt x 122.32584pt.
-<ktablesMCA.png, id=246, 1184.425pt x 499.8675pt>
+<ktablesMCA.png, id=248, 1184.425pt x 499.8675pt>
 File: ktablesMCA.png Graphic file (type png)
 <use ktablesMCA.png>
-Package pdftex.def Info: ktablesMCA.png  used on input line 639.
+Package pdftex.def Info: ktablesMCA.png  used on input line 644.
 (pdftex.def)             Requested size: 399.47415pt x 168.5874pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./ktables.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 691--695
+Underfull \hbox (badness 10000) in paragraph at lines 696--700
 
  []
 
 [7 <./ktablesMCA.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-60.
+65.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1342,24 +1338,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<DescrPack.png, id=275, 642.4pt x 520.94624pt>
+<DescrPack.png, id=276, 642.4pt x 520.94624pt>
 File: DescrPack.png Graphic file (type png)
 <use DescrPack.png>
-Package pdftex.def Info: DescrPack.png  used on input line 772.
+Package pdftex.def Info: DescrPack.png  used on input line 777.
 (pdftex.def)             Requested size: 266.32062pt x 215.97404pt.
 [8 <./DescrPack.png>]
-<conjuntosensibilidad.png, id=290, 782.925pt x 319.1925pt>
+<conjuntosensibilidad.png, id=292, 782.925pt x 319.1925pt>
 File: conjuntosensibilidad.png Graphic file (type png)
 <use conjuntosensibilidad.png>
-Package pdftex.def Info: conjuntosensibilidad.png  used on input line 846.
+Package pdftex.def Info: conjuntosensibilidad.png  used on input line 851.
 (pdftex.def)             Requested size: 355.0919pt x 144.77011pt.
 
-Underfull \hbox (badness 1048) in paragraph at lines 853--869
+Underfull \hbox (badness 1048) in paragraph at lines 858--874
 \T1/ppl/m/n/10 (+20) rep-re-sen-tar el número de pun-tos fuera de con-trol, con
 -siderando el por-centaje de vari-ables
  []
 
-(./appendix.tex [9 <./conjuntosensibilidad.png>]) (./ArticleHotellingACM.bbl
+[9 <./conjuntosensibilidad.png>] (./appendix.tex) (./ArticleHotellingACM.bbl
 Underfull \hbox (badness 6078) in paragraph at lines 37--45
 []\T1/ppl/m/n/9 (+20) APARISI, F.  Hotelling's T2 con-trol chart with adap-tive
  sam-ple sizes.  \T1/ppl/m/it/9 (+20) In-ter-na-tional
@@ -1395,20 +1391,17 @@ T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 49\T1/ppl/m/n/9 (+20) , 1815--1838, [
 [10]) 
 AED: lastpage setting LastPage
 [11] (./ArticleHotellingACM.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
 (rerunfilecheck)             Checksum: 14D8C4F7162C21A320C057CC60CF059A;2854.
  ) 
 Here is how much of TeX's memory you used:
- 26307 strings out of 480990
- 467767 string characters out of 5907211
+ 26311 strings out of 480990
+ 467806 string characters out of 5907211
  840720 words of memory out of 5000000
- 42534 multiletter control sequences out of 15000+600000
- 466275 words of font info for 337 fonts, out of 8000000 for 9000
+ 42535 multiletter control sequences out of 15000+600000
+ 466434 words of font info for 339 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 102i,15n,102p,2405b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,15n,102p,2405b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 tt1000.600pk> </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/ecss0500.600pk>{/Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/en
@@ -1422,10 +1415,10 @@ errojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></Us
 ers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 >
-Output written on ArticleHotellingACM.pdf (11 pages, 1200229 bytes).
+Output written on ArticleHotellingACM.pdf (11 pages, 1200384 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
+ 427 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
  101 named destinations out of 1000 (max. 500000)
  84680 words of extra memory for PDF output out of 89155 (max. 10000000)
 
