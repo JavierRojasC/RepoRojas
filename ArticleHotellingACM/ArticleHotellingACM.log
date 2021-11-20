@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.16)  19 NOV 2021 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.16)  20 NOV 2021 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,7 +910,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@bottom=\skip89
 )
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 15
-4.
+5.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -926,39 +926,39 @@ LaTeX Warning: Label `fig:conspointedu' multiply defined.
 )
 \openout1 = `ArticleHotellingACM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 154.
-LaTeX Info: Redefining \microtypecontext on input line 154.
-Package microtype Info: Applying patch `item' on input line 154.
-Package microtype Info: Applying patch `toc' on input line 154.
-Package microtype Info: Applying patch `eqnum' on input line 154.
-Package microtype Info: Applying patch `footnote' on input line 154.
+(lastpage)             ! on input line 155.
+LaTeX Info: Redefining \microtypecontext on input line 155.
+Package microtype Info: Applying patch `item' on input line 155.
+Package microtype Info: Applying patch `toc' on input line 155.
+Package microtype Info: Applying patch `eqnum' on input line 155.
+Package microtype Info: Applying patch `footnote' on input line 155.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 154.
+LaTeX Info: Redefining \showhyphens on input line 155.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -966,7 +966,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 \symAMSb=\mathgroup5
-Package hyperref Info: Link coloring ON on input line 154.
+Package hyperref Info: Link coloring ON on input line 155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -978,9 +978,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 154.
-LaTeX Info: Redefining \pageref on input line 154.
-LaTeX Info: Redefining \nameref on input line 154.
+LaTeX Info: Redefining \ref on input line 155.
+LaTeX Info: Redefining \pageref on input line 155.
+LaTeX Info: Redefining \nameref on input line 155.
 (./ArticleHotellingACM.out) (./ArticleHotellingACM.out)
 \@outlinefile=\write4
 \openout4 = `ArticleHotellingACM.out'.
@@ -1029,30 +1029,30 @@ Package caption Info: End \AtBeginDocument code.
 <logo-mdpi.pdf, id=103, 86.3225pt x 57.21375pt>
 File: logo-mdpi.pdf Graphic file (type pdf)
 <use logo-mdpi.pdf>
-Package pdftex.def Info: logo-mdpi.pdf  used on input line 154.
+Package pdftex.def Info: logo-mdpi.pdf  used on input line 155.
 (pdftex.def)             Requested size: 42.92798pt x 28.45274pt.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-54.
+55.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-154.
+155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-154.
+155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-154.
+155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-154.
+155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1061,44 +1061,44 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 154.
+(Font)              scaled to size 10.42007pt on input line 155.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 154.
+(Font)              scaled to size 7.91925pt on input line 155.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 154.
+(Font)              scaled to size 6.25204pt on input line 155.
 <logo-orcid.pdf, id=105, 597.23125pt x 845.1575pt>
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 154.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 155.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 154.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 155.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 154.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 155.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 154.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 155.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 154.
+(Font)              scaled to size 9.37807pt on input line 155.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 154.
+(Font)              scaled to size 7.29405pt on input line 155.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 154.
+(Font)              scaled to size 5.21004pt on input line 155.
 <logo-updates.pdf, id=111, 832.75539pt x 281.85541pt>
 File: logo-updates.pdf Graphic file (type pdf)
 <use logo-updates.pdf>
-Package pdftex.def Info: logo-updates.pdf  used on input line 154.
+Package pdftex.def Info: logo-updates.pdf  used on input line 155.
 (pdftex.def)             Requested size: 50.43332pt x 17.07182pt.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-54.
+55.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1110,198 +1110,198 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 {/Users/javierrojas/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
 p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>] [2] [3]
-Underfull \hbox (badness 1122) in paragraph at lines 438--443
+Underfull \hbox (badness 1122) in paragraph at lines 439--444
 []\T1/ppl/m/n/10 (+20) El análi-sis de cor-re-spon-den-cias múlti-ples (MCA) es
  una gen-er-al-ización del análi-sis de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--477
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Overfull \hbox (3.32793pt too wide) in paragraph at lines 532--532
+Overfull \hbox (3.32793pt too wide) in paragraph at lines 533--533
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (11.86385pt too wide) in paragraph at lines 533--533
+Overfull \hbox (11.86385pt too wide) in paragraph at lines 534--534
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (43.96968pt too wide) in paragraph at lines 516--537
+Overfull \hbox (43.96968pt too wide) in paragraph at lines 517--538
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
@@ -1310,40 +1310,40 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
-83.
+84.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 585--588
+Underfull \hbox (badness 10000) in paragraph at lines 586--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--605
+Underfull \hbox (badness 10000) in paragraph at lines 604--606
 
  []
 
 <ktables.png, id=283, 419.5675pt x 289.08pt>
 File: ktables.png Graphic file (type png)
 <use ktables.png>
-Package pdftex.def Info: ktables.png  used on input line 662.
+Package pdftex.def Info: ktables.png  used on input line 663.
 (pdftex.def)             Requested size: 177.54256pt x 122.32584pt.
 <ktablesMCA.png, id=286, 1184.425pt x 499.8675pt>
 File: ktablesMCA.png Graphic file (type png)
 <use ktablesMCA.png>
-Package pdftex.def Info: ktablesMCA.png  used on input line 675.
+Package pdftex.def Info: ktablesMCA.png  used on input line 676.
 (pdftex.def)             Requested size: 399.47415pt x 168.5874pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 727--731
+Underfull \hbox (badness 10000) in paragraph at lines 728--732
 
  []
 
 [7 <./ktables.png> <./ktablesMCA.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-95.
+96.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1354,13 +1354,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 <DescrPack.png, id=314, 642.4pt x 520.94624pt>
 File: DescrPack.png Graphic file (type png)
 <use DescrPack.png>
-Package pdftex.def Info: DescrPack.png  used on input line 807.
+Package pdftex.def Info: DescrPack.png  used on input line 808.
 (pdftex.def)             Requested size: 266.32062pt x 215.97404pt.
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 866.
+LaTeX Warning: Reference `' on page 8 undefined on input line 867.
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 857--869
+Underfull \hbox (badness 3333) in paragraph at lines 858--870
 []\T1/ppl/m/n/10 (+20) Para este es-tu-dio se gen-eró una base de datos sim-u-l
 a-dos, a la que se de-nom-inó
  []
@@ -1369,74 +1369,74 @@ a-dos, a la que se de-nom-inó
 <tablabase.png, id=332, 825.0825pt x 351.3125pt>
 File: tablabase.png Graphic file (type png)
 <use tablabase.png>
-Package pdftex.def Info: tablabase.png  used on input line 874.
+Package pdftex.def Info: tablabase.png  used on input line 875.
 (pdftex.def)             Requested size: 266.32062pt x 113.39792pt.
 [9 <./DescrPack.png>]
 <CONS1.png, id=341, 427.5975pt x 271.0125pt>
 File: CONS1.png Graphic file (type png)
 <use CONS1.png>
-Package pdftex.def Info: CONS1.png  used on input line 909.
+Package pdftex.def Info: CONS1.png  used on input line 910.
 (pdftex.def)             Requested size: 266.32062pt x 168.79517pt.
 <MCAb.png, id=342, 424.58624pt x 271.0125pt>
 File: MCAb.png Graphic file (type png)
 <use MCAb.png>
-Package pdftex.def Info: MCAb.png  used on input line 925.
+Package pdftex.def Info: MCAb.png  used on input line 926.
 (pdftex.def)             Requested size: 266.32062pt x 169.99855pt.
 <Hot1.png, id=347, 412.54124pt x 261.97874pt>
 File: Hot1.png Graphic file (type png)
 <use Hot1.png>
-Package pdftex.def Info: Hot1.png  used on input line 950.
+Package pdftex.def Info: Hot1.png  used on input line 951.
 (pdftex.def)             Requested size: 266.32062pt x 169.1249pt.
 [10 <./tablabase.png> <./CONS1.png>]
 <conspoint.png, id=359, 439.6425pt x 189.70876pt>
 File: conspoint.png Graphic file (type png)
 <use conspoint.png>
-Package pdftex.def Info: conspoint.png  used on input line 983.
+Package pdftex.def Info: conspoint.png  used on input line 984.
 (pdftex.def)             Requested size: 266.32062pt x 114.92322pt.
 [11 <./MCAb.png> <./Hot1.png> <./conspoint.png>]
 <chitable.png, id=372, 485.815pt x 641.39626pt>
 File: chitable.png Graphic file (type png)
 <use chitable.png>
-Package pdftex.def Info: chitable.png  used on input line 1026.
+Package pdftex.def Info: chitable.png  used on input line 1027.
 (pdftex.def)             Requested size: 266.32062pt x 351.60439pt.
 [12 <./chitable.png>]
 <chibar.png, id=380, 364.36125pt x 156.585pt>
 File: chibar.png Graphic file (type png)
 <use chibar.png>
-Package pdftex.def Info: chibar.png  used on input line 1047.
+Package pdftex.def Info: chibar.png  used on input line 1048.
 (pdftex.def)             Requested size: 266.32062pt x 114.45662pt.
 [13 <./chibar.png>]
 <consedu.png, id=391, 424.58624pt x 240.9pt>
 File: consedu.png Graphic file (type png)
 <use consedu.png>
-Package pdftex.def Info: consedu.png  used on input line 1167.
+Package pdftex.def Info: consedu.png  used on input line 1168.
 (pdftex.def)             Requested size: 266.32062pt x 151.10982pt.
 [14 <./consedu.png>]
 <t2edu.png, id=399, 427.5975pt x 271.0125pt>
 File: t2edu.png Graphic file (type png)
 <use t2edu.png>
-Package pdftex.def Info: t2edu.png  used on input line 1234.
+Package pdftex.def Info: t2edu.png  used on input line 1235.
 (pdftex.def)             Requested size: 266.32062pt x 168.79517pt.
 <conspointedu.png, id=402, 435.12563pt x 194.22563pt>
 File: conspointedu.png Graphic file (type png)
 <use conspointedu.png>
-Package pdftex.def Info: conspointedu.png  used on input line 1255.
+Package pdftex.def Info: conspointedu.png  used on input line 1256.
 (pdftex.def)             Requested size: 266.32062pt x 118.88347pt.
 [15 <./t2edu.png>]
 File: chibar.png Graphic file (type png)
 <use chibar.png>
-Package pdftex.def Info: chibar.png  used on input line 1276.
+Package pdftex.def Info: chibar.png  used on input line 1277.
 (pdftex.def)             Requested size: 266.32062pt x 114.45662pt.
 <mcacompedu.png, id=413, 445.665pt x 195.73125pt>
 File: mcacompedu.png Graphic file (type png)
 <use mcacompedu.png>
-Package pdftex.def Info: mcacompedu.png  used on input line 1300.
+Package pdftex.def Info: mcacompedu.png  used on input line 1301.
 (pdftex.def)             Requested size: 266.32062pt x 116.96477pt.
 [16 <./conspointedu.png> <./mcacompedu.png>] [17]
 <conjuntosensibilidad.png, id=431, 782.925pt x 319.1925pt>
 File: conjuntosensibilidad.png Graphic file (type png)
 <use conjuntosensibilidad.png>
-Package pdftex.def Info: conjuntosensibilidad.png  used on input line 1395.
+Package pdftex.def Info: conjuntosensibilidad.png  used on input line 1396.
 (pdftex.def)             Requested size: 355.0919pt x 144.77011pt.
 (./appendix.tex) (./ArticleHotellingACM.bbl [18 <./conjuntosensibilidad.png>]
 Underfull \hbox (badness 6078) in paragraph at lines 37--45
@@ -1486,7 +1486,7 @@ Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
 Here is how much of TeX's memory you used:
  27770 strings out of 480313
  510701 string characters out of 5895642
- 864422 words of memory out of 5000000
+ 864428 words of memory out of 5000000
  44574 multiletter control sequences out of 15000+600000
  468816 words of font info for 372 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1504,7 +1504,7 @@ errojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/
 javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></Us
 ers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
 >
-Output written on ArticleHotellingACM.pdf (20 pages, 2052527 bytes).
+Output written on ArticleHotellingACM.pdf (20 pages, 2052648 bytes).
 PDF statistics:
  583 PDF objects out of 1000 (max. 8388607)
  458 compressed objects within 5 object streams
