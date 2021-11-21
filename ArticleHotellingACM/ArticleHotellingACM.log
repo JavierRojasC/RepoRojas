@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.16)  21 NOV 2021 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.16)  21 NOV 2021 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,8 +919,11 @@ ftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count358
 \l__pdf_internal_box=\box77
+) (./ArticleHotellingACM.aux
+
+LaTeX Warning: Label `fig:conspointedu' multiply defined.
+
 )
-No file ArticleHotellingACM.aux.
 \openout1 = `ArticleHotellingACM.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
@@ -978,6 +981,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 155.
 LaTeX Info: Redefining \pageref on input line 155.
 LaTeX Info: Redefining \nameref on input line 155.
+(./ArticleHotellingACM.out) (./ArticleHotellingACM.out)
 \@outlinefile=\write4
 \openout4 = `ArticleHotellingACM.out'.
 
@@ -1022,7 +1026,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-<logo-mdpi.pdf, id=8, 86.3225pt x 57.21375pt>
+<logo-mdpi.pdf, id=103, 86.3225pt x 57.21375pt>
 File: logo-mdpi.pdf Graphic file (type pdf)
 <use logo-mdpi.pdf>
 Package pdftex.def Info: logo-mdpi.pdf  used on input line 155.
@@ -1065,7 +1069,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 155.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 155.
-<logo-orcid.pdf, id=10, 597.23125pt x 845.1575pt>
+<logo-orcid.pdf, id=105, 597.23125pt x 845.1575pt>
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
 Package pdftex.def Info: logo-orcid.pdf  used on input line 155.
@@ -1088,7 +1092,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 155.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 155.
-<logo-updates.pdf, id=16, 832.75539pt x 281.85541pt>
+<logo-updates.pdf, id=111, 832.75539pt x 281.85541pt>
 File: logo-updates.pdf Graphic file (type pdf)
 <use logo-updates.pdf>
 Package pdftex.def Info: logo-updates.pdf  used on input line 155.
@@ -1102,217 +1106,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Package natbib Warning: Citation `Gutierrez2013' on page 1 undefined on input l
-ine 186.
-
-
-Package natbib Warning: Citation `ramos2017' on page 1 undefined on input line 
-193.
-
-
-Package natbib Warning: Citation `li2012' on page 1 undefined on input line 198
-.
-
-
-Package natbib Warning: Citation `hotelling1947' on page 1 undefined on input l
-ine 202.
-
-
-Package natbib Warning: Citation `lowry1992' on page 1 undefined on input line 
-203.
-
-
-Package natbib Warning: Citation `Crosier1988' on page 1 undefined on input lin
-e 204.
-
-
-Package natbib Warning: Citation `Aparisi1996' on page 1 undefined on input lin
-e 207.
-
-
-Package natbib Warning: Citation `Aparisi2001' on page 1 undefined on input lin
-e 208.
-
-
-Package natbib Warning: Citation `Faraz2006' on page 1 undefined on input line 
-209.
-
-
-Package natbib Warning: Citation `shabbak2012' on page 1 undefined on input lin
-e 210.
-
-
-Package natbib Warning: Citation `kim2012' on page 1 undefined on input line 21
-2.
-
-
-Package natbib Warning: Citation `ruiz2013' on page 1 undefined on input line 2
-13.
-
-
-Package natbib Warning: Citation `yeong2016' on page 1 undefined on input line 
-215.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 216.
-
 [1
 
 {/Users/javierrojas/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
-p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>]
-
-Package natbib Warning: Citation `Tuerhong2014' on page 2 undefined on input li
-ne 221.
-
-
-Package natbib Warning: Citation `Muhammad2018' on page 2 undefined on input li
-ne 224.
-
-
-Package natbib Warning: Citation `liu2020' on page 2 undefined on input line 22
-6.
-
-
-Package natbib Warning: Citation `yilmaz2020' on page 2 undefined on input line
- 227.
-
-
-Package natbib Warning: Citation `Farokhnia' on page 2 undefined on input line 
-229.
-
-
-Package natbib Warning: Citation `xue2020' on page 2 undefined on input line 23
-1.
-
-
-Package natbib Warning: Citation `Ahsan2020' on page 2 undefined on input line 
-233.
-
-
-Package natbib Warning: Citation `Ahsan2021' on page 2 undefined on input line 
-235.
-
-
-Package natbib Warning: Citation `holgate1964' on page 2 undefined on input lin
-e 246.
-
-
-Package natbib Warning: Citation `chiu2007' on page 2 undefined on input line 2
-49.
-
-
-Package natbib Warning: Citation `ho2009' on page 2 undefined on input line 249
-.
-
-
-Package natbib Warning: Citation `laungrungrong2011ewma' on page 2 undefined on
- input line 250.
-
-
-Package natbib Warning: Citation `epprecht2013optimal' on page 2 undefined on i
-nput line 250.
-
-
-Package natbib Warning: Citation `lu1998control' on page 2 undefined on input l
-ine 251.
-
-
-Package natbib Warning: Citation `ranjan2008multivariate' on page 2 undefined o
-n input line 259.
-
-
-Package natbib Warning: Citation `taleb2006multivariate' on page 2 undefined on
- input line 263.
-
-
-Package natbib Warning: Citation `taleb2009control' on page 2 undefined on inpu
-t line 263.
-
-
-Package natbib Warning: Citation `pastuizaca2015multivariate' on page 2 undefin
-ed on input line 267.
-
-
-Package natbib Warning: Citation `epprecht2013optimal' on page 2 undefined on i
-nput line 270.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 291.
-
-[2]
-
-Package natbib Warning: Citation `perez2004' on page 3 undefined on input line 
-292.
-
-
-Package natbib Warning: Citation `Person1901' on page 3 undefined on input line
- 302.
-
-
-Package natbib Warning: Citation `Hotelling1933' on page 3 undefined on input l
-ine 302.
-
-
-Package natbib Warning: Citation `ch1904' on page 3 undefined on input line 303
-.
-
-
-Package natbib Warning: Citation `thurstone1947' on page 3 undefined on input l
-ine 303.
-
-
-Package natbib Warning: Citation `kaiser1958' on page 3 undefined on input line
- 303.
-
-
-Package natbib Warning: Citation `Benzecri' on page 3 undefined on input line 3
-14.
-
-
-Package natbib Warning: Citation `perez2004' on page 3 undefined on input line 
-314.
-
-
-Package natbib Warning: Citation `michailidis1998' on page 3 undefined on input
- line 327.
-
-
-Package natbib Warning: Citation `Gifi1990' on page 3 undefined on input line 3
-37.
-
-
-Package natbib Warning: Citation `Lopez2014' on page 3 undefined on input line 
-344.
-
-
-Package natbib Warning: Citation `michailidis1998' on page 3 undefined on input
- line 351.
-
-
-Package natbib Warning: Citation `torgerson1952' on page 3 undefined on input l
-ine 359.
-
-
-Package natbib Warning: Citation `shepard1962' on page 3 undefined on input lin
-e 359.
-
-
-Package natbib Warning: Citation `perez2004' on page 3 undefined on input line 
-373.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 374.
-
-[3]
-
-LaTeX Warning: Reference `tab:notacion' on page 4 undefined on input line 387.
-
-
-LaTeX Warning: Reference `tab:notacion2' on page 4 undefined on input line 412.
-
-
-
+p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>] [2] [3]
 Underfull \hbox (badness 1122) in paragraph at lines 439--444
 []\T1/ppl/m/n/10 (+20) El análi-sis de cor-re-spon-den-cias múlti-ples (MCA) es
  una gen-er-al-ización del análi-sis de
@@ -1362,12 +1159,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 478--478
 Underfull \hbox (badness 10000) in paragraph at lines 478--478
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
-
-
-LaTeX Warning: Reference `eq:Burt' on page 4 undefined on input line 509.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 514.
 
 [4]
 Underfull \hbox (badness 10000) in paragraph at lines 519--519
@@ -1425,9 +1216,6 @@ Overfull \hbox (43.96968pt too wide) in paragraph at lines 517--538
  []
 
 
-LaTeX Warning: Reference `tab:p' on page 5 undefined on input line 544.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
@@ -1519,9 +1307,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--566
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 582.
 
 [5]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
@@ -1534,34 +1319,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 586--589
  []
 
 
-LaTeX Warning: Reference `eq:s' on page 6 undefined on input line 594.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 604--606
 
  []
 
-
-LaTeX Warning: Reference `tab:colcoor' on page 6 undefined on input line 623.
-
-
-LaTeX Warning: Reference `tab:inicial' on page 6 undefined on input line 651.
-
-
-LaTeX Warning: Reference `fig:ktables' on page 6 undefined on input line 651.
-
-
-Package natbib Warning: Citation `AFM' on page 6 undefined on input line 652.
-
-<ktables.png, id=98, 419.5675pt x 289.08pt>
+<ktables.png, id=283, 419.5675pt x 289.08pt>
 File: ktables.png Graphic file (type png)
 <use ktables.png>
 Package pdftex.def Info: ktables.png  used on input line 663.
 (pdftex.def)             Requested size: 177.54256pt x 122.32584pt.
-
-LaTeX Warning: Reference `fig:MCAk' on page 6 undefined on input line 671.
-
-<ktablesMCA.png, id=100, 1184.425pt x 499.8675pt>
+<ktablesMCA.png, id=286, 1184.425pt x 499.8675pt>
 File: ktablesMCA.png Graphic file (type png)
 <use ktablesMCA.png>
 Package pdftex.def Info: ktablesMCA.png  used on input line 676.
@@ -1569,37 +1336,177 @@ Package pdftex.def Info: ktablesMCA.png  used on input line 676.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 693.
-
 [6]
-
-LaTeX Warning: Reference `eq:Cprima' on page 7 undefined on input line 728.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 728--732
 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 732.
-
 [7 <./ktables.png> <./ktablesMCA.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
+04.
+(/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<DescrPack.png, id=315, 642.4pt x 520.94624pt>
+File: DescrPack.png Graphic file (type png)
+<use DescrPack.png>
+Package pdftex.def Info: DescrPack.png  used on input line 816.
+(pdftex.def)             Requested size: 266.32062pt x 215.97404pt.
+[8]
 
-LaTeX Warning: Reference `eq:UCL' on page 8 undefined on input line 759.
+LaTeX Warning: Reference `' on page 9 undefined on input line 875.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.770 
-       
+
+Underfull \hbox (badness 3333) in paragraph at lines 866--878
+[]\T1/ppl/m/n/10 (+20) Para este es-tu-dio se gen-eró una base de datos sim-u-l
+a-dos, a la que se de-nom-inó
+ []
+
+<tablabase.png, id=333, 825.0825pt x 351.3125pt>
+File: tablabase.png Graphic file (type png)
+<use tablabase.png>
+Package pdftex.def Info: tablabase.png  used on input line 883.
+(pdftex.def)             Requested size: 266.32062pt x 113.39792pt.
+[9 <./DescrPack.png>]
+<CONS1.png, id=342, 427.5975pt x 271.0125pt>
+File: CONS1.png Graphic file (type png)
+<use CONS1.png>
+Package pdftex.def Info: CONS1.png  used on input line 918.
+(pdftex.def)             Requested size: 266.32062pt x 168.79517pt.
+<MCAb.png, id=343, 424.58624pt x 271.0125pt>
+File: MCAb.png Graphic file (type png)
+<use MCAb.png>
+Package pdftex.def Info: MCAb.png  used on input line 934.
+(pdftex.def)             Requested size: 266.32062pt x 169.99855pt.
+<Hot1.png, id=348, 412.54124pt x 261.97874pt>
+File: Hot1.png Graphic file (type png)
+<use Hot1.png>
+Package pdftex.def Info: Hot1.png  used on input line 959.
+(pdftex.def)             Requested size: 266.32062pt x 169.1249pt.
+[10 <./tablabase.png> <./CONS1.png>]
+<conspoint.png, id=361, 439.6425pt x 189.70876pt>
+File: conspoint.png Graphic file (type png)
+<use conspoint.png>
+Package pdftex.def Info: conspoint.png  used on input line 992.
+(pdftex.def)             Requested size: 266.32062pt x 114.92322pt.
+[11 <./MCAb.png> <./Hot1.png>]
+<chitable.png, id=373, 485.815pt x 641.39626pt>
+File: chitable.png Graphic file (type png)
+<use chitable.png>
+Package pdftex.def Info: chitable.png  used on input line 1035.
+(pdftex.def)             Requested size: 266.32062pt x 351.60439pt.
+<chibar.png, id=375, 364.36125pt x 156.585pt>
+File: chibar.png Graphic file (type png)
+<use chibar.png>
+Package pdftex.def Info: chibar.png  used on input line 1056.
+(pdftex.def)             Requested size: 266.32062pt x 114.45662pt.
+[12 <./conspoint.png>] [13 <./chitable.png> <./chibar.png>]
+<consedu.png, id=393, 424.58624pt x 240.9pt>
+File: consedu.png Graphic file (type png)
+<use consedu.png>
+Package pdftex.def Info: consedu.png  used on input line 1177.
+(pdftex.def)             Requested size: 266.32062pt x 151.10982pt.
+[14 <./consedu.png>]
+<t2edu.png, id=401, 427.5975pt x 271.0125pt>
+File: t2edu.png Graphic file (type png)
+<use t2edu.png>
+Package pdftex.def Info: t2edu.png  used on input line 1244.
+(pdftex.def)             Requested size: 266.32062pt x 168.79517pt.
+[15 <./t2edu.png>]
+<conspointedu.png, id=411, 435.12563pt x 194.22563pt>
+File: conspointedu.png Graphic file (type png)
+<use conspointedu.png>
+Package pdftex.def Info: conspointedu.png  used on input line 1265.
+(pdftex.def)             Requested size: 355.0919pt x 158.5103pt.
+File: chibar.png Graphic file (type png)
+<use chibar.png>
+Package pdftex.def Info: chibar.png  used on input line 1286.
+(pdftex.def)             Requested size: 266.32062pt x 114.45662pt.
+<mcacompedu.png, id=415, 445.665pt x 195.73125pt>
+File: mcacompedu.png Graphic file (type png)
+<use mcacompedu.png>
+Package pdftex.def Info: mcacompedu.png  used on input line 1310.
+(pdftex.def)             Requested size: 266.32062pt x 116.96477pt.
+[16 <./conspointedu.png>] [17 <./mcacompedu.png>]
+<conjuntosensibilidad.png, id=433, 782.925pt x 319.1925pt>
+File: conjuntosensibilidad.png Graphic file (type png)
+<use conjuntosensibilidad.png>
+Package pdftex.def Info: conjuntosensibilidad.png  used on input line 1405.
+(pdftex.def)             Requested size: 355.0919pt x 144.77011pt.
+(./appendix.tex) (./ArticleHotellingACM.bbl [18 <./conjuntosensibilidad.png>]
+Underfull \hbox (badness 6078) in paragraph at lines 37--45
+[]\T1/ppl/m/n/9 (+20) APARISI, F.  Hotelling's T2 con-trol chart with adap-tive
+ sam-ple sizes.  \T1/ppl/m/it/9 (+20) In-ter-na-tional
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 37--45
+\T1/ppl/m/it/9 (+20) Jour-nal of Pro-duc-tion Re-search \T1/ppl/b/n/9 (+20) 199
+6\T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 34\T1/ppl/m/n/9 (+20) , 2853--2862,
+ [][][https://doi.org/10.1080/00207549608905062][][].
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 47--55
+\T1/ppl/m/it/9 (+20) Jour-nal of Pro-duc-tion Re-search \T1/ppl/b/n/9 (+20) 200
+1\T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 39\T1/ppl/m/n/9 (+20) , 3127--3140,
+ [][][https://doi.org/10.1080/00207540110054597][][].
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 122--131
+\T1/ppl/m/n/9 (+20) vec-tor ma-chines for mul-ti-vari-ate non-normal dis-tri-bu
+-tions.  \T1/ppl/m/it/9 (+20) Com-mu-ni-ca-tions in Statis-tics -
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 122--131
+\T1/ppl/m/it/9 (+20) Sim-u-la-tion and Com-pu-ta-tion \T1/ppl/b/n/9 (+20) 2020\
+T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 49\T1/ppl/m/n/9 (+20) , 1815--1838, [
+][][https://doi.org/10.1080/03610918.2018.1506032][][].
+ []
+
+[19]) 
+AED: lastpage setting LastPage
+[20] (./ArticleHotellingACM.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
+(rerunfilecheck)             Checksum: 1FFC467248F732014493CBD2C68F9BDA;4279.
+ ) 
 Here is how much of TeX's memory you used:
- 27187 strings out of 480313
- 500840 string characters out of 5895642
- 859519 words of memory out of 5000000
- 44212 multiletter control sequences out of 15000+600000
- 463426 words of font info for 299 fonts, out of 8000000 for 9000
+ 27774 strings out of 480313
+ 510830 string characters out of 5895642
+ 864458 words of memory out of 5000000
+ 44577 multiletter control sequences out of 15000+600000
+ 468816 words of font info for 372 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,15n,94p,2405b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,15n,94p,2405b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+tt1000.600pk> </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecss0500.600pk>{/Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/en
+c/dvips/base/8r.enc}</Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></Users/javierrojas/Library/TinyTeX/texm
+f-dist/fonts/type1/public/mathpazo/fplmb.pfb></Users/javierrojas/Library/TinyTe
+X/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></Users/javierrojas/Library
+/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/javi
+errojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/
+javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></Us
+ers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
+>
+Output written on ArticleHotellingACM.pdf (20 pages, 2053270 bytes).
+PDF statistics:
+ 585 PDF objects out of 1000 (max. 8388607)
+ 460 compressed objects within 5 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 84775 words of extra memory for PDF output out of 89155 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
