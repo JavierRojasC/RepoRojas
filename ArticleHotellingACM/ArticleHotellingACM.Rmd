@@ -406,7 +406,10 @@ UCL=\chi^2_{\alpha,p}
 \label{eq:UCL}
 \end{equation}
 
-donde $p$ es el número de dimensiones y $\alpha$ es la significancia predeterminada considerando $p$.    
+donde $p$ es el número de dimensiones y $\alpha$ es la significancia predeterminada considerando $p$, tal que:
+
+$$\$$
+
 
 ## Tabla posterior
 
