@@ -402,11 +402,14 @@ Se sabe que, bajo control, el $T^2$ se distribuye como una Chi-cuadrado con $p$ 
 Dado que este gráfico de control está basado en distancias de Mahalanobis ponderadas, sólo tiene límite de control superior. Este viene dado por la ecuación \ref{eq:UCL}
 
 \begin{equation}
-UCL=\chi^2_{\alpha,p}
+UCL=\chi^2_{\alpha^{'},p}
 \label{eq:UCL}
 \end{equation}
 
-donde $p$ es el número de dimensiones y $\alpha$ es la significancia predeterminada considerando $p$.    
+donde $p$ es el número de dimensiones y $\alpha^{'}$ es la significancia predeterminada considerando $p$. Tal que $\alpha^{'}=1-(1-\alpha)^{p}$ y $\alpha$, que en este estudio se considera como el error tipo 1 inicial, generalmente es igual a 0.0027.       
+
+Para definir $\alpha^{'}$ (Error tipo 1) se opta el enfoque múltiple, @montgomery2012statistical indica que con este enfoque se consigue una variación de $\alpha^{'}$ en función de $p$, esto es conveniente en este caso ya que permite considerar la dimensionalidad usada al realizar el análisis de correspondencia múltiple.
+
 
 ## Tabla posterior
 
@@ -593,25 +596,38 @@ En el gráfico de barras de la figura \ref{fig:chibar}, se observa tres líneas 
 
 
 En este ejemplo se utiliza una base de datos denominada *Estudiantes 2019_2020*, tomada de reportes que la Universidad Técnica de Machala (UTMACH) cargó en la plataforma del Sistema Integral de Información de la Educación Superior (SIIES), correspondiente a cuatro periodos académicos consecutivos. La base de datos Estudiantes_2019_2020 contiene 43191 observaciones y 17 variables cualitativas referidas los estudiantes de las 30 carreras vigentes en sus 5 facultades.     
-Las variables registradas en la base de datos, con sus respectivas categorías son las siguientes:       
+Las variables registradas en la base de datos, con sus respectivas categorías son las siguientes:      
+
 -	Periodo académico, esta es la variable que sirve como clasificador, hace referencia a 4 periodos de estudio (semestres): 2019-1, 2019-2, 2020-1 y 2020-2.
 
 -	Facultad, que tiene 5 categorías: Facultad de Ciencias Agropecuarias (FCA), Facultad de Ciencias Empresariales (FCE), Facultad de Ciencias Químicas y de la Salud (FCQS), Facultad de Ciencias Sociales (FCS) y Facultad de Ingeniería Civil (FIC).
 
 -	Carrera, variable que contiene el nombre de las 30 carreras vigentes en la UTMACH, cada una de ellas es una categoría y se asocia a alguna de las 5 facultades. En la FCA: Acuicultura, Economía Agropecuaria, Agronomía y Medicina Veterinaria; en la FCE: Administración de Empresas, Turismo, Mercadotecnia, Contabilidad y auditoría, Comercio internacional y Economía; en la FCQS: Medicina, Enfermería, Bioquímica y Farmacia, Alimentos, Ing. Química; en la FCS: Artes plásticas, Pedagogía de la Actividad Física y Deporte, Pedagogía de las Ciencias Experimentales, Educación Básica, Educación inicial, Pedagogía de los Idiomas Nacionales y Extranjeros, Psicología Clínica, Psicopedagogía, Comunicación, Derecho, Gestión Ambiental, Sociología, Trabajo Social; y en la FIC: Ingeniería Civil y Tecnología de la Información.
+
 -	Sexo, con sus dos clases: hombre y mujer.
+
 -	Grupo edad, que clasifica a los estudiantes en 5 grupos según su edad en años: Menores que 18, de 18 a 30, de 31 a 45, de 46 a 60 y Mayores a 60.
+
 -	Discapacidad, cuyas clases son: Intelectual, Auditiva, Física Motora, Visual, Lenguaje y Ninguna.
 -	Etnia, con sus tipos: Mestizo, Montubio, Negro, Blanco, Indígena, Mulato, Afroecuatoriano, Otro, No registra. 
+
 -	Zona residencial, Urbana y Rural.
+
 -	Nivel de formación del padre: Centro de alfabetización, Educación Básica incompleta, Educación Básica, Bachillerato, Superior tecnológica incompleta, Superior tecnológica, Superior universitaria, Superior universitaria incompleta, Diplomado, Especialidad, Postgrado Maestría o Especialización en áreas de Salud, Postgrado Ph.D., Ninguno y No sabe, no registra.
+
 -	Nivel de formación de la madre: Centro de alfabetización, Educación Básica incompleta, Educación Básica, Bachillerato, Superior tecnológica incompleta, Superior tecnológica, Superior universitaria, Superior universitaria incompleta, Diplomado, Especialidad, Postgrado Maestría o Especialización en áreas de Salud, Postgrado Ph.D., Ninguno y No sabe, no registra.
+
 -	Número de miembros del hogar, con sus tres clases: Hasta 3, 4 y 5 o más. 
+
 -	Tipo colegio: Fiscal, Particular, Fiscomisional, Extranjero, Municipal y No registra.
 -	Ingreso total hogar: Rango 1, Rango 2, Rango 3, Rango 4, Rango 5, Rango 6, Rango 7, Rango 8, Rango 9 y Rango 10.
+
 -	Origen de recursos estudios: Padres tutores, Hermanos y familiares, Pareja sentimental, Recursos propios, Beca estudio, Crédito educativo y No registra. 
+
 -	Segunda matrícula: Sí y No.
+
 -	Tercera matrícula: Sí y No.
+
 -	Terminó periodo: Sí y No.
 
 ### Análisis de Correspondencias Múltiple de la tabla Consenso
@@ -659,7 +675,7 @@ El punto que representa al periodo académico 2019-1 ha sido reportado como un v
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='80%', fig.width=18, fig.height=11}
 knitr::include_graphics("conspointedu.png")
 ```
 
@@ -728,6 +744,5 @@ knitr::include_graphics("conjuntosensibilidad.png")
 El análisis de sensibilidad utiliza curvas de nivel y superficies de respuesta (figura \ref{fig:sensibilidad}) para representar el número de puntos fuera de control, considerando el porcentaje de variables contaminadas de la $k_i$ tabla y el número de dimensiones representadas. 
 Los datos de prueba utilizados en el modelo se registran en 10 tablas, cada una de ellas incluye 10 variables y cada variable tiene tres categorías: alto, medio y bajo. La tabla 10 tiene una distribución diferente de las demás, esta es la tabla contaminada.        
 Se observa que el modelo es capaz de identificar un punto fuera de control trabajando con 9  dimensiones ($p$-1), aún con un porcentaje bajo de variables contaminadas. Cuando el número de dimensiones disminuye a 8 y el porcentaje de variables contaminadas es cercano a 100%, detecta correctamente 1 punto fuera de control. Se observa además que cuando el número de dimensiones es menor se pierde estabilidad. En consecuencia, el análisis de sensibilidad ratifica que el gráfico de control T2Qv tiene un buen rendimiento cuando trabaja con altas dimensiones.
-
 
 
