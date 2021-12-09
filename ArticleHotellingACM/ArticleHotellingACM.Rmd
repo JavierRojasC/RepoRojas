@@ -1,5 +1,5 @@
 ---
-title: Gráfico de control T2 Hotelling para variables cualitativas
+title: Gráfico de control $T^2$ Hotelling para variables cualitativas
 author:
   - name: Wilson Rojas-Preciado
     affil: 1,2
@@ -42,7 +42,7 @@ appendix: appendix.tex
 simplesummary: |
   A Simple summary goes here.
 abstract: |
-  Abstract
+  La literatura científica es abundante en lo referente a gráficos de control en entornos multivariantes para datos numéricos y mixtos, sin embargo, para datos cualitativos hay pocas publicaciones. Las variables cualitativas aportan valiosa información de procesos en diversos contextos industriales, productivos, sociales. Los procesos educativos no son una excepción, tienen múltiples variables asociadas a estudiantes, profesores e instituciones. Cuando hay muchas variables se corre el riesgo de tomar información redundante o excesiva, luego, es viable la aplicación de métodos multivariantes de reducción de dimensiones para quedarse con pocas variables ficticias, combinación de las reales, que sinteticen la mayor parte de la información. En este contexto se presenta el gráfico de control T2Qv, una técnica de control estadístico de procesos multivariantes que realiza un análisis de datos cualitativos mediante Análisis de correspondencias múltiples (MCA), Análisis Factorial Múltiple y el gráfico $T^2$ de Hotelling. La interpretación de los puntos fuera de control se realiza comparando los gráficos MCA y analizando la distancia $X^2$ entre las categorías de la tabla consenso y las que representan puntos fuera de control. El análisis de sensibilidad determinó que el gráfico de control T2Qv tiene un buen rendimiento cuando trabaja con altas dimensiones. Para probar la metodología se hizo un análisis con datos simulados y otro con datos reales relacionados  con la educación superior. Para facilitar la difusión y aplicación de la propuesta, se desarrolló un paquete computacional reproducible en R, denominado T2Qv y disponible en GitHub.
 keywords: |
   keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific 
   to the article, yet reasonably common within the subject discipline.).
@@ -64,9 +64,9 @@ Los gráficos de control constituyen una de las herramientas más importantes pa
 
 La variación de los procesos se entiende como la diversidad de resultados que genera un grupo de variables de un proceso, su monitoreo es un objetivo clave del control estadístico, por lo tanto, es necesario entender los tipos y motivos de la variabilidad. Para ello es preciso registrar de manera sistemática y adecuada diferentes variables del proceso que se desea controlar, como las propiedades de los insumos, las condiciones de operación de los equipos, las competencias del personal que maneja los procesos, además de las características de los productos, la satisfacción de los usuarios, el cumplimiento de requisitos, entre otras. 
 
-El pionero del control estadístico de procesos fue Walter Shewhart. Estableció las diferencias entre la variabilidad natural o común, presente en todos los procesos, y la provocada por causas asignables o especiales, que pueden llevarlos a un estado de fuera de control. Señaló que un proceso está en control estadístico cuando trabaja sólo con causas comunes de variación. Propuso los primeros gráficos de control para variables de tipo continuo y para variables de atributos [@Gutierrez2013]. 
+El pionero del control estadístico de procesos fue Walter Shewhart (SPC). Estableció las diferencias entre la variabilidad natural o común, presente en todos los procesos, y la provocada por causas asignables o especiales, que pueden llevarlos a un estado de fuera de control. Señaló que un proceso está en control estadístico cuando trabaja sólo con causas comunes de variación. Propuso los primeros gráficos de control para variables de tipo continuo y para variables de atributos [@Gutierrez2013]. 
 
-El control estadístico de procesos mediante gráficos de control permitió a las organizaciones monitorear el comportamiento de una variable a la vez, no obstante, las organizaciones requirieron, con el pasar del tiempo, el análisis de varias características de calidad de forma simultánea, abriendo la puerta al control estadístico de procesos desde una perspectiva multivariante [@ramos2017]. Para facilitar el control de calidad de procesos es común el uso de gráficas de control que recolectan abundante información en diversas variables de forma simultánea, su análisis permite caracterizar los diferentes tipos de variables que afectan la calidad y explican su comportamiento a lo largo del tiempo [@li2012].
+El SPC mediante gráficos de control permitió a las organizaciones monitorear el comportamiento de una variable a la vez, no obstante, las organizaciones requirieron, con el pasar del tiempo, el análisis de varias características de calidad de forma simultánea, abriendo la puerta al SPC desde una perspectiva multivariante [@ramos2017]. Para facilitar el control de calidad de procesos es común el uso de gráficas de control que recolectan abundante información en diversas variables de forma simultánea, su análisis permite caracterizar los diferentes tipos de variables que afectan la calidad y explican su comportamiento a lo largo del tiempo [@li2012].
 
 Hay una variedad de gráficos de control de procesos desde la perspectiva multivariante, entre los  clásicos están el Gráfico $T^2$ de Hotelling [@hotelling1947], el Multivariate Exponentially Weighted Moving – MEWMA [@lowry1992], el Multivariate Cumulative Sum Control Chart – MCUSUM [@Crosier1988]. Con el transcurso del tiempo se hicieron diversos aportes para mejorar el rendimiento de estos gráficos, entre los más destacados están Gráfico de control $T^2$ con tamaños de muestra adaptables [@Aparisi1996], Gráfico de control $T^2$ con intervalos de muestreo variables [@Aparisi2001], Gráfico de control $T^2$ con líneas de advertencia dobles [@Faraz2006], Gráfico de control robusto [@shabbak2012], Gráficos de control basados en modelos de minería de datos para procesos multivariantes y autocorrelacionados [@kim2012], Gráficos de control de calidad multivariantes con dimensión variable [@ruiz2013], Gráfico de control para el coeficiente de variación multivariante [@yeong2016].
 
@@ -74,35 +74,25 @@ Además de estos gráficos de control para entornos paramétricos, se desarrolla
 
 Como se puede observar, la literatura científica es abundante en lo referente a gráficos de control en entornos multivariantes paramétricos y no paramétricos para datos numéricos y, en los últimos años, para datos mixtos (numéricos y cualitativos), sin embargo, son pocas las publicaciones sobre gráficos de control multivariantes para datos cualitativos. En este campo las propuestas se han desarrollado alrededor del análisis de variables que siguen una distribución Poisson y el análisis de variables multinomiales.
 
-La primera propuesta fue la de @holgate1964, quien presentó un trabajo sobre la distribución Poisson bivariante para variables correlacionadas. Este modelo fue tomado como insumo en las investigaciones de autores como @chiu2007, @ho2009, @laungrungrong2011ewma, @epprecht2013optimal. Otra propuesta destacada es la de @lu1998control, quien desarrolló un gráfico de control tipo Shewhart para procesos multivariados con variables de atributos, cuando la característica de calidad asume valores binarios, que se denominó gráfico np multivariante (MNP). No obstante, hay escenarios en los que una clasificación dicotómica es insuficiente y se vuelve necesario acudir a niveles intermedios, en cuyo caso el análisis requiere el uso de distribuciones multinomiales. 
+La primera propuesta fue la de @holgate1964, quien presentó un trabajo sobre la distribución Poisson bivariante para variables correlacionadas. Este modelo fue tomado como insumo en las investigaciones de autores como @chiu2007, @ho2009, @laungrungrong2011ewma, @epprecht2013optimal. Otra propuesta destacada es la de @lu1998control, quien desarrolló un gráfico de control tipo Shewhart para procesos multivariados con variables de atributos, cuando la característica de calidad asume valores binarios, que se denominó gráfico *np* multivariante (MNP). No obstante, hay escenarios en los que una clasificación dicotómica es insuficiente y se vuelve necesario acudir a niveles intermedios, en cuyo caso el análisis requiere el uso de distribuciones multinomiales. 
 
-En este contexto @ranjan2008multivariate planteó un gráfico de control multivariante utilizando el estadístico D2 de Mahalanobis para atributos que siguen una distribución multinomial. Además, surgieron los gráficos de control multivariantes en procesos multinomiales bajo el enfoque difuso [@taleb2006multivariate]; @taleb2009control introdujo gráficos de control para el monitoreo de procesos multivariados con datos lingüísticos multidimensionales, basados en dos procedimientos: la teoría de la probabilidad y la teoría difusa; @pastuizaca2015multivariate presentaron un gráfico de control multivariante multinomial T2 con un enfoque difuso.
+En este contexto @ranjan2008multivariate planteó un gráfico de control multivariante utilizando el estadístico $D^2$ de Mahalanobis para atributos que siguen una distribución multinomial. Además, surgieron los gráficos de control multivariantes en procesos multinomiales bajo el enfoque difuso [@taleb2006multivariate]; @taleb2009control introdujo gráficos de control para el monitoreo de procesos multivariados con datos lingüísticos multidimensionales, basados en dos procedimientos: la teoría de la probabilidad y la teoría difusa; @pastuizaca2015multivariate presentaron un gráfico de control multivariante multinomial T2 con un enfoque difuso.
 
-Otra propuesta interesante es la de @epprecht2013optimal, quienes presentaron una combinación lineal óptima de variables discretas, cuando siguen la distribución de Poisson, para el control de procesos estadísticos multivariados. 
+Un aporte interesante es el de @epprecht2013optimal, quienes presentaron una combinación lineal óptima de variables discretas, cuando siguen la distribución de Poisson, para el SPC multivariantes. Asimismo, @raza2019design desarrollaron gráficos de control para datos con distribución Poisson multivariante utilizando un muestreo generalizado de estados dependientes múltiples (GMDS).
 
 
 En el estudio de los procesos que se desarrollan en el entorno social-educativo y que explican el comportamiento de variables como el rendimiento académico, tasas de graduación o deserción, producción científica, porcentajes de matrícula de nuevo ingreso, entre otros, se maneja con mucha frecuencia variables cualitativas. No es que estén ausentes los datos cuantitativos, sino que, en las bases de datos que se utilizan para estos análisis, abundan las variables cualitativas nominales y ordinales sobre las de tipo numérico, algunos ejemplos de datos de los estudiantes son: sexo, lugar de procedencia, autodenominación étnica, grado académico de los padres, tipo de institución educativa de procedencia (fiscal, particular, municipal); ejemplos de datos de las instituciones son: tipo de sostenimiento económico, jornada, modalidad, campo de estudio, niveles (tecnológico, grado y postgrado), tipo de infraestructura; ejemplos asociados a datos de los profesores son: titularidad, dedicación, grado académico, grado en el escalafón, discapacidad, entre otros.
 
-@perez2004 señala que al observar muchas variables sobre una muestra es presumible que una parte de la información recogida pueda ser redundante o que sea excesiva, en cuyo caso los métodos multivariantes de reducción de la dimensión tratan de eliminarla combinando muchas variables observadas para quedarse con pocas variables ficticias que, aunque no observadas, sean combinación de las reales y sinteticen la mayor parte de la información contenida en sus datos. En este caso se deberá tener en cuenta el tipo de variables que maneja. Si son variables cuantitativas las técnicas que le permiten este tratamiento pueden ser el Análisis de componentes principales  [@Person1901;@Hotelling1933], el Análisis factorial [@ch1904; @thurstone1947; @kaiser1958], mientras que, si se trata de variables cualitativas, es recomendable la aplicación de un Análisis de correspondencias múltiple, Análisis de homogeneidad o un Análisis de Escalamiento multidimensional.
+@perez2004 señala que al observar muchas variables sobre una muestra es presumible que una parte de la información recogida pueda ser redundante o que sea excesiva, en cuyo caso los métodos multivariantes de reducción de la dimensión tratan de eliminarla combinando muchas variables observadas para quedarse con pocas variables ficticias que, aunque no observadas, sean combinación de las reales y sinteticen la mayor parte de la información contenida en sus datos. En este caso se deberá tener en cuenta el tipo de variables que maneja. Si son variables cuantitativas las técnicas que le permiten este tratamiento pueden ser el Análisis de componentes principales  [@Person1901;@Hotelling1933], el Análisis factorial [@ch1904; @thurstone1947; @kaiser1958], mientras que, si se trata de variables cualitativas, es recomendable la aplicación de un Análisis de correspondencias múltiple, Análisis de homogeneidad o un Análisis de Escalamiento multidimensional.    
 
-## Análisis de Correspondencias
+En el contexto del SPC el análisis gráficos de control para variables cualitativas todavía es incipiente. Al analizar los procedimientos publicados por los autores citados en este estudio, se detecta limitaciones que podrían restringir su aplicación, por ejemplo, el análisis de pocas características de la calidad, el uso de muestras constituidas por elementos individuales en vez de grupos, la dificultad de trabajar con muchas categorías de forma simultánea. Surge, entonces, la necesidad de un gráfico de control para la representación de p variables cualitativas, que pueda trabajar con múltiples categorías nominales y ordinales y que facilite la identificación de las causas que pueden llevar al proceso a un estado fuera de control.     
 
-El tratamiento multivariante de variables cualitativas requiere un proceso metodológico distinto, uno de los más representativos es el Análisis de Correspondencias [@Benzecri]. Según [@perez2004], este análisis implica estudios de similaridad o disimilaridad entre categorías, se debe cuantificar la diferencia o distancia entre ellas sumando las diferencias cuadráticas relativas entre las frecuencias de las distribuciones de las variables analizadas, lo que conduce al concepto de la $\chi^2$.  Así, el análisis de correspondencias puede considerase como un análisis de componentes principales aplicado a variables cualitativas que, al no poder utilizar correlaciones, se basa en la distancia no euclídea de la$\chi^2$.
-En el enfoque francés del Análisis de Correspondencias, que se caracteriza por el énfasis en la geometría, el análisis de una tabla cruzada se llama análisis de correspondencia (CA) y el análisis de una colección de matrices indicadoras, se denomina análisis de correspondencia múltiple (MCA) [@michailidis1998]. En contextos anglosajones, el MCA es conocido como Análisis de Homogeneidad o Escalamiento Dual, especialmente en psicometría.
-
-## Análisis de Homogeneidad
-
-El Análisis de Homogeneidad, Homogeneous Alternating Least Squares (HOMALS), es un modelo de la familia de modelos matemáticos del Escalamiento óptimo del sistema Gifi [@Gifi1990], el cual comprende una serie de técnicas exploratorias de análisis multivariado no lineal. Igual que el MCA, HOMALS se considera una forma de Análisis de Componentes Principales para datos cualitativos. El Análisis de Homogeneidad representa los objetos analizados mediante puntos en el modelo espacial, sus características más relevantes se presentan en las relaciones geométricas entre los puntos, para ello, es necesario la cuantificación de datos cualitativos [@Lopez2014]. El uso de variables cualitativas no es particularmente restrictivo, ya que una variable numérica continua se puede considerar como una variable cualitativa con un gran número de categorías. HOMALS se diferencia del el MCA en que éste utiliza la función de Descomposición de valores propios mientras que el Análisis de Homogeneidad utiliza Mínimos Cuadrados Alternos, lo que se conoce en la literatura como la Solución de Homals [@michailidis1998]. 
+Esta necesidad se atiende en esta investigación, cuyo objetivo es desarrollar un gráfico de control para variables cualitativas con múltiples categorías nominales y ordinales, mediante la aplicación de una metodología de análisis multivariante, para que se contribuya a la diversificación de técnicas en la fase I del control estadístico de procesos.     
 
 
-## Escalamiento multidimensional 
+Este artículo está organizado de la siguiente manera: la Introducción, que establece los antecedentes conceptuales y referenciales de los gráficos de control multivariantes aplicados a variables cualitativas; la sección 2, materiales y métodos, que detalla el procedimiento que se siguió en el desarrollo del gráfico de control propuesto; la sección 3 describe al complemento computacional que facilita la aplicación de esta metodología; la sección 4 muestra los resultados mediante el análisis de datos simulados y datos reales aplicados al contexto de la educación superior; la sección 5 corresponde al análisis de sensibilidad que relaciona el número de dimensiones analizadas versus la confiabilidad de los resultados. La sección 6 presenta la discusión mediante un análisis comparativo entre el gráfico de control T2Qv y las propuestas de otros autores. Finalmente, la sección 7 establece las conclusiones.      
 
-Otra de las técnicas multivariantes para el tratamiento de variables cualitativas es el escalamiento multidimensional (EMD) [@torgerson1952; @shepard1962]. Se define como una técnica que elabora una representación gráfica que permite conocer la imagen que los individuos crean de un conjunto de objetos por posicionamiento de cada uno en relación con los demás, (mapa perceptual). El EMD trata de encontrar la estructura de un conjunto de medidas de distancia entre objetos o casos. Esto se logra asignando las observaciones a posiciones específicas en un espacio conceptual, normalmente de dos o tres dimensiones, de modo que las distancias entre los puntos en el espacio concuerden al máximo con las disimilaridades dadas. Las dimensiones de este espacio conceptual se pueden interpretar para favorecer la comprensión de los datos, inclusive si son valoraciones subjetivas de disimilaridad entre objetos o conceptos.  Dado que el EMD permite calcular las distancias a partir de los datos multivariados, si las variables se han medido objetivamente, se lo puede utilizar como técnica de reducción de datos [@perez2004]. 
-
-Las variables que utiliza esta técnica pueden ser métricas o no métricas. El escalamiento multidimensional las transforma en distancias entre los objetos en un espacio de dimensiones múltiples, de modo que objetos que aparecen situados más próximos entre sí son percibidos como más similares por los sujetos.
-
-
-# Materials and Methods
+# Metodología
 
 ## Notación
 
@@ -137,22 +127,31 @@ A lo largo del artículo se utilizarán letras para hacer referencia a parámetr
  \hline\hline
  $p$ & Número de dimensiones &\\
 \hline
- K & Número total de tablas (Especifica la profundidad del cubo de datos) & \\
+ $K$ & Número total de tablas (Especifica la profundidad del cubo de datos) & \\
  \hline
  $k$ & Índice de tabla &  k=1,2,...,K\\
   \hline
  $T$ & Índice de matriz transpuesta &  $\mathbf{X^{T}}$\\
 \hline
- n & Tamaño muestral de las K tablas &\\
+ $n$ & Tamaño muestral de las $k$ tablas &\\
 \hline
 \end{tabular}\caption{Notación}
 \label{tab:notacion2}
 \end{center}
 \end{table}
 
-## Análisis de Correspondencia Múltiple (MCA)
+## Bases metodológicas
 
-El análisis de correspondencias múltiples (MCA) es una generalización del análisis de correspondencias simple o binario, donde se incluyen más variables cualitativas. Se obtiene al realizar el análisis de correspondencias simple a una tabla disyuntiva completa, conocida como la tabla de Burt.
+### Análisis de Correspondencias Simple
+
+El tratamiento multivariante de variables cualitativas requiere un proceso metodológico distinto, uno de los más representativos es el Análisis de Correspondencias [@Benzecri]. Según [@perez2004], este análisis implica estudios de similaridad o disimilaridad entre categorías, se debe cuantificar la diferencia o distancia entre ellas sumando las diferencias cuadráticas relativas entre las frecuencias de las distribuciones de las variables analizadas, lo que conduce al concepto de la $\chi^2$.  Así, el análisis de correspondencias puede considerase como un análisis de componentes principales aplicado a variables cualitativas que, al no poder utilizar correlaciones, se basa en la distancia no euclídea de la$\chi^2$.      
+
+En el enfoque francés del análisis de correspondencias, que se caracteriza por el énfasis en la geometría, el análisis de una tabla cruzada se llama análisis de correspondencias (CA) y el análisis de una colección de matrices indicadoras, se denomina análisis de correspondencias múltiples (MCA) [@michailidis1998]. En contextos anglosajones, el MCA es conocido como Análisis de Homogeneidad o Escalamiento Dual, especialmente en psicometría.
+
+
+### Análisis de Correspondencias Múltiples (MCA)
+
+El análisis de correspondencias múltiples (MCA) es una generalización del análisis de correspondencias simple o binario, donde se incluyen más variables cualitativas. Se obtiene al realizar el análisis de correspondencias simple a una tabla disyuntiva completa, conocida como la tabla de Burt.    
 
 Se tiene una matriz de datos con $p$ variables cualitativas, cada una con $h$ categorías ($h$ >1). En el ejemplo que se desarrolla para esta investigación, se dispone de una base de datos  (*Datak10Contaminated*) constituida por 10 tablas, cada una tiene 10 variables y cada variable, 3 categorías (Alto, Medio y Bajo).
 
@@ -205,7 +204,7 @@ La tabla de Burt viene dada por:
 \label{eq:Burt}
 \end{equation}
 
-La construcción de la matriz de Burt se da por la superposición de tablas. En las tablas ubicadas en la diagonal se encuentran matrices diagonales que contienen las frecuencias marginales de cada una de las variables. Fuera de la diagonal de la matriz de Burt se encuentran las tablas cruzadas por pares de variables.       
+La construcción de la matriz de Burt se da por la superposición de tablas. En las tablas ubicadas en la diagonal se encuentran matrices diagonales que contienen las frecuencias marginales de cada una de las variables. Fuera de la diagonal de la matriz de Burt se encuentran las tablas cruzadas por pares de variables.        
 Para realizar el análisis de correspondencias múltiples se parte de la matriz de Burt, obtenida con la ecuación \ref{eq:Burt}. Esta matriz está formada por las frecuencias absolutas, éstas se transforman en frecuencias relativas, dividiendo los valores de la matriz por la frecuencia total, dando lugar a una nueva matriz que se denominará **P**.
 
 \begin{table}[!ht]
@@ -326,9 +325,15 @@ Para los fines necesarios, se utilizará las coordenadas de las columnas (Tabla 
 \end{center}
 \end{table}
 
-## Generalización a K tablas
+### Análisis de Homogeneidad
 
-Si se tienen K tablas, con la misma estructura de la tabla \ref{tab:inicial}, como se visualiza en la figura \ref{fig:ktables}, se aborda el enfoque del análisis factorial múltiple (MFA). @AFM indica que el MFA utiliza análisis de correspondencia múltiple cuando se trata de variables cualitativas. El procedimiento implica la realización de un MCA por cada tabla y dividirlo por su primer valor propio con la finalidad de obtener K grupos normalizados. Posteriormente se consideran todas las tablas y se realiza un MCA global.
+El Análisis de Homogeneidad, Homogeneous Alternating Least Squares (HOMALS), es un modelo de la familia de modelos matemáticos del Escalamiento óptimo del sistema Gifi [@Gifi1990], el cual comprende una serie de técnicas exploratorias de análisis multivariado no lineal. Igual que el MCA, HOMALS se considera una forma de Análisis de Componentes Principales para datos cualitativos. El Análisis de Homogeneidad representa los objetos analizados mediante puntos en el modelo espacial, sus características más relevantes se presentan en las relaciones geométricas entre los puntos, para ello, es necesario la cuantificación de datos cualitativos [@Lopez2014].      
+El uso de variables cualitativas no es particularmente restrictivo, ya que una variable numérica continua se puede considerar como una variable cualitativa con un gran número de categorías. HOMALS se diferencia del el MCA en que éste utiliza la función de Descomposición de valores propios mientras que el Análisis de Homogeneidad utiliza Mínimos Cuadrados Alternos, lo que se conoce en la literatura como la Solución de Homals [@michailidis1998]. 
+
+
+### Generalización a $k$ tablas
+
+Si se tienen *k* tablas, con la misma estructura de la tabla \ref{tab:inicial}, como se visualiza en la figura \ref{fig:ktables}, se aborda el enfoque del análisis factorial múltiple (MFA). @AFM indica que el MFA utiliza análisis de correspondencias múltiples cuando se trata de variables cualitativas. El procedimiento implica la realización de un MCA por cada tabla y dividirlo por su primer valor propio con la finalidad de obtener $K$ grupos normalizados. Posteriormente se consideran todas las tablas y se realiza un MCA global.
 
 \begin{figure}[!ht]
 
@@ -337,12 +342,12 @@ Si se tienen K tablas, con la misma estructura de la tabla \ref{tab:inicial}, co
 knitr::include_graphics("ktables.png")
 ```
 
-\caption{K tablas con el formato inicial.}
+\caption{$k$ tablas con el formato inicial.}
 
 \label{fig:ktables}
 \end{figure}
 
-La generalización a K tablas del procedimiento del MCA, se presenta en la Figura \ref{fig:MCAk}
+La generalización a *k* tablas del procedimiento del MCA, se presenta en la Figura \ref{fig:MCAk}
 
 
 \begin{figure}[!h]
@@ -351,14 +356,14 @@ La generalización a K tablas del procedimiento del MCA, se presenta en la Figur
 knitr::include_graphics("ktablesMCA.png")
 ```
 
-\caption{Procedimiento del MCA para K tablas}
+\caption{Procedimiento del MCA para $k$ tablas}
 
 \label{fig:MCAk}
 \end{figure}
 
 Se llama $C$ a cada tabla de coordenadas. Con la finalidad de detectar la magnitud de las variables latentes, su aporte neto a las variables, se trata la matriz $C$ con valor absoluto.
 
-## Aporte del Análisis Factorial Múltiple (MFA)
+### Aporte del Análisis Factorial Múltiple (MFA)
 
 Una vez que se tienen las coordenadas de las columnas, se procede a realizar la normalización, característica del procedimiento MFA.
 
@@ -370,16 +375,18 @@ Individualmente, para el caso de la matriz k, se tendría la siguiente expresió
 \label{eq:Cprimak}
 \end{equation}
 
-Aglomerando las matrices normalizadas $C^{'}$ en una sola, se tiene la matriz $\mathbb{C}^{'}$. Esta contiene todos los elementos de las k tablas.
+Aglomerando las matrices normalizadas $C^{'}$ en una sola, se tiene la matriz $\mathbb{C}^{'}$. Esta contiene todos los elementos de las *k* tablas.
 
 \begin{equation}
 \mathbf{\mathbb{C^{'}}}=[\mathbf{C_1^{'}}|\mathbf{C_2^{'}}|,...,|\mathbf{C'_{K}}]^{T}
 \label{eq:Cprima}
 \end{equation}
 
-La normalización que realiza el MFA se encarga de ponderar las k tablas, con el objetivo de evitar alguna descompensación al momento de realizar el análisis conjunto de las tablas. 
+La normalización que realiza el MFA se encarga de ponderar las *k* tablas, con el objetivo de evitar alguna descompensación al momento de realizar el análisis conjunto de las tablas. 
 
-## Gráfico de control
+## Gráfico de control T2Qv
+
+### Obtención del gráfico de control
 
 Para definir el gráfico de control $T^2$ Hotelling se deben tomar las siguientes consideraciones:
 
@@ -408,12 +415,21 @@ UCL=\chi^2_{\alpha^{'},p}
 
 donde $p$ es el número de dimensiones y $\alpha^{'}$ es la significancia predeterminada considerando $p$. Tal que $\alpha^{'}=1-(1-\alpha)^{p}$ y $\alpha$, que en este estudio se considera como el error tipo 1 inicial, generalmente es igual a 0.0027.       
 
-Para definir $\alpha^{'}$ (Error tipo 1) se opta el enfoque múltiple, @montgomery2012statistical indica que con este enfoque se consigue una variación de $\alpha^{'}$ en función de $p$, esto es conveniente en este caso ya que permite considerar la dimensionalidad usada al realizar el análisis de correspondencia múltiple.
+Para definir $\alpha^{'}$ (Error tipo 1) se opta el enfoque múltiple, @montgomery2012statistical indica que con este enfoque se consigue una variación de $\alpha^{'}$ en función de $p$, esto es conveniente en este caso ya que permite considerar la dimensionalidad usada al realizar el análisis de correspondencias múltiples.
 
 
-## Tabla posterior
+### Interpretación de puntos fuera de control
 
-Con la finalidad de detectar las potenciales categorías responsables de que un punto en el gráfico $T^2$ de Hotelling para variables cualitativas se encuentre fuera de control, se propone una tabla que presenta las anomalías de cada categoría en cada variable, comparando las masas de columna de la tabla $k$ y las masas de columna de la tabla consenso por medio de distancias $\chi^2$ que proporcionan un valor p, aportando a la interpretación.
+El gráfico multivariante $T^2$ de Hotelling para variables cualitativas es capaz de señalar que el proceso salió de control, pero no permite reconocer el momento ni las causas por las que ocurrió esto. Es obvio que, más allá de reconocer el estado del proceso, interesa saber cuándo y por qué salió de control. Es importante tener en cuenta que cada punto representado en el gráfico $T^2$ de Hotelling representa a una tabla (muestra), constituida por un grupo de individuos (observaciones) y p variables que pueden tener muchas categorías, algunas de éstas pueden mostrar un comportamiento anómalo. Por consiguiente, es necesario analizar con detenimiento que está pasando con los datos de las tablas reportadas. 
+
+Este análisis se realiza comparando la ubicación de los puntos que representan las categorías de las variables en el MCA de la tabla consenso y la ubicación de los puntos en los gráficos MCA de cada tabla reportada como fuera de control. Las categorías que están incidiendo en el estado fuera de control son aquellas cuya ubicación en ambas tablas comparadas muestra diferencias importantes. Para cuantificar la magnitud del comportamiento anómalo de estas categorías se calcula las distancias Chi-cuadrado entre las masas de las columnas de la tabla reportada como fuera de control y las de la tabla consenso, tomada como referente. Mientras mayor es el valor del estadístico, mayor es su incidencia en el desplazamiento de la media del proceso que, finalmente, pueden llevarlo a un estado fuera de control. 
+
+El aplicativo informático del gráfico T2Qv presenta esta información de dos maneras: la primera es una tabla que registra las distancias $\chi^2$ para cada categoría de las variables analizadas, además, muestra el *p*-valor para cada observación, de esto depende el número de asteriscos que indican su nivel de significancia estadística. Así, si el *p*-valor es inferior a 0.05, la observación se reporta como significancia estadística y va asociada a un asterisco; si el *p*-valor es menor que 0.01, se entiende que hay alta significación estadística y se registran dos asteriscos; si el *p*-valor es menor que 0.001, la significancia estadística es muy alta y se reportan tres asteriscos; caso contrario, no se reporta significancia y la observación no lleva asteriscos.
+
+La segunda manera consiste en un gráfico de barras que incluye tres líneas horizontales correspondientes a los límites asociados a los niveles de significancia estadística, la más baja representa al *p*-valor inferior a 0.05 (un asterisco); la línea del medio, al *p*-valor inferior a 0.01 (dos asteriscos); y, la línea más alta representa al p-valor inferior a 0.001 (tres asteriscos). Las barras que representan valores sin significancia estadística no sobrepasan ninguna de las líneas y se pintan de color gris, mientras que, las que sí denotan significancia estadística adquieren el color de la línea más alta que sobrepasan.
+
+De esta manera, la metodología propuesta en esta investigación permite explicar cuándo y por qué el proceso salió de control.
+
 
 
 # Complemento computacional
@@ -482,57 +498,71 @@ Con la intención de probar la metodología propuesta en el gráfico de control 
 Para este estudio se generó una base de datos simulados, a la que se denominó *Datak10Contaminated*. Consta de 10 tablas, cada una de ellas está constituida por 100 filas (observaciones) y 11 columnas, de las cuales, las 10 primeras corresponden a las variables analizadas (V1, V2, …; V10) mientras que, la columna 11, denominada *GroupLetter*, contiene el factor de clasificación de los grupos. Para su identificación, las tablas han sido denominadas con las letras del alfabeto, desde la *a* hasta la *j*. La tabla *j* tiene una distribución distinta de la que tienen las otras nueve. Los datos se expresan en tres niveles: alto, medio y bajo. La tabla \ref{} presenta las 10 primeras filas de la base de datos *Datak10Contaminated*. 
 
 
-\begin{figure}[!ht]
-
-
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
-knitr::include_graphics("tablabase.png")
-```
+\begin{table}[]
+\tiny
+\centering
+\resizebox{13cm}{!} {
+\begin{tabular}{@{}lllllllllll@{}}
+\toprule
+\textbf{V1}                  & \textbf{V2}                    & \textbf{V3}                  & \textbf{V4}                    & \textbf{V5}                  & \textbf{V6}                    & \textbf{V7}                    & \textbf{V8}                    & \textbf{V9}                    & \textbf{V10}                   & \textbf{GroupLetter}      \\ \midrule
+Low      & Medium     & Medium                       & High                           & High                         & High                           & Low                            & Medium                         & Medium                         & Medium                         & a                         \\
+Low                          & Low                            & High                         & Low                            & Medium                       & High                           & High                           & High                           & Low                            & High                           & a \\
+High & Medium & High & Low    & High & Medium & Medium & High   & Medium & Low    & a                         \\
+Medium                       & Medium                         & Low                          & High                           & Low                          & Medium                         & High                           & Low                            & Low                            & High                           & a \\
+Low  & Low    & Low  & High   & Low  & High   & High   & High   & Medium & Medium & a                         \\
+High                         & High                           & Medium                       & Low                            & High                         & Low                            & Medium                         & Medium                         & High                           & Low                            & a \\
+High & High   & Low  & Low    & Low  & Medium & High   & Medium & Medium & High   & a                         \\
+Medium                       & Medium                         & High                         & Medium                         & Medium                       & High                           & Medium                         & High                           & High                           & High                           & a \\
+Low  & Low    & Low  & Medium & High & Medium & Low    & Medium & Low    & Low    & a                         \\
+Medium                       & Medium                         & Medium                       & High                           & Low                          & Medium                         & High                           & Low                            & High                           & Medium                         & a \\ \bottomrule
+\end{tabular}
+}
 
 \caption{Sección de la base de datos Datak10Contaminated.}
 
 \label{tab:tabladatos}
-\end{figure}
+
+\end{table}
 
 
-Para facilitar análisis se creó un paquete al que se denominó *T2Qv*, herramienta diseñada en el software estadístico R y R Studio. T2Qv realiza el análisis de control de k tablas utilizando gráficos de control multivariantes para variables cualitativas, utilizando los fundamentos del análisis de correspondencia múltiple y el análisis de factores múltiples. Los gráficos se pueden mostrar de forma plana o interactiva, de la misma manera todas las salidas se pueden mostrar en un panel interactivo de Shiny.
-El primer resultado es el gráfico del Análisis de Correspondencias Múltiple (MCA) aplicado a la tabla consenso (Figura \ref{fig:CONS1}). Esta tabla ha sido tomada como referente, como escenario en control para el análisis posterior de las tablas que sean reportadas como puntos fuera de control en el gráfico T2 de Hotelling. 
+Para facilitar análisis se creó un paquete al que se denominó *T2Qv*, herramienta diseñada en el software estadístico R y R Studio. T2Qv realiza el análisis de control de *k* tablas utilizando gráficos de control multivariantes para variables cualitativas, utilizando los fundamentos del análisis de correspondencias múltiples y el análisis de factores múltiples. Los gráficos se pueden mostrar de forma plana o interactiva, de la misma manera todas las salidas se pueden mostrar en un panel interactivo de Shiny.       
+El primer resultado es el gráfico del Análisis de Correspondencias Múltiples (MCA) aplicado a la tabla consenso (Figura \ref{fig:CONS1}). Esta tabla ha sido tomada como referente, como escenario en control para el análisis posterior de las tablas que sean reportadas como puntos fuera de control en el gráfico $T^2$ de Hotelling.       
 El MCA reporta una inercia total del 63.3%, la dimensión 1 representa al 53.6% de la información, mientras que la dimensión 2, al 9.7%. Los puntos del gráfico representan a las observaciones de cada una de las 10 variables en sus tres niveles: alto, medio y bajo. En esta figura, todas las observaciones que corresponden al nivel alto se ubican a la izquierda en el eje de las X; de las 10 observaciones correspondientes al nivel medio, 8 se situaron en el cuarto cuadrante y las dos restantes en el cuadrante 1, es decir, todas las observaciones de este nivel estuvieron a la derecha en el eje de las X. Finalmente, de los 10 puntos que representan al nivel bajo, 8 están ubicados en el cuadrante 1.
 
 
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=18, fig.height=11}
 knitr::include_graphics("CONS1.png")
 ```
 
-\caption{Análisis de correspondencias múltiple aplicado a la tabla consenso.}
+\caption{Análisis de correspondencias múltiples aplicado a la tabla consenso.}
 
 \label{fig:CONS1}
 \end{figure}
 
-Otro resultado es el Análisis de Correspondencias Múltiple aplicado a una tabla específica. En este punto, uno de los argumentos que se debe tener en cuenta es la selección de la tabla de la que se realizará el análisis. 
+Otro resultado es el Análisis de Correspondencias Múltiples aplicado a una tabla específica. En este punto, uno de los argumentos que se debe tener en cuenta es la selección de la tabla de la que se realizará el análisis. 
 
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("MCAb.png")
 ```
 
-\caption{Análisis de correspondencias múltiple aplicado a la tabla b.}
+\caption{Análisis de correspondencias múltiples aplicado a la tabla b.}
 
 \label{fig:MCAb}
 \end{figure}
 
 La figura \ref{fig:MCAb} representa el gráfico del MCA de la tabla *b*. Este gráfico, en sus dos dimensiones, representa al 39.3% de la información. Es notorio que las observaciones en sus niveles alto, medio y bajo están distribuidas de forma aleatoria en todos los cuadrantes del del gráfico, no se puede precisar un patrón específico de agrupación. Esto mismo se puede decir de los puntos representados en cualquiera de las otras tablas, exceptuando la tabla *j*, que fue diseñada con una distribución diferente.    
-No obstante, el uso del MCA de las figuras \ref{fig:MCAb} y \ref{fig:CONS1} todavía no permite detectar si el proceso está o no en control. La identificación de puntos fuera de control se puede realizar mediante la representación gráfica del estadístico T2 de Hotelling, como se observa en la figura \ref{fig:hot1}. 
+No obstante, el uso del MCA de las figuras \ref{fig:MCAb} y \ref{fig:CONS1} todavía no permite detectar si el proceso está o no en control. La identificación de puntos fuera de control se puede realizar mediante la representación gráfica del estadístico $T^2$ de Hotelling, como se observa en la figura \ref{fig:hot1}. 
 
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("Hot1.png")
 ```
 
@@ -541,7 +571,7 @@ knitr::include_graphics("Hot1.png")
 \label{fig:hot1}
 \end{figure}
 
-La figura \ref{fig:hot1} presenta un gráfico de control elaborado con el estadístico T2 de Hotelling, aplicado a la detección de anomalías en cualquiera de las k tablas analizadas. Cada una de las tablas está  representada por los puntos en el gráfico. Se observa una línea horizontal que representa al límite de control superior (UCL). El límite de control inferior (LCL) es igual a cero.        
+La figura \ref{fig:hot1} presenta un gráfico de control elaborado con el estadístico $T^2$ de Hotelling, aplicado a la detección de anomalías en cualquiera de las *k* tablas analizadas. Cada una de las tablas está  representada por los puntos en el gráfico. Se observa una línea horizontal que representa al límite de control superior (UCL). El límite de control inferior (LCL) es igual a cero.        
 Dado que el análisis de sensibilidad determinó que este gráfico de control tiene un mejor rendimiento cuando trabaja con un número alto de dimensiones, se ha recomendado que este sea p-1, donde p es el número de dimensiones inicial, que es equivalente a la cantidad de variables de la base de datos, sin contar a la variable GroupLetter que sólo sirve como factor de clasificación de las tablas.    
 Se observa que el punto que representa a la tabla *j* se ubica por encima del límite de control superior, lo que quiere decir que se lo ha identificado como un valor fuera de control. Por consiguiente, es necesario analizar con detenimiento qué está pasando con los datos de la tabla reportada, comparándolos con los de la tabla consenso, a fin de identificar las causas de la variación y tomar las acciones pertinentes. 
 Para hacer un análisis del punto fuera de control se realiza un gráfico del MCA de la tabla *j* y se lo compara con el gráfico similar de la tabla consenso, como se presenta en la figura \ref{fig:conspoint}.
@@ -549,7 +579,7 @@ Para hacer un análisis del punto fuera de control se realiza un gráfico del MC
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("conspoint.png")
 ```
 
@@ -560,20 +590,54 @@ knitr::include_graphics("conspoint.png")
 
 La figura \ref{fig:conspoint} presenta la distribución de las observaciones de las tablas consenso y *j* mediante gráficos del MCA. El gráfico de la tabla consenso, que sirve de referente en control, ya se analizó en la figura \ref{fig:CONS1}; el de la tabla *j* muestra una tendencia de los puntos que con valores medios a ubicarse al lado izquierdo, bastante alejados de los demás que confluyen hacia el centro del eje de las X. Especial atención merece la variable 3, que registra una observación para el nivel medio con el valor más alejado del grupo.     
 Al comparar los gráficos es obvio que la distribución de los datos en la tabla *j* es diferente de las distribuciones de las demás tablas, y en especial, es diferente de la distribución de la tabla consenso, lo que explica por qué el punto *j* ha sido identificado como fuera de control.       
-Para profundizar en el análisis se calcula las distancias Chi-cuadrado entre las masas de las columnas de la tabla reportada como fuera de control y la tabla consenso, tomada como referente. Estas distancias permiten identificar el comportamiento de las variables que inciden en el desplazamiento de la media del proceso que finalmente pueden llevarlo a un estado fuera de control (tabla \ref{tab:chi}).     
-La tabla \ref{tab:chi} contiene los datos de cada una de las variables de la tabla *j* con sus tres niveles (alto, medio y bajo). La columna 3 muestra el p-valor para cada observación, de esto depende el número de asteriscos de la columna 4 que indica el nivel de significancia estadística. Así, si el p-valor es inferior a 0.05, la observación se reporta como significancia estadística y va asociada a un asterisco; si el p-valor es menor que 0.01, se entiende que hay alta significación estadística y se registran dos asteriscos; si el p-valor es menor que 0.001, la significancia estadística es muy alta y se reportan tres asteriscos; caso contrario, no se reporta significancia y la observación no lleva asteriscos. 
-
-\begin{figure}[!ht]
+   
+La tabla \ref{tab:chi} contiene los datos de cada una de las variables de la tabla *j* con sus tres niveles (alto, medio y bajo). La columna 3 muestra el p-valor para cada observación, de esto depende el número de asteriscos de la columna 4 que indica el nivel de significancia estadística.     
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
-knitr::include_graphics("chitable.png")
-```
+\begin{table}[!ht]
+\tiny
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Variable} & \textbf{Chi-Squared} & \textbf{p-value} & \textbf{Signif} \\ \midrule
+V1:High & 6.62953 & 0.01003 & * \\
+V1:Low & 2.51447 & 0.11281 &  \\
+V1:Medium & 4.40573 & 0.03582 & * \\
+V2:High & 6.10216 & 0.01350 & * \\
+V2:Low & 3.15682 & 0.07561 &  \\
+V2:Medium & 3.81899 & 0.05067 &  \\
+V3:High & 5.58957 & 0.01807 & * \\
+V3:Low & 2.73051 & 0.09845 &  \\
+V3:Medium & 3.37596 & 0.06615 &  \\
+V4:High & 6.61362 & 0.01012 & * \\
+V4:Low & 1.95916 & 0.16160 &  \\
+V4:Medium & 5.33225 & 0.02093 & * \\
+V5:High & 5.23785 & 0.02210 & * \\
+V5:Low & 1.24566 & 0.26438 &  \\
+V5:Medium & 4.56461 & 0.03264 & * \\
+V6:High & 5.64217 & 0.01753 & * \\
+V6:Low & 1.81050 & 0.17845 &  \\
+V6:Medium & 4.11597 & 0.04248 & * \\
+V7:High & 5.94284 & 0.01478 & * \\
+V7:Low & 3.10801 & 0.07791 &  \\
+V7:Medium & 3.32453 & 0.06825 &  \\
+V8:High & 4.65021 & 0.03105 & * \\
+V8:Low & 1.88624 & 0.16963 &  \\
+V8:Medium & 3.45642 & 0.06301 &  \\
+V9:High & 4.67660 & 0.03058 & * \\
+V9:Low & 1.46059 & 0.22684 &  \\
+V9:Medium & 3.60793 & 0.05750 &  \\
+V10:High & 5.10688 & 0.02383 & * \\
+V10:Low & 2.76592 & 0.09629 &  \\
+V10:Medium & 3.19604 & 0.07382 & 
+\end{tabular}
 
-\caption{Distancia $\chi^2$ entre las masas de la tabla consenso y las k tablas, Datak10Contaminated}
+\caption{Distancia $\chi^2$ entre las masas de la tabla consenso y las $k$, Datak10Contaminated}
 
 \label{tab:chi}
-\end{figure}
+\end{table}
+
+
 
 De las 30 observaciones que tiene la tabla *j*, se presentan 14 casos de p-valores menores que 0.05, es decir, reportan significancia estadística (un asterisco), de los cuales, 10 se atribuyen a las categorías altas de las variables cualitativas y cuatro a los niveles medios. El comportamiento de estas variables en la tabla *j*, que obedece a una distribución diferente a la de las demás tablas, provoca el desplazamiento de la media del proceso que, al final, lo lleva a un estado fuera de control. 
 Otra manera de visualizar esta información es a través de un gráfico de barras (figura \ref{fig:chibar}).
@@ -581,21 +645,21 @@ Otra manera de visualizar esta información es a través de un gráfico de barra
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("chibar.png")
 ```
 
-\caption{. Distancia $\chi^2$ entre las masas de la tabla consenso y las k tablas, Datak10Contaminated.}
+\caption{Distancia $\chi^2$ entre las masas de la tabla consenso y las $k$ tablas, Datak10Contaminated.}
 
 \label{fig:chibar}
 \end{figure}
 
-En el gráfico de barras de la figura \ref{fig:chibar}, se observa tres líneas horizontales que corresponden a los límites asociados a los niveles de significancia estadística, la más baja representa al p-valor inferior a 0.05 (un asterisco), la línea del medio, al p-valor inferior a 0.01 (dos asteriscos); y, la línea más alta representa al p-valor inferior a 0.001 (tres asteriscos). Las barras que representan valores sin significancia estadística no sobrepasan ninguna de las líneas y se pintan de color gris, mientras que, las que sí denotan significancia estadística adquieren el color de la línea más alta que sobrepasan.
+El gráfico de barras de la figura \ref{fig:chibar}, expresa también la distancia $\chi^2$ entre las masas de la tabla consenso y las *k* tablas de la base de datos *Datak10Contaminated*. Es otra manera de representar la información que ya se analizó en la tabla \ref{tab:chi}.
 
 ## Resultados con datos aplicados al contexto de la educación superior
 
 
-En este ejemplo se utiliza una base de datos denominada *Estudiantes 2019_2020*, tomada de reportes que la Universidad Técnica de Machala (UTMACH) cargó en la plataforma del Sistema Integral de Información de la Educación Superior (SIIES), correspondiente a cuatro periodos académicos consecutivos. La base de datos Estudiantes_2019_2020 contiene 43191 observaciones y 17 variables cualitativas referidas los estudiantes de las 30 carreras vigentes en sus 5 facultades.     
+En este ejemplo se utiliza una base de datos denominada *Estudiantes_2019_2020*, tomada de reportes que la Universidad Técnica de Machala (UTMACH) cargó en la plataforma del Sistema Integral de Información de la Educación Superior (SIIES), correspondiente a cuatro periodos académicos consecutivos. La base de datos Estudiantes_2019_2020 contiene 43191 observaciones y 17 variables cualitativas referidas los estudiantes de las 30 carreras vigentes en sus 5 facultades.     
 Las variables registradas en la base de datos, con sus respectivas categorías son las siguientes:      
 
 -	Periodo académico, esta es la variable que sirve como clasificador, hace referencia a 4 periodos de estudio (semestres): 2019-1, 2019-2, 2020-1 y 2020-2.
@@ -630,15 +694,15 @@ Las variables registradas en la base de datos, con sus respectivas categorías s
 
 -	Terminó periodo: Sí y No.
 
-### Análisis de Correspondencias Múltiple de la tabla Consenso
+### Análisis de Correspondencias Múltiples de la tabla Consenso
 
-El gráfico del Análisis de Correspondencias Múltiple que se realiza a la tabla consenso (Figura \ref{fig:CONS1}) es el escenario bajo control que se utilizará para el análisis de las tablas que luego se registren como puntos fuera de control en el gráfico T2 de Hotelling. El MCA reporta una inercia total del 30.31%. Los puntos del gráfico representan a las observaciones de cada una de las 16 variables en sus distintos niveles. La variable Periodo académico sirve como elemento clasificador, por eso sus observaciones no aparecen aquí. 
+El gráfico del Análisis de Correspondencias Múltiples que se realiza a la tabla consenso (Figura \ref{fig:CONS1}) es el escenario bajo control que se utilizará para el análisis de las tablas que luego se registren como puntos fuera de control en el gráfico $T^2$ de Hotelling. El MCA reporta una inercia total del 30.31%. Los puntos del gráfico representan a las observaciones de cada una de las 16 variables en sus distintos niveles. La variable Periodo académico sirve como elemento clasificador, por eso sus observaciones no aparecen aquí. 
 
 
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("consedu.png")
 ```
 
@@ -660,7 +724,7 @@ El análisis de las variables que se manifiestan con mayor presencia en la dimen
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("t2edu.png")
 ```
 
@@ -669,13 +733,13 @@ knitr::include_graphics("t2edu.png")
 \label{fig:t2edu}
 \end{figure}
 
-La figura \ref{fig:t2edu} muestra el gráfico de control T2 de Hotelling para la representación de las k = 4 tablas analizadas, éstas se representan por los puntos del gráfico y corresponden a los cuatro periodos académicos considerados en este estudio. 
+La figura \ref{fig:t2edu} muestra el gráfico de control $T^2$ de Hotelling para la representación de las $k$ = 4 tablas analizadas, éstas se representan por los puntos del gráfico y corresponden a los cuatro periodos académicos considerados en este estudio. 
 El punto que representa al periodo académico 2019-1 ha sido reportado como un valor fuera de control, en consecuencia, será necesario un análisis de sus datos comparados con los de la tabla consenso (Figura \ref{fig:CONSedu}) para identificar las causas de la variación y, si fuera el caso, tomar las acciones pertinentes. Para ello se realiza un MCA a la tabla 2019-1.    
 
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='80%', fig.width=18, fig.height=11}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=18, fig.height=11}
 knitr::include_graphics("conspointedu.png")
 ```
 
@@ -689,11 +753,11 @@ La figura \ref{fig:conspointedu} contiene los gráficos del MCA de la tabla cons
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
-knitr::include_graphics("chibar.png")
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
+knitr::include_graphics("chibar2.png")
 ```
 
-\caption{Distancia $\chi^2$ entre las masas de la tabla consenso y las k tablas, Estudiantes 2019 2020.}
+\caption{Distancia $\chi^2$ entre las masas de la tabla consenso y las $k$ tablas, Estudiantes 2019 2020.}
 
 \label{fig:conspointedu}
 \end{figure}
@@ -703,7 +767,7 @@ La figura \ref{fig:conspointedu}, permite apreciar, en un gráfico de barras, la
 \begin{figure}[!ht]
 
 
-```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='60%', fig.width=16, fig.height=9}
+```{r , echo=FALSE, fig.align='center',results='asis', fig.pos="H", out.extra = "", out.width='90%', fig.width=16, fig.height=9}
 knitr::include_graphics("mcacompedu.png")
 ```
 
@@ -744,5 +808,53 @@ knitr::include_graphics("conjuntosensibilidad.png")
 El análisis de sensibilidad utiliza curvas de nivel y superficies de respuesta (figura \ref{fig:sensibilidad}) para representar el número de puntos fuera de control, considerando el porcentaje de variables contaminadas de la $k_i$ tabla y el número de dimensiones representadas. 
 Los datos de prueba utilizados en el modelo se registran en 10 tablas, cada una de ellas incluye 10 variables y cada variable tiene tres categorías: alto, medio y bajo. La tabla 10 tiene una distribución diferente de las demás, esta es la tabla contaminada.        
 Se observa que el modelo es capaz de identificar un punto fuera de control trabajando con 9  dimensiones ($p$-1), aún con un porcentaje bajo de variables contaminadas. Cuando el número de dimensiones disminuye a 8 y el porcentaje de variables contaminadas es cercano a 100%, detecta correctamente 1 punto fuera de control. Se observa además que cuando el número de dimensiones es menor se pierde estabilidad. En consecuencia, el análisis de sensibilidad ratifica que el gráfico de control T2Qv tiene un buen rendimiento cuando trabaja con altas dimensiones.
+
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{l|l|}
+\cline{2-2}
+             & \textbf{Curvas de nivel y superficie de respuesta} \\ \hline
+\multicolumn{1}{|l|}{5 Variables}  & \includegraphics[width=9cm]{5var.png}  \\ \hline
+\multicolumn{1}{|l|}{15 Variables} & \includegraphics[width=9cm]{15var.png} \\ \hline
+\end{tabular}
+
+\caption{Curvas de nivel y superficie de respuesta obtenidas con el gráfico T2 Hotelling para variables cualitativas con 5 y 15 variables.}
+
+\label{tab:sensibilidadcasos}
+\end{table}
+
+Con la finalidad de conocer el comportamiento del gráfico T2Qv con distintos números de variables, se presenta 2 casos (Tabla \ref{tab:sensibilidadcasos}), además del que se observa en la figura \ref{fig:sensibilidad}, que consta de 10 variables. Ambos casos presentan inestabilidad con dimensiones bajas. El primer caso está realizado con 5 variables, 10 tablas, donde la última tiene una distribución diferente a las demás, a diferencia del caso con 10 variables, este no es muy estable aún cuando el número de dimensiones se acerca al número de variables. El segundo caso presenta la misma estructura de tablas pero consta de 15 variables. Se denota que con mayor número de dimensiones es estable, aún si se disminuye 2 dimensiones sigue detectando un solo punto fuera de control, que corresponde al escenario correcto. De este modo se comprueba que el gráfico T2Qv es más estable con mayor cantidad de variables, sin embargo, los resultados con pocas variables siguen siendo fiables.
+
+
+
+# Discusión
+
+En el SPC para variables cualitativas todavía no son muchas las propuestas publicadas. Las diferencias entre procedimientos para la determinación de los estadísticos y los gráficos de control en este campo hacen difícil su comparación. 
+
+El gráfico de control T2Qv, que se presenta en este artículo, aplica un MCA, técnica de análisis multivariante que identifica estructuras latentes que subyacen en el conjunto de datos cualitativos y que involucra una reducción de dimensiones, en consecuencia, desde el comienzo se requiere una tabla de datos con p variables ($p$ > 3) dicotómicas o politómicas. Se debe recordar que el análisis de sensibilidad determinó que esta propuesta tiene un buen rendimiento cuando trabaja con altas dimensiones y que a bajas dimensiones pierde estabilidad. En varios estudios revisados, los casos de aplicación analizan sólo dos o tres variables, lo que conduciría a la aplicación de un análisis de correspondencias simple, no múltiple. En consecuencia, estos casos no podrían ser tratados con el T2Qv.
+
+Como ejemplos se señala la Combinación lineal óptima de variables Poisson para el SPC multivariados, de @epprecht2013optimal cuyo caso de aplicación registrado en su publicación analiza dos variables relacionadas con el conteo de defectos en la producción de jarrones de cerámica. El gráfico GMDS de @raza2019design fue ejemplificado con un conjunto de datos de telecomunicaciones, tomado de @jiang2002process, que consta de sólo dos variables. El gráfico de control multivariante, desarrollado por @pastuizaca2015multivariate ), para p características de calidad de atributos correlacionadas, que aplica teoría difusa, hace un análisis de dos tablas tomadas de publicaciones de @taleb2009control y @taleb2006multivariate), la primera con tres variables relacionadas con la comida congelada, y la segunda, con tres variables sobre la producción de porcelana.
+
+Otra de las características del gráfico T2Qv es que cada muestra es un grupo constituido por un conjunto de individuos. El ejemplo de datos simulados *Datak10Contaminated*  incluye un conjunto de 10 tablas y 11 variables, cada tabla es una muestra, está formada por 100 observaciones y aparece representada como un punto en el gráfico $T^2$ de Hotelling; el ejemplo aplicado al contexto educativo hace referencia a la base de datos *Estudiantes 2019_2020*, conformada por 43191 observaciones y 17 variables cualitativas agrupadas en 4 periodos académicos, estos periodos constituyen las tablas (muestras) que se representan como puntos en el gráfico. En publicaciones de varios autores se puede constatar que en sus ejemplos de aplicación se analiza una sola tabla, de dimensiones *n* (filas) x *p* (variables), donde cada $n_i$  fila es una muestra.    
+Por ejemplo, el gráfico de control MNP, de @lu1998control contiene en su artículo una tabla de datos simulados de 30 muestras, donde cada una de ellas es un único individuo (objeto) que registra el conteo de defectos para tres características de la calidad. Asimismo, la ejemplificación que @chiu2007 presentaron de su gráfico de control *MP* se hizo con una tabla de datos simulados de 26 muestras, donde cada muestra representa a un individuo al que se le registra el *D* número de defectos o no conformidades asociadas a tres características de calidad.    
+
+
+En el gráfico de control T2Qv que se presenta en este artículo, cada uno de los individuos (filas) que conforman las diferentes nuestras pueden tener distintas configuraciones en función de las categorías de las variables. En base de datos *Estudiantes_2019_2020*, por ejemplo, el primer individuo de la lista es una mujer que estudia la carrera de Acuicultura en la Facultad de Ciencias Agropecuarias, su edad está entre 18 y 30 años, no presenta discapacidad, se autodeclaró mestiza; vive en una zona urbana, su padre tiene un nivel de formación de Educación Básica, su madre también; en su hogar viven 5 o más personas, sus estudios secundarios los realizó en un colegio particular, el ingreso total de su hogar se clasifica como de Rango 2, no registró el origen de los recursos económicos para sus estudios, no tuvo necesidad de acudir a segunda ni tercera matrícula y sí terminó su periodo académico. Otros estudiantes de esta misma tabla, o de las otras tres, tendrán diferentes características, hay que considerar que en total son 43191 individuos.
+
+Por el contrario, otros autores que han investigado sobre gráficos de control multivariante para datos de atributos, aunque en su análisis consideran varias características de calidad, al final clasifican a cada individuo por una sola de las variables analizadas. Es el caso de @ranjan2008multivariate, cuya propuesta se demuestra con un caso de aplicación que controla 7 características de calidad en 24 muestras cuyo tamaño varía entre 20 y 404 individuos. Las variables responden a 6 tipos de defectos de la pintura en la cubierta de ventiladores de techo: cobertura deficiente, desbordamiento, defecto de empanada, burbujas, defectos de pintura, defectos de pulido. La séptima característica es la ausencia de defectos. A cada individuo se lo clasifica por su defecto más predominante, por consiguiente, en su registro sólo aparece un tipo de defecto o ausencia de defectos, lo que resulta en una pérdida de información sobre el efecto combinado de las variables sobre el proceso.
+
+
+ 
+
+# Conclusiones
+
+En este artículo se ha presentado el gráfico de control T2Qv, un técnica de control estadístico de procesos multivariantes que realiza un análisis de los datos cualitativos a través del Análisis de correspondencias múltiple, cuyas coordenadas se someten a un proceso de normalización propio del Análisis Factorial Múltiple, para luego representarlos mediante el gráfico $T^2$ de Hotelling.     
+Esta propuesta genera un gráfico del MCA de la tabla consenso, que sirve de referente para comparar otros gráficos del MCA de las tablas que hayan sido identificadas como puntos fuera de control en el gráfico de Hotelling. Allí se puede verificar qué categorías de las variables han tenido variaciones en su ubicación en ambos gráficos, que pueden estar provocando cambios en la media del proceso y ocasionando el estado de fuera de control.    
+Para facilitar la interpretación del comportamiento de las variables se realiza un análisis de la distancia Chi cuadrado entre las categorías de la tabla consenso y de las tablas reportadas como fuera de control. Para este análisis se puede utilizar una tabla que reporta los valores del estadístico Chi cuadrado y los p-valores que determinan significancia estadística en tres niveles: 0.05 ($*$), 0.01($**$) y 0.001($***$). También se puede representar este análisis mediante un gráfico de barras que incluye límites asociados a los niveles de significancia estadística establecidos.    
+El análisis de sensibilidad determinó que el gráfico de control T2Qv tiene un buen rendimiento cuando trabaja con altas dimensiones, pero, que pierde estabilidad a bajas dimensiones.
+Para facilitar la difusión y aplicación del método propuesto, se ha desarrollado un paquete estadístico computacional reproducible en R, denominado T2Qv y disponible en GitHub, que permite visualizar los resultados de forma plana o interactiva, además, presenta un panel Shiny que contiene todas las funciones integradas en un mismo espacio.     
+
+En el SPC para variables cualitativas todavía no son muchas las propuestas publicadas. Las diferencias entre procedimientos para la determinación de los estadísticos y los gráficos de control en este campo hacen difícil su comparación. 
 
 
