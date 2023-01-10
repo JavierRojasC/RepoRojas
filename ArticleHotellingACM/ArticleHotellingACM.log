@@ -1,25 +1,25 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.26)  6 DEC 2021 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.17)  25 JUL 2022 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **ArticleHotellingACM.tex
 (./ArticleHotellingACM.tex
-LaTeX2e <2021-11-15>
-L3 programming layer <2021-11-22> (./mdpi.cls
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-12> (./mdpi.cls
 Document Class: mdpi 15/02/2019 MDPI paper class
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -31,15 +31,15 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks17
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count191
-\calc@Bcount=\count192
+\calc@Acount=\count193
+\calc@Bcount=\count194
 \calc@Adimen=\dimen139
 \calc@Bdimen=\dimen140
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count193
+\calc@Ccount=\count195
 \calc@Cskip=\skip51
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.st
 y
@@ -138,16 +138,16 @@ Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count194
+\linenopenalty=\count196
 \output=\toks19
-\linenoprevgraf=\count195
+\linenoprevgraf=\count197
 \linenumbersep=\dimen143
 \linenumberwidth=\dimen144
-\c@linenumber=\count196
-\c@pagewiselinenumber=\count197
-\c@LN@truepage=\count198
-\c@internallinenumber=\count199
-\c@internallinenumbers=\count266
+\c@linenumber=\count198
+\c@pagewiselinenumber=\count199
+\c@LN@truepage=\count266
+\c@internallinenumber=\count267
+\c@internallinenumbers=\count268
 \quotelinenumbersep=\dimen145
 \bframerule=\dimen146
 \bframesep=\dimen147
@@ -155,7 +155,7 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count267
+\c@float@type=\count269
 \float@exts=\toks20
 \float@box=\box51
 \@float@everytoks=\toks21
@@ -176,13 +176,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count268
+\inf@bad=\count270
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count269
-\leftroot@=\count270
+\uproot@=\count271
+\leftroot@=\count272
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count271
-\DOTSCASE@=\count272
+\classnum@=\count273
+\DOTSCASE@=\count274
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -191,15 +191,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen150
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count273
-\c@MaxMatrixCols=\count274
+\macc@depth=\count275
+\c@MaxMatrixCols=\count276
 \dotsspace@=\muskip16
-\c@parentequation=\count275
-\dspbrk@lvl=\count276
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
 \tag@help=\toks23
-\row@=\count277
-\column@=\count278
-\maxfields@=\count279
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
 \andhelp@=\toks24
 \eqnshift@=\dimen151
 \alignsep@=\dimen152
@@ -223,8 +223,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen157
 \enit@toks=\toks27
 \enit@inbox=\box55
-\enit@count@id=\count280
-\enitdp@description=\count281
+\enit@count@id=\count282
+\enitdp@description=\count283
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
@@ -241,12 +241,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen165
 \cmidrulekern=\dimen166
 \defaultaddspace=\dimen167
-\@cmidla=\count282
-\@cmidlb=\count283
+\@cmidla=\count284
+\@cmidlb=\count285
 \@aboverulesep=\dimen168
 \@belowrulesep=\dimen169
-\@thisruleclass=\count284
-\@lastruleclass=\count285
+\@thisruleclass=\count286
+\@lastruleclass=\count287
 \@thisrulewidth=\dimen170
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.st
 y
@@ -263,7 +263,7 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.st
 y
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count286
+\etb@tempcnta=\count288
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/tabto-ltx/tabto.sty
 Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
 \CurrentLineWidth=\dimen176
@@ -290,7 +290,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \everycr=\toks30
 \minrowclearance=\skip69
 )
-\rownum=\count287
+\rownum=\count289
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -315,35 +315,36 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 y
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count288
+\multirow@cntb=\count290
 \multirow@dima=\skip72
 \bigstrutjot=\dimen183
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.st
 y
-Package: microtype 2021/10/31 v3.0 Micro-typographical refinements (RS)
+Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
 \MT@toks=\toks36
-\MT@count=\count289
+\MT@count=\count291
 \MT@tempbox=\box59
-\MT@leftmarginkern=\dimen184
-\MT@rightmarginkern=\dimen185
-LaTeX Info: Redefining \textls on input line 1114.
-\MT@outer@kern=\dimen186
-LaTeX Info: Redefining \textmicrotypecontext on input line 1700.
-\MT@listname@count=\count290
+LaTeX Info: Redefining \leftprotrusion on input line 1010.
+LaTeX Info: Redefining \rightprotrusion on input line 1018.
+LaTeX Info: Redefining \textls on input line 1173.
+\MT@outer@kern=\dimen184
+LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+\MT@listname@count=\count292
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pd
 ftex.def
-File: microtype-pdftex.def 2021/10/31 v3.0 Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
+File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 897.
+LaTeX Info: Redefining \lslig on input line 897.
 \MT@outer@space=\skip73
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cf
 g
-File: microtype.cfg 2021/10/31 v3.0 microtype main configuration file (RS)
+File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
 ))
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz
 .sty
@@ -354,8 +355,8 @@ ty
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfuti
 l-common.tex
 \pgfutil@everybye=\toks37
-\pgfutil@tempdima=\dimen187
-\pgfutil@tempdimb=\dimen188
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfuti
 l-common-lists.tex))
@@ -388,26 +389,26 @@ s.code.tex
 sfiltered.code.tex
 \pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen189
-\pgf@y=\dimen190
-\pgf@xa=\dimen191
-\pgf@ya=\dimen192
-\pgf@xb=\dimen193
-\pgf@yb=\dimen194
-\pgf@xc=\dimen195
-\pgf@yc=\dimen196
-\pgf@xd=\dimen197
-\pgf@yd=\dimen198
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
+\pgf@xd=\dimen195
+\pgf@yd=\dimen196
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count291
-\c@pgf@countb=\count292
-\c@pgf@countc=\count293
-\c@pgf@countd=\count294
+\c@pgf@counta=\count293
+\c@pgf@countb=\count294
+\c@pgf@countc=\count295
+\c@pgf@countd=\count296
 \t@pgf@toka=\toks41
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
-\pgf@sys@id@count=\count295
+\pgf@sys@id@count=\count297
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.
 cfg
@@ -426,8 +427,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfs
 yssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count296
-\pgfsyssoftpath@bigbuffer@items=\count297
+\pgfsyssoftpath@smallbuffer@items=\count298
+\pgfsyssoftpath@bigbuffer@items=\count299
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfs
 ysprotocol.code.tex
@@ -445,8 +446,8 @@ e.tex
 .code.tex)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathpars
 er.code.tex
-\pgfmath@dimen=\dimen199
-\pgfmath@count=\count298
+\pgfmath@dimen=\dimen197
+\pgfmath@count=\count300
 \pgfmath@box=\box61
 \pgfmath@toks=\toks44
 \pgfmath@stack@operand=\toks45
@@ -472,39 +473,39 @@ tions.misc.code.tex)
 tions.integerarithmetics.code.tex)))
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloa
 t.code.tex
-\c@pgfmathroundto@lastzeros=\count299
+\c@pgfmathroundto@lastzeros=\count301
 ))
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code
 .tex)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 repoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen256
-\pgf@picmaxx=\dimen257
-\pgf@picminy=\dimen258
-\pgf@picmaxy=\dimen259
-\pgf@pathminx=\dimen260
-\pgf@pathmaxx=\dimen261
-\pgf@pathminy=\dimen262
-\pgf@pathmaxy=\dimen263
-\pgf@xx=\dimen264
-\pgf@xy=\dimen265
-\pgf@yx=\dimen266
-\pgf@yy=\dimen267
-\pgf@zx=\dimen268
-\pgf@zy=\dimen269
+\pgf@picminx=\dimen198
+\pgf@picmaxx=\dimen199
+\pgf@picminy=\dimen256
+\pgf@picmaxy=\dimen257
+\pgf@pathminx=\dimen258
+\pgf@pathmaxx=\dimen259
+\pgf@pathminy=\dimen260
+\pgf@pathmaxy=\dimen261
+\pgf@xx=\dimen262
+\pgf@xy=\dimen263
+\pgf@yx=\dimen264
+\pgf@yy=\dimen265
+\pgf@zx=\dimen266
+\pgf@zy=\dimen267
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 repathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen270
-\pgf@path@lasty=\dimen271
+\pgf@path@lastx=\dimen268
+\pgf@path@lasty=\dimen269
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 repathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen272
-\pgf@shorten@start@additional=\dimen273
+\pgf@shorten@end@additional=\dimen270
+\pgf@shorten@start@additional=\dimen271
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 rescopes.code.tex
@@ -512,19 +513,19 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count300
+\pgf@picture@serial@count=\count302
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 regraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen274
+\pgflinewidth=\dimen272
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 retransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen275
-\pgf@pt@y=\dimen276
-\pgf@pt@temp=\dimen277
+\pgf@pt@x=\dimen273
+\pgf@pt@y=\dimen274
+\pgf@pt@temp=\dimen275
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 requick.code.tex
@@ -541,14 +542,14 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 rearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen278
+\pgfarrowsep=\dimen276
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 reshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen279
-\pgf@sys@shading@range@num=\count301
-\pgf@shadingcount=\count302
+\pgf@max=\dimen277
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfco
 reimage.code.tex
@@ -587,8 +588,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfc
 omp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen280
-\pgf@nodesepend=\dimen281
+\pgf@nodesepstart=\dimen278
+\pgf@nodesepend=\dimen279
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfc
 omp-version-1-18.sty
@@ -609,8 +610,8 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.cod
 e.tex)
-\pgffor@iter=\dimen282
-\pgffor@skip=\dimen283
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
 ))
@@ -621,34 +622,34 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflib
 raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count303
-\pgfplotmarksize=\dimen284
+\pgf@plot@mark@count=\count305
+\pgfplotmarksize=\dimen282
 )
-\tikz@lastx=\dimen285
-\tikz@lasty=\dimen286
-\tikz@lastxsaved=\dimen287
-\tikz@lastysaved=\dimen288
-\tikz@lastmovetox=\dimen289
-\tikz@lastmovetoy=\dimen290
-\tikzleveldistance=\dimen291
-\tikzsiblingdistance=\dimen292
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
 \tikz@figbox=\box67
 \tikz@figbox@bg=\box68
 \tikz@tempbox=\box69
 \tikz@tempbox@bg=\box70
-\tikztreelevel=\count304
-\tikznumberofchildren=\count305
-\tikznumberofcurrentchild=\count306
-\tikz@fig@count=\count307
+\tikztreelevel=\count306
+\tikznumberofchildren=\count307
+\tikznumberofcurrentchild=\count308
+\tikz@fig@count=\count309
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodul
 ematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count308
-\pgfmatrixcurrentcolumn=\count309
-\pgf@matrix@numberofcolumns=\count310
+\pgfmatrixcurrentrow=\count310
+\pgfmatrixcurrentcolumn=\count311
+\pgf@matrix@numberofcolumns=\count312
 )
-\tikz@expandcount=\count311
+\tikz@expandcount=\count313
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/ti
 kz/libraries/tikzlibrarytopaths.code.tex
@@ -670,19 +671,19 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip76
 \dth@everypar=\toks54
 )
-\c@theorem=\count312
-\c@lemma=\count313
-\c@corollary=\count314
-\c@proposition=\count315
-\c@characterization=\count316
-\c@property=\count317
-\c@problem=\count318
-\c@example=\count319
-\c@examplesanddefinitions=\count320
-\c@remark=\count321
-\c@definition=\count322
-\c@hypothesis=\count323
-\c@notation=\count324
+\c@theorem=\count314
+\c@lemma=\count315
+\c@corollary=\count316
+\c@proposition=\count317
+\c@characterization=\count318
+\c@property=\count319
+\c@problem=\count320
+\c@example=\count321
+\c@examplesanddefinitions=\count322
+\c@remark=\count323
+\c@definition=\count324
+\c@hypothesis=\count325
+\c@notation=\count326
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language4
@@ -692,7 +693,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip77
 \bibsep=\skip78
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count325
+\c@NAT@ctr=\count327
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.st
 y
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -709,9 +710,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen293
-\Hy@linkcounter=\count326
-\Hy@pagecounter=\count327
+\@linkdim=\dimen291
+\Hy@linkcounter=\count328
+\Hy@pagecounter=\count329
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -729,7 +730,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 y
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count328
+\Hy@SavedSpaceFactor=\count330
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -747,13 +748,13 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count329
+\c@Hy@tempcnt=\count331
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen294
+\XeTeXLinkMargin=\dimen292
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -762,9 +763,9 @@ c.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count330
-\Field@Width=\dimen295
-\Fld@charsize=\dimen296
+\Fld@menulength=\count332
+\Field@Width=\dimen293
+\Fld@charsize=\dimen294
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -778,8 +779,8 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count331
-\c@Item=\count332
+\Hy@abspage=\count333
+\c@Item=\count334
 )
 Package hyperref Info: Driver: hpdftex.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -790,8 +791,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count333
-\c@bookmark@seq@number=\count334
+\Fld@listcount=\count335
+\c@bookmark@seq@number=\count336
 
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfi
 lecheck.sty
@@ -809,8 +810,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 y
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks55
-\footnotemargin=\dimen297
-\c@pp@next@reset=\count335
+\footnotemargin=\dimen295
+\c@pp@next@reset=\count337
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -820,56 +821,56 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-\c@page@totc=\count336
+\c@page@totc=\count338
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count337
-\Gm@cntv=\count338
-\c@Gm@tempcnt=\count339
-\Gm@bindingoffset=\dimen298
-\Gm@wd@mp=\dimen299
-\Gm@odd@mp=\dimen300
-\Gm@even@mp=\dimen301
-\Gm@layoutwidth=\dimen302
-\Gm@layoutheight=\dimen303
-\Gm@layouthoffset=\dimen304
-\Gm@layoutvoffset=\dimen305
+\Gm@cnth=\count339
+\Gm@cntv=\count340
+\c@Gm@tempcnt=\count341
+\Gm@bindingoffset=\dimen296
+\Gm@wd@mp=\dimen297
+\Gm@odd@mp=\dimen298
+\Gm@even@mp=\dimen299
+\Gm@layoutwidth=\dimen300
+\Gm@layoutheight=\dimen301
+\Gm@layouthoffset=\dimen302
+\Gm@layoutvoffset=\dimen303
 \Gm@dimlist=\toks56
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/newfloat/newfloat.st
 y
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
 Package newfloat Info: New float `listing' with options `' on input line 974.
-\c@listing=\count340
+\c@listing=\count342
 Package newfloat Info: float type `listing'=4 on input line 974.
 Package newfloat Info: New float `boxenv' with options `name=Box' on input line
  975.
-\c@boxenv=\count341
+\c@boxenv=\count343
 Package newfloat Info: float type `boxenv'=8 on input line 975.
 Package newfloat Info: New float `chart' with options `' on input line 976.
-\c@chart=\count342
+\c@chart=\count344
 Package newfloat Info: float type `chart'=16 on input line 976.
 Package newfloat Info: New float `scheme' with options `' on input line 977.
-\c@scheme=\count343
+\c@scheme=\count345
 Package newfloat Info: float type `scheme'=32 on input line 977.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen306
-\captionmargin@=\dimen307
-\captionwidth=\dimen308
-\caption@tempdima=\dimen309
-\caption@indent=\dimen310
-\caption@parindent=\dimen311
-\caption@hangindent=\dimen312
+\captionmargin=\dimen304
+\captionmargin@=\dimen305
+\captionwidth=\dimen306
+\caption@tempdima=\dimen307
+\caption@indent=\dimen308
+\caption@parindent=\dimen309
+\caption@hangindent=\dimen310
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count344
-\c@continuedfloat=\count345
+\c@caption@flags=\count346
+\c@continuedfloat=\count347
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
@@ -881,84 +882,84 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip82
 \LTpre=\skip83
 \LTpost=\skip84
-\LTchunksize=\count346
-\LTcapwidth=\dimen313
+\LTchunksize=\count348
+\LTcapwidth=\dimen311
 \LT@head=\box72
 \LT@firsthead=\box73
 \LT@foot=\box74
 \LT@lastfoot=\box75
 \LT@gbox=\box76
-\LT@cols=\count347
-\LT@rows=\count348
-\c@LT@tables=\count349
-\c@LT@chunks=\count350
+\LT@cols=\count349
+\LT@rows=\count350
+\c@LT@tables=\count351
+\c@LT@chunks=\count352
 \LT@p@ftn=\toks57
 ) (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count351
+\c@KVtest=\count353
 \sf@farskip=\skip85
-\sf@captopadj=\dimen314
+\sf@captopadj=\dimen312
 \sf@capskip=\skip86
 \sf@nearskip=\skip87
-\c@subfigure=\count352
-\c@subfigure@save=\count353
-\c@lofdepth=\count354
-\c@subtable=\count355
-\c@subtable@save=\count356
-\c@lotdepth=\count357
+\c@subfigure=\count354
+\c@subfigure@save=\count355
+\c@lofdepth=\count356
+\c@subtable=\count357
+\c@subtable@save=\count358
+\c@lotdepth=\count359
 \sf@top=\skip88
 \sf@bottom=\skip89
 )
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 17
-9.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 18
+5.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pd
 ftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count358
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count360
 \l__pdf_internal_box=\box77
 ) (./ArticleHotellingACM.aux
 
-LaTeX Warning: Label `fig:conspointedu' multiply defined.
+LaTeX Warning: Label `eq:T2med' multiply defined.
 
 )
 \openout1 = `ArticleHotellingACM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 179.
-LaTeX Info: Redefining \microtypecontext on input line 179.
-Package microtype Info: Applying patch `item' on input line 179.
-Package microtype Info: Applying patch `toc' on input line 179.
-Package microtype Info: Applying patch `eqnum' on input line 179.
-Package microtype Info: Applying patch `footnote' on input line 179.
+(lastpage)             ! on input line 185.
+LaTeX Info: Redefining \microtypecontext on input line 185.
+Package microtype Info: Applying patch `item' on input line 185.
+Package microtype Info: Applying patch `toc' on input line 185.
+Package microtype Info: Applying patch `eqnum' on input line 185.
+Package microtype Info: Applying patch `footnote' on input line 185.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 179.
+LaTeX Info: Redefining \showhyphens on input line 185.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -966,7 +967,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 \symAMSb=\mathgroup5
-Package hyperref Info: Link coloring ON on input line 179.
+Package hyperref Info: Link coloring ON on input line 185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -976,11 +977,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count359
+\c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 179.
-LaTeX Info: Redefining \pageref on input line 179.
-LaTeX Info: Redefining \nameref on input line 179.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
 (./ArticleHotellingACM.out) (./ArticleHotellingACM.out)
 \@outlinefile=\write4
 \openout4 = `ArticleHotellingACM.out'.
@@ -1028,56 +1029,56 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 179.
+(hyperref)                removing `superscript' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 179.
+(hyperref)                removing `superscript' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 185.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 179.
+(hyperref)                removing `superscript' on input line 185.
 
-<logo-mdpi.pdf, id=115, 86.3225pt x 57.21375pt>
+<logo-mdpi.pdf, id=119, 86.3225pt x 57.21375pt>
 File: logo-mdpi.pdf Graphic file (type pdf)
 <use logo-mdpi.pdf>
-Package pdftex.def Info: logo-mdpi.pdf  used on input line 179.
+Package pdftex.def Info: logo-mdpi.pdf  used on input line 185.
 (pdftex.def)             Requested size: 42.92798pt x 28.45274pt.
-LaTeX Font Info:    Calculating math sizes for size <18> on input line 179.
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 185.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-79.
+85.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-179.
+185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-179.
+185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-179.
+185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-179.
+185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1086,50 +1087,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 18.75613pt on input line 179.
+(Font)              scaled to size 18.75613pt on input line 185.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 14.25455pt on input line 179.
+(Font)              scaled to size 14.25455pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.25378pt on input line 179.
+(Font)              scaled to size 11.25378pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 179.
+(Font)              scaled to size 10.42007pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 179.
+(Font)              scaled to size 7.91925pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 179.
-<logo-orcid.pdf, id=117, 597.23125pt x 845.1575pt>
+(Font)              scaled to size 6.25204pt on input line 185.
+<logo-orcid.pdf, id=121, 597.23125pt x 845.1575pt>
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 179.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 179.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 179.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 File: logo-orcid.pdf Graphic file (type pdf)
 <use logo-orcid.pdf>
-Package pdftex.def Info: logo-orcid.pdf  used on input line 179.
+Package pdftex.def Info: logo-orcid.pdf  used on input line 185.
 (pdftex.def)             Requested size: 9.10509pt x 12.88315pt.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 179.
+(Font)              scaled to size 9.37807pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 179.
+(Font)              scaled to size 7.29405pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 179.
-<logo-updates.pdf, id=123, 832.75539pt x 281.85541pt>
+(Font)              scaled to size 5.21004pt on input line 185.
+<logo-updates.pdf, id=132, 832.75539pt x 281.85541pt>
 File: logo-updates.pdf Graphic file (type pdf)
 <use logo-updates.pdf>
-Package pdftex.def Info: logo-updates.pdf  used on input line 179.
+Package pdftex.def Info: logo-updates.pdf  used on input line 185.
 (pdftex.def)             Requested size: 50.43332pt x 17.07182pt.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-79.
+85.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1140,241 +1141,238 @@ Package microtype Info: Loading generic protrusion settings for font family
 [1
 
 {/Users/javierrojas/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.ma
-p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>] [2] [3]
-Underfull \hbox (badness 1122) in paragraph at lines 451--456
+p} <./logo-mdpi.pdf> <./logo-orcid.pdf> <./logo-updates.pdf>] [2] [3] [4]
+Underfull \hbox (badness 1122) in paragraph at lines 475--480
 []\T1/ppl/m/n/10 (+20) El análi-sis de cor-re-spon-den-cias múlti-ples (MCA) es
  una gen-er-al-ización del análi-sis de
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Overfull \hbox (3.32793pt too wide) in paragraph at lines 545--545
+Overfull \hbox (3.32793pt too wide) in paragraph at lines 563--563
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (11.86385pt too wide) in paragraph at lines 546--546
+Overfull \hbox (11.86385pt too wide) in paragraph at lines 564--564
 []|$\OML/zplm/m/it/9 b[]$| 
  []
 
 
-Overfull \hbox (43.96968pt too wide) in paragraph at lines 529--550
+Overfull \hbox (43.96968pt too wide) in paragraph at lines 547--568
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--564
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|$\OML/zplm/m/it/9 V[] \OT1/zplm/m/n/9 :
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
-96.
-(/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 598--601
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 616--618
-
- []
-
-[6]
-<ktables.png, id=302, 419.5675pt x 289.08pt>
+[5] [6]
+<ktables.png, id=312, 419.5675pt x 289.08pt>
 File: ktables.png Graphic file (type png)
 <use ktables.png>
-Package pdftex.def Info: ktables.png  used on input line 698.
+Package pdftex.def Info: ktables.png  used on input line 677.
 (pdftex.def)             Requested size: 177.54256pt x 122.32584pt.
-<ktablesMCA.png, id=305, 1184.425pt x 499.8675pt>
+<ktablesMCA.png, id=315, 1177.39874pt x 516.93124pt>
 File: ktablesMCA.png Graphic file (type png)
 <use ktablesMCA.png>
-Package pdftex.def Info: ktablesMCA.png  used on input line 711.
-(pdftex.def)             Requested size: 399.47415pt x 168.5874pt.
+Package pdftex.def Info: ktablesMCA.png  used on input line 690.
+(pdftex.def)             Requested size: 399.47415pt x 175.38358pt.
+[7 <./ktables.png> <./ktablesMCA.png>]
+<esquema_1.png, id=327, 838.13126pt x 585.18625pt>
+File: esquema_1.png Graphic file (type png)
+<use esquema_1.png>
+Package pdftex.def Info: esquema_1.png  used on input line 735.
+(pdftex.def)             Requested size: 399.47415pt x 278.91284pt.
+<esquema_2.png, id=329, 612.2875pt x 604.2575pt>
+File: esquema_2.png Graphic file (type png)
+<use esquema_2.png>
+Package pdftex.def Info: esquema_2.png  used on input line 765.
+(pdftex.def)             Requested size: 399.47415pt x 394.23796pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./ktables.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 767--771
-
- []
-
-[8 <./ktablesMCA.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-88.
+[8 <./esquema_1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 7
+83.
+(/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [9 <./esquema_2.png>] [10]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+17.
 (/Users/javierrojas/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1382,99 +1380,198 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[9]
-<DescrPack.png, id=344, 642.4pt x 520.94624pt>
+<DescrPack.png, id=360, 650.43pt x 672.5125pt>
 File: DescrPack.png Graphic file (type png)
 <use DescrPack.png>
-Package pdftex.def Info: DescrPack.png  used on input line 900.
-(pdftex.def)             Requested size: 266.32062pt x 215.97404pt.
+Package pdftex.def Info: DescrPack.png  used on input line 928.
+(pdftex.def)             Requested size: 266.32062pt x 275.36249pt.
 
-LaTeX Warning: Reference `' on page 10 undefined on input line 959.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 3333) in paragraph at lines 950--962
+[11 <./DescrPack.png>]
+Underfull \hbox (badness 3333) in paragraph at lines 984--995
 []\T1/ppl/m/n/10 (+20) Para este es-tu-dio se gen-eró una base de datos sim-u-l
 a-dos, a la que se de-nom-inó
  []
 
+[12] [13]
+Overfull \hbox (8.84436pt too wide) in paragraph at lines 1146--1171
+ [][] 
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 963.
+[14]
+<concatenated.png, id=403, 886.31125pt x 473.77pt>
+File: concatenated.png Graphic file (type png)
+<use concatenated.png>
+Package pdftex.def Info: concatenated.png  used on input line 1248.
+(pdftex.def)             Requested size: 399.47415pt x 213.54152pt.
+[15 <./concatenated.png>]
+<pointb.png, id=412, 881.2925pt x 476.78125pt>
+File: pointb.png Graphic file (type png)
+<use pointb.png>
+Package pdftex.def Info: pointb.png  used on input line 1263.
+(pdftex.def)             Requested size: 399.47415pt x 216.11371pt.
+<t2.png, id=417, 885.3075pt x 477.785pt>
+File: t2.png Graphic file (type png)
+<use t2.png>
+Package pdftex.def Info: t2.png  used on input line 1287.
+(pdftex.def)             Requested size: 399.47415pt x 215.59178pt.
 
-[10 <./DescrPack.png>]
-<CONS1.png, id=356, 1087.06125pt x 677.53125pt>
-File: CONS1.png Graphic file (type png)
-<use CONS1.png>
-Package pdftex.def Info: CONS1.png  used on input line 1018.
-(pdftex.def)             Requested size: 399.47415pt x 248.97682pt.
-[11 <./CONS1.png>]
-<MCAb.png, id=363, 1087.06125pt x 677.53125pt>
-File: MCAb.png Graphic file (type png)
-<use MCAb.png>
-Package pdftex.def Info: MCAb.png  used on input line 1034.
-(pdftex.def)             Requested size: 399.47415pt x 248.97682pt.
-<Hot1.png, id=368, 1087.06125pt x 677.53125pt>
-File: Hot1.png Graphic file (type png)
-<use Hot1.png>
-Package pdftex.def Info: Hot1.png  used on input line 1059.
-(pdftex.def)             Requested size: 399.47415pt x 248.97682pt.
-<conspoint.png, id=371, 1371.62437pt x 620.81938pt>
-File: conspoint.png Graphic file (type png)
-<use conspoint.png>
-Package pdftex.def Info: conspoint.png  used on input line 1092.
-(pdftex.def)             Requested size: 399.47415pt x 180.80978pt.
-[12 <./MCAb.png>] [13 <./Hot1.png> <./conspoint.png>]
-<chibar.png, id=390, 1343.0175pt x 598.235pt>
-File: chibar.png Graphic file (type png)
-<use chibar.png>
-Package pdftex.def Info: chibar.png  used on input line 1177.
-(pdftex.def)             Requested size: 399.47415pt x 177.93832pt.
-[14 <./chibar.png>] [15]
-<consedu.png, id=405, 1087.06125pt x 677.53125pt>
-File: consedu.png Graphic file (type png)
-<use consedu.png>
-Package pdftex.def Info: consedu.png  used on input line 1293.
-(pdftex.def)             Requested size: 399.47415pt x 248.97682pt.
-[16 <./consedu.png>]
-<t2edu.png, id=411, 1087.06125pt x 677.53125pt>
-File: t2edu.png Graphic file (type png)
-<use t2edu.png>
-Package pdftex.def Info: t2edu.png  used on input line 1360.
-(pdftex.def)             Requested size: 399.47415pt x 248.97682pt.
-<conspointedu.png, id=414, 1428.33624pt x 649.42625pt>
-File: conspointedu.png Graphic file (type png)
-<use conspointedu.png>
-Package pdftex.def Info: conspointedu.png  used on input line 1381.
-(pdftex.def)             Requested size: 399.47415pt x 181.63pt.
-<chibar2.png, id=417, 1428.33624pt x 706.13812pt>
-File: chibar2.png Graphic file (type png)
-<use chibar2.png>
-Package pdftex.def Info: chibar2.png  used on input line 1402.
-(pdftex.def)             Requested size: 399.47415pt x 197.49106pt.
-[17 <./t2edu.png>]
-<mcacompedu.png, id=426, 1428.33624pt x 649.42625pt>
-File: mcacompedu.png Graphic file (type png)
-<use mcacompedu.png>
-Package pdftex.def Info: mcacompedu.png  used on input line 1426.
-(pdftex.def)             Requested size: 399.47415pt x 181.63pt.
-[18 <./conspointedu.png> <./chibar2.png>] [19 <./mcacompedu.png>]
-<conjuntosensibilidad.png, id=442, 782.925pt x 319.1925pt>
-File: conjuntosensibilidad.png Graphic file (type png)
-<use conjuntosensibilidad.png>
-Package pdftex.def Info: conjuntosensibilidad.png  used on input line 1521.
-(pdftex.def)             Requested size: 355.0919pt x 144.77011pt.
-<5var.png, id=444, 880.28876pt x 356.33125pt>
-File: 5var.png Graphic file (type png)
-<use 5var.png>
-Package pdftex.def Info: 5var.png  used on input line 1551.
-(pdftex.def)             Requested size: 256.0748pt x 103.6542pt.
-<15var.png, id=445, 877.2775pt x 372.39125pt>
-File: 15var.png Graphic file (type png)
-<use 15var.png>
-Package pdftex.def Info: 15var.png  used on input line 1552.
-(pdftex.def)             Requested size: 256.0748pt x 108.70097pt.
-[20 <./conjuntosensibilidad.png>] [21 <./5var.png> <./15var.png>] [22] (./appen
-dix.tex) (./ArticleHotellingACM.bbl
+Underfull \hbox (badness 1603) in paragraph at lines 1289--1289
+[]\T1/ppl/b/n/9 (+20) Figure 8. |\T1/ppl/m/n/9 (+20) Grá-fico de con-trol mul-t
+i-vari-ante T2 Hotelling apli-ca-ble a vari-ables cual-i-ta-ti-vas,
+ []
+
+[16 <./pointb.png> <./t2.png>]
+<comparation.png, id=428, 1343.0175pt x 493.845pt>
+File: comparation.png Graphic file (type png)
+<use comparation.png>
+Package pdftex.def Info: comparation.png  used on input line 1322.
+(pdftex.def)             Requested size: 399.47415pt x 146.88867pt.
+
+Underfull \hbox (badness 1603) in paragraph at lines 1324--1324
+[]\T1/ppl/b/n/9 (+20) Figure 9. |\T1/ppl/m/n/9 (+20) Grá-fico de con-trol mul-t
+i-vari-ante T2 Hotelling apli-ca-ble a vari-ables cual-i-ta-ti-vas,
+ []
+
+[17 <./comparation.png>]
+<Chisqr.png, id=439, 891.33pt x 486.81876pt>
+File: Chisqr.png Graphic file (type png)
+<use Chisqr.png>
+Package pdftex.def Info: Chisqr.png  used on input line 1378.
+(pdftex.def)             Requested size: 399.47415pt x 218.18245pt.
+[18 <./Chisqr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1416--1421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1483
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1490--1496
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1504
+
+ []
+
+<concat_edu.png, id=456, 1431.3475pt x 862.22125pt>
+File: concat_edu.png Graphic file (type png)
+<use concat_edu.png>
+Package pdftex.def Info: concat_edu.png  used on input line 1533.
+(pdftex.def)             Requested size: 399.47415pt x 240.63092pt.
+[20] [21 <./concat_edu.png>]
+<tdos_edu.png, id=469, 1410.26875pt x 849.1725pt>
+File: tdos_edu.png Graphic file (type png)
+<use tdos_edu.png>
+Package pdftex.def Info: tdos_edu.png  used on input line 1655.
+(pdftex.def)             Requested size: 399.47415pt x 240.53954pt.
+[22]
+<point2018_edu.png, id=475, 1393.205pt x 872.25874pt>
+File: point2018_edu.png Graphic file (type png)
+<use point2018_edu.png>
+Package pdftex.def Info: point2018_edu.png  used on input line 1676.
+(pdftex.def)             Requested size: 399.47415pt x 250.1003pt.
+[23 <./tdos_edu.png> <./point2018_edu.png>]
+<comp_edu.png, id=486, 1317.92375pt x 594.22pt>
+File: comp_edu.png Graphic file (type png)
+<use comp_edu.png>
+Package pdftex.def Info: comp_edu.png  used on input line 1708.
+(pdftex.def)             Requested size: 399.47415pt x 180.10799pt.
+[24 <./comp_edu.png>]
+<chisq_edu.png, id=495, 1325.95375pt x 456.70625pt>
+File: chisq_edu.png Graphic file (type png)
+<use chisq_edu.png>
+Package pdftex.def Info: chisq_edu.png  used on input line 1750.
+(pdftex.def)             Requested size: 399.47415pt x 137.59132pt.
+<dist20182.png, id=499, 1078.0275pt x 343.2825pt>
+File: dist20182.png Graphic file (type png)
+<use dist20182.png>
+Package pdftex.def Info: dist20182.png  used on input line 1776.
+(pdftex.def)             Requested size: 399.47415pt x 127.20633pt.
+[25 <./chisq_edu.png> <./dist20182.png>]
+<dist20182n1.png, id=510, 1005.7575pt x 375.4025pt>
+File: dist20182n1.png Graphic file (type png)
+<use dist20182n1.png>
+Package pdftex.def Info: dist20182n1.png  used on input line 1807.
+(pdftex.def)             Requested size: 399.47415pt x 149.10435pt.
+<dist20182n2.png, id=512, 981.6675pt x 349.305pt>
+File: dist20182n2.png Graphic file (type png)
+<use dist20182n2.png>
+Package pdftex.def Info: dist20182n2.png  used on input line 1825.
+(pdftex.def)             Requested size: 399.47415pt x 142.14465pt.
+[26 <./dist20182n1.png> <./dist20182n2.png>]
+<point_2020_1.png, id=524, 1206.5075pt x 705.63625pt>
+File: point_2020_1.png Graphic file (type png)
+<use point_2020_1.png>
+Package pdftex.def Info: point_2020_1.png  used on input line 1851.
+(pdftex.def)             Requested size: 399.47415pt x 233.63591pt.
+<chisq_2020_1.png, id=526, 1135.24126pt x 339.2675pt>
+File: chisq_2020_1.png Graphic file (type png)
+<use chisq_2020_1.png>
+Package pdftex.def Info: chisq_2020_1.png  used on input line 1880.
+(pdftex.def)             Requested size: 399.47415pt x 119.38214pt.
+[27 <./point_2020_1.png> <./chisq_2020_1.png>]
+<dist20201n3.png, id=536, 651.43375pt x 704.6325pt>
+File: dist20201n3.png Graphic file (type png)
+<use dist20201n3.png>
+Package pdftex.def Info: dist20201n3.png  used on input line 1898.
+(pdftex.def)             Requested size: 399.47415pt x 432.1046pt.
+[28 <./dist20201n3.png>]
+<point_2022_2.png, id=543, 1200.485pt x 703.62875pt>
+File: point_2022_2.png Graphic file (type png)
+<use point_2022_2.png>
+Package pdftex.def Info: point_2022_2.png  used on input line 1932.
+(pdftex.def)             Requested size: 399.47415pt x 234.14151pt.
+<chi20202n5.png, id=545, 1119.18124pt x 337.26pt>
+File: chi20202n5.png Graphic file (type png)
+<use chi20202n5.png>
+Package pdftex.def Info: chi20202n5.png  used on input line 1965.
+(pdftex.def)             Requested size: 399.47415pt x 120.37912pt.
+[29 <./point_2022_2.png>]
+<dist20202n6.png, id=554, 624.3325pt x 686.565pt>
+File: dist20202n6.png Graphic file (type png)
+<use dist20202n6.png>
+Package pdftex.def Info: dist20202n6.png  used on input line 1980.
+(pdftex.def)             Requested size: 399.47415pt x 439.30582pt.
+[30 <./chi20202n5.png> <./dist20202n6.png>]
+<sensibilidad.png, id=564, 1349.04pt x 448.67625pt>
+File: sensibilidad.png Graphic file (type png)
+<use sensibilidad.png>
+Package pdftex.def Info: sensibilidad.png  used on input line 2043.
+(pdftex.def)             Requested size: 399.47415pt x 132.85812pt.
+[31 <./sensibilidad.png>] [32] [33] (./appendix.tex) (./ArticleHotellingACM.bbl
+
 Underfull \hbox (badness 6078) in paragraph at lines 37--45
 []\T1/ppl/m/n/9 (+20) APARISI, F.  Hotelling's T2 con-trol chart with adap-tive
  sam-ple sizes.  \T1/ppl/m/it/9 (+20) In-ter-na-tional
@@ -1487,7 +1584,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 37--45
  [][][https://doi.org/10.1080/00207549608905062][][].
  []
 
-
+[34]
 Underfull \hbox (badness 1859) in paragraph at lines 47--55
 \T1/ppl/m/it/9 (+20) Jour-nal of Pro-duc-tion Re-search \T1/ppl/b/n/9 (+20) 200
 1\T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 39\T1/ppl/m/n/9 (+20) , 3127--3140,
@@ -1507,44 +1604,63 @@ T1/ppl/m/n/9 (+20) , \T1/ppl/m/it/9 (+20) 49\T1/ppl/m/n/9 (+20) , 1815--1838, [
 ][][https://doi.org/10.1080/03610918.2018.1506032][][].
  []
 
-[23]) 
+[35]
+Underfull \hbox (badness 3179) in paragraph at lines 308--312
+[]\T1/ppl/m/n/9 (+20) Galindo-Villardón, P.; Vicente-Villardón, J.; Zarza, C.A.
+; Fernandez-Gómez, M.J.; Mart^^Yn, J.
+ []
+
+) 
 AED: lastpage setting LastPage
-[24] [25] (./ArticleHotellingACM.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 2314--2314
+  \TS1/ppl/m/n/9 (+20) © \T1/ppl/m/n/9 (+20) 2022 by the au-thors. Sub-mit-ted 
+to \T1/ppl/m/it/9 (+20) Math-e-mat-ics \T1/ppl/m/n/9 (+20) for pos-si-ble open 
+ac-cess pub-li-ca-tion
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 2314--2314
+\T1/ppl/m/n/9 (+20) un-der the terms and con-di-tions of the Cre-ative Com-mons
+ At-tri-bu-tion (CC BY) li-cense
+ []
+
+[36] (./ArticleHotellingACM.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ArticleHotellingACM.out' has not changed.
-(rerunfilecheck)             Checksum: 31F4EF7F583F713BE8D844BD4D826823;4904.
+(rerunfilecheck)             Checksum: 78AF4E09A3C621BB0E5B5F13CFE338EA;5385.
  ) 
 Here is how much of TeX's memory you used:
- 27866 strings out of 480295
- 512353 string characters out of 5895215
- 859132 words of memory out of 5000000
- 44641 multiletter control sequences out of 15000+600000
- 477640 words of font info for 410 fonts, out of 8000000 for 9000
+ 28120 strings out of 480228
+ 516225 string characters out of 5893879
+ 873495 words of memory out of 5000000
+ 44839 multiletter control sequences out of 15000+600000
+ 549839 words of font info for 480 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,15n,94p,2405b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,15n,94p,2405b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 tt1000.600pk> </Users/javierrojas/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/ecss0500.600pk>{/Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/en
 c/dvips/base/8r.enc}</Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></Users/javierrojas/Library/TinyTeX/texm
-f-dist/fonts/type1/public/mathpazo/fplmb.pfb></Users/javierrojas/Library/TinyTe
-X/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></Users/javierrojas/Library
-/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/javi
-errojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/
-javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></U
-sers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
-></Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8
-a.pfb>
-Output written on ArticleHotellingACM.pdf (25 pages, 7412033 bytes).
+public/amsfonts/cm/cmbsy10.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></Users/javierrojas/Library/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/javierrojas/Library/
+TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/javierrojas
+/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/j
+avierrojas/Library/TinyTeX/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb></U
+sers/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/public/mathpazo/fplmri.
+pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/type1/u
+rw/palatino/uplb8a.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/fonts/typ
+e1/urw/palatino/uplbi8a.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></Users/javierrojas/Library/TinyTeX/texmf-dist/
+fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on ArticleHotellingACM.pdf (36 pages, 6312090 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 94532 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 94585 words of extra memory for PDF output out of 106986 (max. 10000000)
 
