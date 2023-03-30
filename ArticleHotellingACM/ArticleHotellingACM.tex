@@ -484,13 +484,13 @@ la tabla de Burt.
  \hline
  $V_{1}$ & $V_{2}$ & $\cdots$ & $V_{p}$ \\ [0.5ex] 
  \hline\hline
- Alto & Medio & $\cdots$ & Medio\\
+ High & Medium & $\cdots$ & Medium\\
  \hline
-Medio & Bajo & $\cdots$ & Alto\\
+Medium & Low & $\cdots$ & High\\
 \hline
 \vdots & $\vdots$ & $\vdots$ & $\vdots$\\
 \hline
-Bajo & Alto & $\cdots$ & Bajo \\ [1ex] 
+Low & High & $\cdots$ & Low \\ [1ex] 
  \hline
 \end{tabular}\caption{Matriz inicial}
 \label{tab:inicial}
@@ -505,7 +505,7 @@ eventos de forma binaria.
 \begin{center}
  \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
  \hline
- $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ $V_{1}:High$ &$V_{1}:Medium$ &$V_{1}:Low$ & $V_{2}:High$ & $V_{2}:Medium$ & $V_{2}:Low$ & $\cdots$ & $V_{p}:High$ & $V_{p}:Medium$ & $V_{p}:Low$ \\ [0.5ex] 
  \hline\hline
  1 & 0 & 0 & 0 & 1 & 0 & $\cdots$ & 0 & 1 & 0 \\ [0.2ex] 
  \hline
@@ -544,25 +544,25 @@ frecuencia total, dando lugar a una nueva matriz que se denominará
 
 \begin{table}[!ht]
 \begin{center}
- \begin{tabular}{| p{1.7cm} ||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1.3cm} p{1cm} p{1cm} ||} 
+ \begin{tabular}{| p{1.9cm} ||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1.3cm} p{1cm} p{1cm} ||} 
  \hline
-  & $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+  & $V_{1}:High$ &$V_{1}:Medium$ &$V_{1}:Low$ & $V_{2}:High$ & $V_{2}:Medium$ & $V_{2}:Low$ & $\cdots$ & $V_{p}:High$ & $V_{p}:Medium$ & $V_{p}:Low$ \\ [0.5ex] 
  \hline\hline
- $V_{1}:Alto$ & $b_{1,1}$ & 0 & 0  & $b_{1,4}$ & $b_{1,5}$ & $b_{1,6}$ & $\cdots$ & $b_{1,3p-2}$ & $b_{1,3p-1}$ & $b_{1,3p}$ \\
- $V_{1}:Medio$ & 0 & $b_{2,2}$ & 0 & $b_{2,4}$ & $b_{2,5}$ & $b_{2,6}$ & $\cdots$ & $b_{2,3p-2}$ & $b_{2,3p-1}$ & $b_{2,3p}$ \\ 
- $V_{1}:Bajo$ & 0 & 0 & $b_{3,3}$  & $b_{3,4}$ & $b_{3,5}$ & $b_{3,6}$ & $\cdots$ & $b_{3,3p-2}$ & $b_{3,3p-1}$ & $b_{3,3p}$ \\ 
+ $V_{1}:High$ & $b_{1,1}$ & 0 & 0  & $b_{1,4}$ & $b_{1,5}$ & $b_{1,6}$ & $\cdots$ & $b_{1,3p-2}$ & $b_{1,3p-1}$ & $b_{1,3p}$ \\
+ $V_{1}:Medium$ & 0 & $b_{2,2}$ & 0 & $b_{2,4}$ & $b_{2,5}$ & $b_{2,6}$ & $\cdots$ & $b_{2,3p-2}$ & $b_{2,3p-1}$ & $b_{2,3p}$ \\ 
+ $V_{1}:Low$ & 0 & 0 & $b_{3,3}$  & $b_{3,4}$ & $b_{3,5}$ & $b_{3,6}$ & $\cdots$ & $b_{3,3p-2}$ & $b_{3,3p-1}$ & $b_{3,3p}$ \\ 
 \hline\hline
-  $V_{2}:Alto$ & $b_{4,1}$ & $b_{4,2}$ & $b_{4,3}$ & $b_{4,4}$ & 0 & 0 & $\cdots$ & $b_{4,3p-2}$ & $b_{4,3p-1}$ & $b_{4,3p}$ \\
- $V_{2}:Medio$ & $b_{5,1}$ & $b_{5,2}$ & $b_{5,3}$ & 0 & $b_{5,5}$ & 0 & $\cdots$ & $b_{5,3p-2}$ & $b_{5,3p-1}$ & $b_{5,3p}$ \\ 
- $V_{2}:Bajo$ &  $b_{6,1}$ & $b_{6,2}$ & $b_{6,3}$ & 0 & 0 &  $b_{6,6}$ & $\cdots$& $b_{6,3p-2}$ & $b_{6,3p-1}$ & $b_{6,3p}$ \\ 
+  $V_{2}:High$ & $b_{4,1}$ & $b_{4,2}$ & $b_{4,3}$ & $b_{4,4}$ & 0 & 0 & $\cdots$ & $b_{4,3p-2}$ & $b_{4,3p-1}$ & $b_{4,3p}$ \\
+ $V_{2}:Medium$ & $b_{5,1}$ & $b_{5,2}$ & $b_{5,3}$ & 0 & $b_{5,5}$ & 0 & $\cdots$ & $b_{5,3p-2}$ & $b_{5,3p-1}$ & $b_{5,3p}$ \\ 
+ $V_{2}:Low$ &  $b_{6,1}$ & $b_{6,2}$ & $b_{6,3}$ & 0 & 0 &  $b_{6,6}$ & $\cdots$& $b_{6,3p-2}$ & $b_{6,3p-1}$ & $b_{6,3p}$ \\ 
 \hline\hline
  
  $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$ & $\vdots$ & $\vdots$ \\ 
  
 \hline\hline
- $V_{p}:Alto$  & $b_{3p-2,1}$   & $b_{3p-2,2}$   & $b_{3p-2,3}$   & $b_{3p-2,4}$   & $b_{3p-2,5}$   & $b_{3p-2,6}$    & $\cdots$ & $b_{3p-2,3p-2}$ & 0 & 0 \\
- $V_{p}:Medio$ & $b_{3p-1,1}$ & $b_{3p-1,2}$ & $b_{3p-1,3}$ & $b_{3p-1,4}$ & $b_{3p-1,5}$ & $b_{3p-1,6}$  & $\cdots$ & 0 & $b_{3p-1,3p-1}$ & 0 \\ 
- $V_{p}:Bajo$  & $b_{3p,1}$ & $b_{3p,2}$ & $b_{3p,3}$ & $b_{3p,4}$ & $b_{3p,5}$ & $b_{3p,6}$  & $\cdots$ & 0 & 0 & $b_{3p,3p}$ \\ 
+ $V_{p}:High$  & $b_{3p-2,1}$   & $b_{3p-2,2}$   & $b_{3p-2,3}$   & $b_{3p-2,4}$   & $b_{3p-2,5}$   & $b_{3p-2,6}$    & $\cdots$ & $b_{3p-2,3p-2}$ & 0 & 0 \\
+ $V_{p}:Medium$ & $b_{3p-1,1}$ & $b_{3p-1,2}$ & $b_{3p-1,3}$ & $b_{3p-1,4}$ & $b_{3p-1,5}$ & $b_{3p-1,6}$  & $\cdots$ & 0 & $b_{3p-1,3p-1}$ & 0 \\ 
+ $V_{p}:Low$  & $b_{3p,1}$ & $b_{3p,2}$ & $b_{3p,3}$ & $b_{3p,4}$ & $b_{3p,5}$ & $b_{3p,6}$  & $\cdots$ & 0 & 0 & $b_{3p,3p}$ \\ 
 \hline
 \end{tabular}
 \caption{P: Tabla de contingencia de Burt en frecuencias relativas}
@@ -579,7 +579,7 @@ respectivamente.
 \begin{center}
  \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
  \hline
- $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ $V_{1}:High$ &$V_{1}:Medium$ &$V_{1}:Low$ & $V_{2}:High$ & $V_{2}:Medium$ & $V_{2}:Low$ & $\cdots$ & $V_{p}:High$ & $V_{p}:Medium$ & $V_{p}:Low$ \\ [0.5ex] 
  \hline
     $b_{1,\bullet}$ & $b_{2, \bullet}$ & $b_{3, \bullet}$ & $b_{4, \bullet}$ & $b_{5, \bullet}$ & $b_{6, \bullet}$ & $\cdots$ & $b_{3p-2, \bullet}$ & $b_{3p-1,\bullet}$ & $b_{3p, \bullet}$ \\ [0.5ex] 
  \hline
@@ -593,7 +593,7 @@ respectivamente.
 \begin{center}
  \begin{tabular}{||p{1cm}p{1cm}p{1cm}||p{1cm}p{1cm} p{1cm} ||p{1cm} ||p{1cm} p{1cm} p{1cm} ||} 
  \hline
- $V_{1}:Alto$ &$V_{1}:Medio$ &$V_{1}:Bajo$ & $V_{2}:Alto$ & $V_{2}:Medio$ & $V_{2}:Bajo$ & $\cdots$ & $V_{p}:Alto$ & $V_{p}:Medio$ & $V_{p}:Bajo$ \\ [0.5ex] 
+ $V_{1}:High$ &$V_{1}:Medium$ &$V_{1}:Low$ & $V_{2}:High$ & $V_{2}:Medium$ & $V_{2}:Low$ & $\cdots$ & $V_{p}:High$ & $V_{p}:Medium$ & $V_{p}:Low$ \\ [0.5ex] 
  \hline
     $b_{\bullet,1}$ & $b_{\bullet,2}$ & $b_{\bullet,3}$ & $b_{\bullet,4}$ & $b_{\bullet,5}$ & $b_{\bullet,6}$ & $\cdots$ & $b_{\bullet,3p-2}$ & $b_{\bullet,3p-1}$ & $b_{\bullet,3p}$ \\ [0.5ex] 
  \hline
@@ -643,15 +643,15 @@ columnas (Tabla \ref{tab:colcoor}).
  \hline
  & $Dim_{1}$      & $Dim_{2}$ & $\cdots$ & $Dim_{3p}$ \\ [0.5ex] 
  \hline\hline
-  $V_{1}:Alto$    & ${v_{1}d_{1}}_{alto}$& ${v_{1}d_{1}}_{alto}$  & $\cdots$ & ${v_{1}d_{p}}_{alto}$\\
+  $V_{1}:High$    & ${v_{1}d_{1}}_{High}$& ${v_{1}d_{1}}_{High}$  & $\cdots$ & ${v_{1}d_{p}}_{High}$\\
  \hline
- $V_{1}:Medio$    &${v_{1}d_{1}}_{medio}$ & ${v_{1}d_{1}}_{medio}$ & $\cdots$ & ${v_{1}d_{p}}_{medio}$\\
+ $V_{1}:Medium$    &${v_{1}d_{1}}_{Medium}$ & ${v_{1}d_{1}}_{Medium}$ & $\cdots$ & ${v_{1}d_{p}}_{Medium}$\\
 \hline
- $V_{1}:Bajo$     &${v_{1}d_{1}}_{bajo}$ & ${v_{1}d_{1}}_{bajo}$  &$\cdots$ & ${v_{1}d_{p}}_{bajo}$\\
+ $V_{1}:Low$     &${v_{1}d_{1}}_{Low}$ & ${v_{1}d_{1}}_{Low}$  &$\cdots$ & ${v_{1}d_{p}}_{Low}$\\
 \hline
 \vdots & $\vdots$ & $\vdots$  &$\ddots$& $\vdots$\\
 \hline
- $V_{p}:Bajo$     &${v_{p}d_{1}}_{bajo}$ & ${v_{p}d_{1}}_{bajo}$ & $\cdots$ & ${v_{p} d_{p}} _{bajo}$ \\ [1ex] 
+ $V_{p}:Low$     &${v_{p}d_{1}}_{Low}$ & ${v_{p}d_{1}}_{Low}$ & $\cdots$ & ${v_{p} d_{p}} _{Low}$ \\ [1ex] 
  \hline
 \end{tabular}\caption{Coordenadas estandarizadas de las columnas.}
 \label{tab:colcoor}
@@ -962,8 +962,7 @@ tabla \ref{tab:functions}.
 \end{center}
 \end{table}
 
-\hypertarget{resultados}{%
-\section{Resultados}\label{resultados}}
+2022-2023 \# Resultados
 
 Con la intención de probar la metodología propuesta en el gráfico de
 control \(T^2\) de Hotelling para variables cualitativas, se hizo un
